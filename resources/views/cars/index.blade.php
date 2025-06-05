@@ -18,7 +18,7 @@
                 <div class="p-4">
                     <h2 class="text-lg font-bold text-gray-800">{{ $car->brand }} {{ $car->model }}</h2>
                     <p class="text-gray-600 text-sm mt-1">Rs. {{ number_format($car->price / 100000, 2) }} Lakh <span class="text-xs text-gray-400">Avg. Ex-Showroom price</span></p>
-                    <a href="{{ url('/car/' . $car->id) }}" class="mt-3 inline-block text-blue-600 hover:underline text-sm">Show price in my city</a>
+                    <a href="{{ url('/car/' . $car->id) }}" class="mt-3 inline-block text-blue-600 hover:underline text-sm">View Details</a>
                 </div>
             </div>
         @endforeach
