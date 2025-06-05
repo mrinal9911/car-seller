@@ -13,7 +13,7 @@
         <x-input name="price" label="Price" type="number" required />
         <x-input name="fuel_type" label="Fuel Type" required />
         <x-input name="transmission" label="Transmission" required />
-        <x-input name="mileage" label="Mileage (km)" type="number" required />
+        <x-input name="mileage" label="Driven (km)" type="number" required />
 
         <x-textarea name="description" label="Description" required />
 

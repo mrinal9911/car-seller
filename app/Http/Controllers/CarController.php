@@ -10,9 +10,18 @@ class CarController extends Controller
     public function index()
     {
         $cars = Car::with('images')->where('status', 'approved')->latest()->paginate(10);
-        return view('cars.index', compact('cars'));
-    }
 
+        $featuredCars = Car::selectRaw('MIN(id) as id, brand')
+            ->with(['images' => function ($query) {
+                $query->limit(1);
+            }])
+            ->where('status', 'approved')
+            ->groupBy('brand')
+            ->take(10)
+            ->get();
+
+        return view('cars.index', compact('cars', 'featuredCars'));
+    }
     public function show($id)
     {
         $car = Car::with('images', 'user')->findOrFail($id);

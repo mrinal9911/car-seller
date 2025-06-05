@@ -2,14 +2,24 @@
 
 @section('content')
 <div class="max-w-7xl mx-auto p-6">
-    <h1 class="text-2xl font-bold mb-4">Available Cars</h1>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <h1 class="text-3xl font-bold text-gray-800 mb-6">Featured Cars</h1>
+
+    <ul class="flex space-x-6 border-b mb-6">
+        <li><a href="#" class="text-blue-600 font-semibold border-b-2 border-blue-600 pb-2">Trending</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-blue-600">Popular</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-blue-600">Upcoming</a></li>
+    </ul>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         @foreach ($cars as $car)
-            <div class="bg-white p-4 rounded shadow">
-                <img src="{{ asset('storage/' . $car->images->first()->image_path) }}" class="w-full h-48 object-cover mb-3 rounded">
-                <h2 class="text-lg font-semibold">{{ $car->brand }} {{ $car->model }}</h2>
-                <p class="text-sm text-gray-600">₹{{ number_format($car->price) }}</p>
-                <a href="{{ url('/car/' . $car->id) }}" class="text-blue-600 hover:underline mt-2 inline-block">View Details</a>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition hover:shadow-lg">
+                <img src="{{ asset('storage/' . $car->images->first()->image_path) }}" class="w-full h-48 object-cover" alt="{{ $car->brand }} {{ $car->model }}">
+                
+                <div class="p-4">
+                    <h2 class="text-lg font-bold text-gray-800">{{ $car->brand }} {{ $car->model }}</h2>
+                    <p class="text-gray-600 text-sm mt-1">Rs. {{ number_format($car->price / 100000, 2) }} Lakh <span class="text-xs text-gray-400">Avg. Ex-Showroom price</span></p>
+                    <a href="{{ url('/car/' . $car->id) }}" class="mt-3 inline-block text-blue-600 hover:underline text-sm">Show price in my city</a>
+                </div>
             </div>
         @endforeach
     </div>
