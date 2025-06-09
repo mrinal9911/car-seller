@@ -23,8 +23,9 @@ Route::middleware('auth')->group(function () {
  * | From GPT
  */
 Route::get('/', [CarController::class, 'index']);
+Route::get('/home', [CarController::class, 'homePage']);
 Route::get('/car/{id}', [CarController::class, 'show']);
-Route::get('/car/create', [CarController::class, 'create']);
+Route::get('/create', [CarController::class, 'create']);
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [CarController::class, 'dashboard'])->name('dashboard');

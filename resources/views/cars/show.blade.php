@@ -37,19 +37,5 @@
         </div>
     </div>
 
-    {{-- Optional: Offer & EMI Section like CarWale --}}
-    <div class="mt-10 grid md:grid-cols-2 gap-6">
-        <div class="bg-gray-50 p-4 rounded shadow">
-            <h2 class="text-lg font-semibold mb-2">Special Offers</h2>
-            <p class="text-sm text-gray-600">Benefits up to ₹1,70,000 available.</p>
-            <a href="#" class="text-blue-600 hover:underline text-sm">Get this offer</a>
-        </div>
-
-        <div class="bg-gray-50 p-4 rounded shadow">
-            <h2 class="text-lg font-semibold mb-2">EMI Calculator</h2>
-            <p class="text-sm text-gray-600">Estimate your monthly payments.</p>
-            <a href="#" class="text-blue-600 hover:underline text-sm">Calculate EMI</a>
-        </div>
-    </div>
 </div>
 @endsection

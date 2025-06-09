@@ -22,6 +22,12 @@ class CarController extends Controller
 
         return view('cars.index', compact('cars', 'featuredCars'));
     }
+    
+    public function homePage()
+    {
+        return view('cars.home');
+    }
+
     public function show($id)
     {
         $car = Car::with('images', 'user')->findOrFail($id);
@@ -36,7 +42,7 @@ class CarController extends Controller
 
     public function create()
     {
-        return view('cars.create');
+        return view('cars.create'); // Make sure the Blade file exists
     }
 
     public function store(Request $request)
