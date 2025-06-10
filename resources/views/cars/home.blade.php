@@ -52,7 +52,7 @@
             position: relative;
             height: 100vh;
             width: 100%;
-            background: url("{{ asset('storage/images/car-hero2.jpg') }}") no-repeat center center/cover;
+            /* background: url("{{ asset('storage/images/car-hero2.jpg') }}") no-repeat center center/cover; */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -73,6 +73,27 @@
             color: #ddd;
             margin-top: 1rem;
             max-width: 600px;
+        }
+
+        .carousel-caption .btn {
+            margin-top: 2rem;
+            background-color: transparent;
+            border: 2px solid #f00;
+            color: #f00;
+            padding: 0.75rem 2rem;
+            border-radius: 999px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-caption {
+            bottom: 10.25rem !important;
+        }
+
+        .carousel-caption .btn:hover {
+
+            background-color: #f00;
+            color: white;
         }
 
         .hero .btn {
@@ -124,12 +145,12 @@
         </nav>
     </header>
 
-    <section class="hero">
+    <!-- <section class="hero">
         <h1>Exquisite, Elegant, Futuristic</h1>
         <p>Crafting a refined aesthetic that stands at the intersection of timeless sophistication and forward-thinking design.</p>
         <button class="btn">Get Start</button>
         <div class="scroll-indicator">&#x25BC;</div>
-    </section>
+    </section> -->
 
     <!-- Carousel Section -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -143,24 +164,31 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
+
                 <img src="{{ asset('storage/images/car-hero.jpg') }}" class="d-block w-100" alt="Slide 1">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Exquisite, Elegant, Futuristic</h5>
+                    <h1>Exquisite, Elegant, Futuristic</h1>
                     <p>Crafting a refined aesthetic that stands at the intersection of timeless sophistication and forward-thinking design.</p>
+                    <button class="btn">Get Start</button>
+                    <div class="scroll-indicator">&#x25BC;</div>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="{{ asset('storage/images/car-hero2.jpg') }}" class="d-block w-100" alt="Slide 2">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Exquisite, Elegant, Futuristic</h5>
+                    <h1>Exquisite, Elegant, Futuristic</h1>
                     <p>Crafting a refined aesthetic that stands at the intersection of timeless sophistication and forward-thinking design.</p>
+                    <button class="btn">Get Start</button>
+                    <div class="scroll-indicator">&#x25BC;</div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('storage/images/car-hero2.jpg') }}" class="d-block w-100" alt="Slide 3">
+                <img src="{{ asset('storage/images/car-hero3.avif') }}" class="d-block w-100" alt="Slide 3">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Exquisite, Elegant, Futuristic</h5>
+                    <h1>Exquisite, Elegant, Futuristic</h1>
                     <p>Crafting a refined aesthetic that stands at the intersection of timeless sophistication and forward-thinking design.</p>
+                    <button class="btn">Get Start</button>
+                    <div class="scroll-indicator">&#x25BC;</div>
                 </div>
             </div>
         </div>
