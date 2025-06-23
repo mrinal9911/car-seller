@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CarController;
+use App\Http\Controllers\EnquiryController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -26,6 +27,17 @@ Route::get('/', [CarController::class, 'index']);
 Route::get('/home', [CarController::class, 'homePage']);
 Route::get('/car/{id}', [CarController::class, 'show']);
 Route::get('/create', [CarController::class, 'create']);
+
+/**
+ * | CRUD of Enquiry
+ */
+Route::controller(EnquiryController::class)->prefix('enquiry')->group(function () {
+    Route::get('/', 'enquiry')->name('enquiry.index');
+    Route::get('/create', 'createEnquiry')->name('enquiry.create');         # For Frontend
+    Route::post('/store', 'storeEnquiry')->name('enquiry.store');
+    Route::get('/list', 'listEnquiry')->name('enquiry.list');
+});
+
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [CarController::class, 'dashboard'])->name('dashboard');
