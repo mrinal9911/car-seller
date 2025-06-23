@@ -7,12 +7,15 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
         @foreach ($cars as $car)
-            <div class="bg-white p-4 rounded shadow">
-                <img src="{{ asset('storage/' . $car->images->first()->image_path) }}" class="w-full h-48 object-cover rounded mb-2">
-                <h2 class="font-bold">{{ $car->title }}</h2>
-                <p>Status: {{ ucfirst($car->status) }}</p>
-                <p>₹{{ number_format($car->price) }}</p>
-            </div>
+        <div class="bg-white p-4 rounded shadow">
+            @php
+            $imagePath=!empty($car->images->first())?($car->images->first()->image_path):'';
+            @endphp
+            <img src="{{ asset('storage/' . $imagePath) }}" class=" w-full h-48 object-cover rounded mb-2">
+            <h2 class="font-bold">{{ $car->title }}</h2>
+            <p>Status: {{ ucfirst($car->status) }}</p>
+            <p>₹{{ number_format($car->price) }}</p>
+        </div>
         @endforeach
     </div>
 </div>
