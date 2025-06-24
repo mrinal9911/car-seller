@@ -238,7 +238,7 @@
             <div class="h-widget-content">
               <p class="m-0 text-nowrap">Our Location
                 <br>
-                <span class="text-muted">77 McKinney, Texas</span>
+                <span class="text-muted">Piska more, Ranchi</span>
               </p>
             </div>
             <div class="vr opacity-15 position-absolute end-0 top-0 h-100 d-none d-md-block m-0 ms-md-3 ms-lg-0"></div>
@@ -292,42 +292,10 @@
 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 me-auto">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle link-body-emphasis px-3 py-3 fw-bold custom-color" href="https://www.themecrest.top/" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item custom-color" href="home-v1.html">Home v1 Classifieds</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item custom-color" href="home-v2.html">Home v2 Classifieds</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item custom-color" href="home-v3.html">Home v3 Classifieds</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item custom-color" href="home-v4.html">Home v4 Classifieds</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item custom-color" href="home-v5.html">Home v5 Classifieds</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item custom-color" href="home-v6.html">Home v6 Dealership</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item custom-color" href="home-v7.html">Home v7 Dealership</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item custom-color" href="home-v8.html">Home v8 Dealership</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item custom-color" href="home-v9.html">Home v9 Dealership</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item custom-color" href="home-v10.html">Home v10 Dealership</a>
-                  </li>
-                </ul>
+                <a class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color" href="/home" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
               </li>
               <li class="nav-item">
-                <a href="used-cars.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Used</a>
+                <a href="/" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Vehicle</a>
               </li>
               <li class="nav-item">
                 <a href="new-cars.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">New</a>
@@ -5984,7 +5952,7 @@
   </footer>
 
 
-  
+
   <!-- This is for smoothening the edges -->
   <div class="overflow-hidden collapsing">
     <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -6026,7 +5994,7 @@
   <!-- Main JavaScript -->
   <script src="/js/script.min.js"></script>
 
-  <script src="switcher/switcher.min.js"></script>
+  <script src="/switcher/switcher.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
