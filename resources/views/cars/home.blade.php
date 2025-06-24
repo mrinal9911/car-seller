@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-    <script src="js/color-modes.js"></script>
+    <script src="/js/color-modes.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
 
     <!-- Load Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -22,11 +22,11 @@
         rel="stylesheet">
 
     {{-- <!-- Owl Carousel stylesheet --> change  --}}
-    <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.carousel.min.css">                   
-    <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/libs/owl.carousel/dist/assets/owl.carousel.min.css">                   
+    <link rel="stylesheet" href="/libs/owl.carousel/dist/assets/owl.theme.default.min.css">
 
     {{-- <!-- Simplebar stylesheet --> change  --}}
-    <link rel="stylesheet" href="libs/simplebar/dist/simplebar.min.css">
+    <link rel="stylesheet" href="/libs/simplebar/dist/simplebar.min.css">
     <noscript>
         <style>
             /**
@@ -47,19 +47,19 @@
     </noscript>
 
     <!-- Jarallax stylesheet -->
-    <link rel="stylesheet" href="libs/jarallax/dist/jarallax.min.css">
+    <link rel="stylesheet" href="/libs/jarallax/dist/jarallax.min.css">
 
     <!-- Site stylesheet -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
 
     <!-- Color scheme -->
-    <link id="templateColorScheme" rel="stylesheet" href="css/color-schemes/tc_red.css">
+    <link id="templateColorScheme" rel="stylesheet" href="/css/color-schemes/tc_red.css">
 
     <!-- Preloader stylesheet -->
-    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="/css/preloader.css">
 
     <!-- Preloader JavaScript -->
-    <script src="js/preloader.js"></script>
+    <script src="/js/preloader.js"></script>
 
 
     <meta charset="UTF-8" />
@@ -208,98 +208,11 @@
   </div>
   <!-- END Preloader -->
 
-  <!-- Header -->
-  <!-- Header Style 1 -->
+  {{-- CAUTION put this section in layout  --}}
   <header class="z-1030 position-relative z-2 shadow-sm">
 
     <!-- Top Bar - Style 1 -->
-    <nav class="top-bar-1 py-0 bg-body-tertiary border-bottom fs-sm">
-      <div class="container d-flex flex-wrap align-items-center">
-        <ul class="nav me-auto">
-          <li class="nav-item">
-            <a href="services.html" class="nav-link link-body-emphasis px-2 active">Services</a>
-          </li>
-          <li class="nav-item">
-            <a href="/" class="nav-link link-body-emphasis px-2">Vehicle</a>
-          </li>
-          <li class="nav-item">
-            <a href="faqs.html" class="nav-link link-body-emphasis px-2">FAQs</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link link-body-emphasis px-2">About</a>
-          </li>
-        </ul>
-        <button class="btn btn-sm me-2 btn-light border rounded-circle" id="cm-mode-switcher">
-          <span class="mode-light"></span>
-          <span class="mode-dark"></span>
-        </button>
-        <div class="dropdown user-dropdown text-end mx-2">
-          <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle my-1" data-bs-toggle="dropdown" aria-expanded="false">
-            <img data-src="./images/team/06.jpg" alt="Martin Jones" class="rounded-circle border border-light-subtle lazy" width="24" height="24">
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end text-small fs-sm py-0 overflow-hidden">
-            <li>
-              <a class="dropdown-item d-flex justify-content-between align-items-center py-2" href="vendor-profile.html">
-                <img data-src="./images/team/06.jpg" class="rounded-circle border shadow-sm large lazy" alt="Martin Jones" width="45" height="45">
-                <div class="fs-sm ms-2">
-                  <span class="d-block">Martin Jones</span>
-                  <small class="text-muted">Car Enthusiast</small>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item d-flex justify-content-between" href="account-dashboard.html">Dashboard</a>
-            </li>
-            <li>
-              <a class="dropdown-item d-flex justify-content-between" href="vendor-profile.html">Profile</a>
-            </li>
-            <li>
-              <a class="dropdown-item d-flex justify-content-between" href="account-listings.html">Listings <span class="badge text-bg-primary custom-color rounded-1 d-flex align-self-center py-1">15</span>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item d-flex justify-content-between" href="account-favorites.html">Favorites <span class="badge text-bg-primary custom-color rounded-1 d-flex align-self-center py-1">7</span>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item d-flex justify-content-between" href="account-reviews.html">Reviews <span class="badge text-bg-primary custom-color rounded-1 d-flex align-self-center py-1">13</span>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item d-flex justify-content-between" href="account-reviews-received.html">Reviews Received <span class="badge text-bg-primary custom-color rounded-1 d-flex align-self-center py-1">14</span>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item d-flex justify-content-between" href="account-messages.html">Messages <span class="badge text-bg-primary custom-color rounded-1 d-flex align-self-center py-1">12</span>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item d-flex justify-content-between" href="account-settings-profile.html">Settings</a>
-            </li>
-            <li>
-              <hr class="dropdown-divider m-0">
-            </li>
-            <li>
-              <a class="dropdown-item d-flex justify-content-between" href="#">Help</a>
-            </li>
-            <li>
-              <a class="dropdown-item d-flex justify-content-between" href="#">Logout</a>
-            </li>
-          </ul>
-        </div>
-        <ul class="nav">
-          <li class="nav-item">
-            <a href="add-listing.html" class="nav-link link-body-emphasis px-2">Sell Car</a>
-          </li>
-          <li class="nav-item">
-            <a href="auth-login.html" class="nav-link link-body-emphasis px-2">Login</a>
-          </li>
-          <li class="nav-item">
-            <a href="auth-signup.html" class="nav-link link-body-emphasis px-2">Sign up</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    
     <!-- END Top Bar - Style 1 -->
 
     <div class="container d-flex flex-wrap justify-content-between align-items-center py-4 pb-0 pb-md-4 border-bottom overflow-hidden">
@@ -812,20 +725,15 @@
     <!-- END Nav - Style 1 -->
 
   </header>
-  <!-- END Header Style 1 -->
-  <!-- END Header -->
+
+
+
 
   <!-- Main -->
   <main>
 
-
-
-
     <!-- Hero Filter -->
-    <section class="position-relative custom-color
-
-">
-
+    <section class="position-relative custom-color">
 
       <div class="jarallax" data-jarallax data-speed="0.2">
 
@@ -5961,7 +5869,8 @@
   <!-- END Main -->
 
   <!-- Footer -->
-  <!-- Footer Style 1 -->
+
+  {{-- CAUTION put this section in the layout  --}}
   <footer class="footer-style-1 position-relative border-top border-opacity-10 bg-dark text-bg-dark p-5">
 
     <div class="container py-3">
@@ -5970,7 +5879,7 @@
           <div class="d-flex flex-column h-100">
             <div class="logo mb-4">
               <a class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-decoration-none" href="index.html">
-                <img class="logo-light" src="images/logo-light.png" alt="CARMART">
+                <img class="logo-light" src="/images/logo-light.png" alt="CARMART">
               </a>
             </div>
             <p class="mb-4">Buy and drive your dream car from the most trusted automotive specialists.</p>
@@ -6073,8 +5982,9 @@
     </div>
 
   </footer>
-  <!-- END Footer Style 1 -->
 
+
+  
   <!-- This is for smoothening the edges -->
   <div class="overflow-hidden collapsing">
     <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -6092,29 +6002,29 @@
   <!-- Scripts -->
 
   <!-- jQuery -->
-  <script src="libs/jquery/dist/jquery.min.js"></script>
+  <script src="/libs/jquery/dist/jquery.min.js"></script>
 
   <!-- Owl Carousel plugin -->
-  <script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="/libs/owl.carousel/dist/owl.carousel.min.js"></script>
 
   <!-- jQuery Lazy plugin -->
-  <script src="libs/jquery-lazy/jquery.lazy.min.js"></script>
+  <script src="/libs/jquery-lazy/jquery.lazy.min.js"></script>
 
   <!-- Simplebar plugin -->
-  <script src="libs/simplebar/dist/simplebar.min.js"></script>
+  <script src="/libs/simplebar/dist/simplebar.min.js"></script>
 
   <!-- Bootstrap bundle -->
-  <script src="libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Jarallax plugin -->
-  <script src="libs/jarallax/dist/jarallax.min.js"></script>
-  <script src="libs/jarallax/dist/jarallax-video.min.js"></script>
+  <script src="/libs/jarallax/dist/jarallax.min.js"></script>
+  <script src="/libs/jarallax/dist/jarallax-video.min.js"></script>
 
   <!-- FlyTo plugin -->
-  <script src="libs/fly-to/dist/js/fly-to.min.js"></script>
+  <script src="/libs/fly-to/dist/js/fly-to.min.js"></script>
 
   <!-- Main JavaScript -->
-  <script src="js/script.min.js"></script>
+  <script src="/js/script.min.js"></script>
 
   <script src="switcher/switcher.min.js"></script>
 
