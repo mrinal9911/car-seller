@@ -2,195 +2,195 @@
 <html lang="en">
 
 <head>
-    <script src="/js/color-modes.js"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+  <script src="/js/color-modes.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
 
-    <!-- Load Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap"
-        rel="stylesheet">
+  <!-- Load Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap"
+    rel="stylesheet">
 
-    {{-- <!-- Owl Carousel stylesheet --> change  --}}
-    <link rel="stylesheet" href="/libs/owl.carousel/dist/assets/owl.carousel.min.css">                   
-    <link rel="stylesheet" href="/libs/owl.carousel/dist/assets/owl.theme.default.min.css">
+  {{-- <!-- Owl Carousel stylesheet --> change  --}}
+  <link rel="stylesheet" href="/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="/libs/owl.carousel/dist/assets/owl.theme.default.min.css">
 
-    {{-- <!-- Simplebar stylesheet --> change  --}}
-    <link rel="stylesheet" href="/libs/simplebar/dist/simplebar.min.css">
-    <noscript>
-        <style>
-            /**
+  {{-- <!-- Simplebar stylesheet --> change  --}}
+  <link rel="stylesheet" href="/libs/simplebar/dist/simplebar.min.css">
+  <noscript>
+    <style>
+      /**
         * Reinstate scrolling for non-JS clients
         */
-            .simplebar-content-wrapper {
-                scrollbar-width: auto;
-                -ms-overflow-style: auto;
-            }
+      .simplebar-content-wrapper {
+        scrollbar-width: auto;
+        -ms-overflow-style: auto;
+      }
 
-            .simplebar-content-wrapper::-webkit-scrollbar,
-            .simplebar-hide-scrollbar::-webkit-scrollbar {
-                display: initial;
-                width: initial;
-                height: initial;
-            }
-        </style>
-    </noscript>
-
-    <!-- Jarallax stylesheet -->
-    <link rel="stylesheet" href="/libs/jarallax/dist/jarallax.min.css">
-
-    <!-- Site stylesheet -->
-    <link rel="stylesheet" href="/css/style.min.css">
-
-    <!-- Color scheme -->
-    <link id="templateColorScheme" rel="stylesheet" href="/css/color-schemes/tc_red.css">
-
-    <!-- Preloader stylesheet -->
-    <link rel="stylesheet" href="/css/preloader.css">
-
-    <!-- Preloader JavaScript -->
-    <script src="/js/preloader.js"></script>
-
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ReadyDrive</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-
-        body {
-            background-color: #0a0a0a;
-            color: white;
-            overflow-x: hidden;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2rem 4rem;
-            position: relative;
-            z-index: 10;
-        }
-
-        nav a {
-            margin-left: 2rem;
-            color: #bbb;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a.active,
-        nav a:hover {
-            color: #f00;
-        }
-
-        .hero {
-            position: relative;
-            height: 100vh;
-            width: 100%;
-            /* background: url("{{ asset('storage/images/car-hero2.jpg') }}") no-repeat center center/cover; */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 0 2rem;
-            padding-top: 12px;
-            justify-content: flex-start;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            color: white;
-        }
-
-        .hero p {
-            font-size: 1rem;
-            color: #ddd;
-            margin-top: 1rem;
-            max-width: 600px;
-        }
-
-        .carousel-caption .btn {
-            margin-top: 2rem;
-            background-color: transparent;
-            border: 2px solid #f00;
-            color: #f00;
-            padding: 0.75rem 2rem;
-            border-radius: 999px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .carousel-caption {
-            bottom: 10.25rem !important;
-        }
-
-        .carousel-caption .btn:hover {
-
-            background-color: #f00;
-            color: white;
-        }
-
-        .hero .btn {
-            margin-top: 2rem;
-            background-color: transparent;
-            border: 2px solid #f00;
-            color: #f00;
-            padding: 0.75rem 2rem;
-            border-radius: 999px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .hero .btn:hover {
-            background-color: #f00;
-            color: white;
-        }
-
-        .scroll-indicator {
-            margin-top: 3rem;
-            font-size: 2rem;
-            color: #eee;
-            animation: bounce 2s infinite;
-        }
-
-        @keyframes bounce {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(10px);
-            }
-        }
+      .simplebar-content-wrapper::-webkit-scrollbar,
+      .simplebar-hide-scrollbar::-webkit-scrollbar {
+        display: initial;
+        width: initial;
+        height: initial;
+      }
     </style>
+  </noscript>
+
+  <!-- Jarallax stylesheet -->
+  <link rel="stylesheet" href="/libs/jarallax/dist/jarallax.min.css">
+
+  <!-- Site stylesheet -->
+  <link rel="stylesheet" href="/css/style.min.css">
+
+  <!-- Color scheme -->
+  <link id="templateColorScheme" rel="stylesheet" href="/css/color-schemes/tc_red.css">
+
+  <!-- Preloader stylesheet -->
+  <link rel="stylesheet" href="/css/preloader.css">
+
+  <!-- Preloader JavaScript -->
+  <script src="/js/preloader.js"></script>
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReadyDrive</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #0a0a0a;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 4rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    nav a {
+      margin-left: 2rem;
+      color: #bbb;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a.active,
+    nav a:hover {
+      color: #f00;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      /* background: url("{{ asset('storage/images/car-hero2.jpg') }}") no-repeat center center/cover; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 2rem;
+      padding-top: 12px;
+      justify-content: flex-start;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: #ddd;
+      margin-top: 1rem;
+      max-width: 600px;
+    }
+
+    .carousel-caption .btn {
+      margin-top: 2rem;
+      background-color: transparent;
+      border: 2px solid #f00;
+      color: #f00;
+      padding: 0.75rem 2rem;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .carousel-caption {
+      bottom: 10.25rem !important;
+    }
+
+    .carousel-caption .btn:hover {
+
+      background-color: #f00;
+      color: white;
+    }
+
+    .hero .btn {
+      margin-top: 2rem;
+      background-color: transparent;
+      border: 2px solid #f00;
+      color: #f00;
+      padding: 0.75rem 2rem;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .hero .btn:hover {
+      background-color: #f00;
+      color: white;
+    }
+
+    .scroll-indicator {
+      margin-top: 3rem;
+      font-size: 2rem;
+      color: #eee;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(10px);
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -212,7 +212,7 @@
   <header class="z-1030 position-relative z-2 shadow-sm">
 
     <!-- Top Bar - Style 1 -->
-    
+
     <!-- END Top Bar - Style 1 -->
 
     <div class="container d-flex flex-wrap justify-content-between align-items-center py-4 pb-0 pb-md-4 border-bottom overflow-hidden">
@@ -705,7 +705,7 @@
 
       <div class="jarallax" data-jarallax data-speed="0.2">
 
-        <img class="jarallax-img lazy" data-src="./images/cars/hero-01.jpg" alt="">
+        <img class="jarallax-img lazy" data-src="./images/cars/bmw-x5/01.jpg" alt="">
 
 
         <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" style="background-color: ; background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.42) 0px, rgba(255, 255, 255, 0.08) 67%); opacity: "></span>
@@ -947,8 +947,8 @@
 
     <!-- Browse by brand logo -->
     <section class="position-relative custom-color
-            
-            ">
+    
+    ">
 
 
       <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" style="background-color: var(--bs-primary); background-image: ; opacity: 0.04"></span>
@@ -1084,1881 +1084,17 @@
           <!-- END Brand Item -->
 
 
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Baojun</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/baojun.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>2</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Bentley</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/bentley.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>7</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Bertone</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/bertone.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>6</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">BMW</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/bmw.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>12</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Borgward</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/borgward.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>3</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Bugatti</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/bugatti.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>1</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Buick</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/buick.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>5</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">BYD</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/byd.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>7</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Cadillac</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/cadillac.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>5</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Changan</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/changan.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>4</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Chevrolet</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/chevrolet.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>19</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Chrysler</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/chrysler.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>4</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Citroen</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/citroen.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>10</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Corvette</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/corvette.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>2</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Cupra</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/cupra.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>8</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Dacia</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/dacia.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>8</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Daewoo</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/daewoo.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>6</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Dodge</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/dodge.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>5</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Faw</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/faw.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>2</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">DS</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/ds.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>8</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Ferrari</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/ferrari.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>9</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Fiat</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/fiat.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>2</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Ford</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/ford.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>11</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">GAC Motor</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/gac-motor.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>3</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Genesis</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/genesis.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>1</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Gillet</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/gillet.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>3</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">GMC</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/gmc.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>16</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Honda</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/honda.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>5</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Hyundai</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/hyundai.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>13</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Infiniti</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/infiniti.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>20</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Iveco</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/iveco.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>4</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Jaguar</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/jaguar.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>17</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Jeep</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/jeep.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>14</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Kia</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/kia.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>0</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Koenigsegg</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/koenigsegg.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>2</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Lamborghini</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/lamborghini.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>18</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Lancia</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/lancia.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>2</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Land Rover</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/landrover.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>6</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Lexus</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/lexus.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>15</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Lincoln</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/lincoln.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>3</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Lotus</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/lotus.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>2</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Luxgen</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/luxgen.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>2</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Maserati</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/maserati.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>3</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Maybach</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/maybach.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>4</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Mazda</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/mazda.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>9</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">McLaren</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/mclaren.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>17</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Mercedes-Benz</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/mercedes-benz.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>8</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Mercury</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/mercury.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>2</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">MG</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/mg.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>1</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">MINI</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/mini.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>5</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Mini Cooper</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/mini-cooper.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>5</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Mitsubishi</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/mitsubishi.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>11</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Nissan</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/nissan.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>13</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">OldMobile</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/oldmobile.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>5</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Opel</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/opel.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>4</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Peterbilt</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/peterbilt.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>16</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Pontiac</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/pontiac.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>16</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Peugeot</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/peugeot.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>16</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Porsche</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/porsche.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>10</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Qoros</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/qoros.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>1</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Renault</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/renault.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>1</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Roewe</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/roewe.png)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>2</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Rolls Royce</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/abarth.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>19</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Saab</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/saab.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>2</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Saic Motor</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/saic-motor.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>2</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Seat</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/seat.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>2</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Skoda</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/skoda.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>2</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Subaru</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/subaru.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>2</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Suzuki</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/suzuki.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>7</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Tata</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/tata.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>12</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Tesla</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/tesla.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>12</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Toyota</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/toyota.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>18</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Vauxhall</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/vauxhall.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>14</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Volkswagen</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/volkswagen.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>20</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Volvo</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/volvo.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>15</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Wiesmann</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/wiesmann.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>15</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border bg-light-subtle border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Wuling</h5>
-                <p class="card-text">
-                <div class="car-brand-logo overflow-hidden">
-                  <div style="--car-brand-logo: url(../images/brand-logo/wuling.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-              <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-                <strong>2</strong> Offers Available
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
         </div>
       </div>
 
     </section>
     <!-- END Browse by brand logo -->
 
-    <!-- Browse by body type [image] -->
-    <section class="position-relative custom-color
-            
-              bg-body-tertiary
-            
-            ">
-
-      <div class="container position-relative col-xxl-8 py-5 px-3 px-sm-0">
-        <h2 class="fs-5 text-uppercase pb-3 mb-4 custom-color ">Browse by Body Type</h2>
-        <div class="browse-body-type-image row row-cols-2 row-cols-lg-6 row-cols-md-4 row-cols-sm-3 g-3 mb-3">
-
-
-
-          <!-- Body Type Image -->
-          <div class="item">
-            <div class="p-1">
-              <div class="card body-type-card border-0 shadow-alt-sm">
-                <div class="card-body d-flex flex-column align-items-center">
-                  <h5 class="card-title fw-bold fs-sm fs-special m-0">4x4</h5>
-                  <div class="body-type-img overflow-hidden position-relative my-2">
-                    <img class="img-fluid img-grayscale-max lazy" data-src="./images/body-types/4x4.png" alt="">
-                  </div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                  <div class="body-type-count p-1 px-2 bg-secondary-subtle text-secondary fs-xs lh-level fw-bold d-inline-flex align-middle text-center rounded-pill">12</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END Body Type Image -->
-
-
-
-          <!-- Body Type Image -->
-          <div class="item">
-            <div class="p-1">
-              <div class="card body-type-card border-0 shadow-alt-sm">
-                <div class="card-body d-flex flex-column align-items-center">
-                  <h5 class="card-title fw-bold fs-sm fs-special m-0">Convertible</h5>
-                  <div class="body-type-img overflow-hidden position-relative my-2">
-                    <img class="img-fluid img-grayscale-max lazy" data-src="./images/body-types/convertible.png" alt="">
-                  </div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                  <div class="body-type-count p-1 px-2 bg-secondary-subtle text-secondary fs-xs lh-level fw-bold d-inline-flex align-middle text-center rounded-pill">8</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END Body Type Image -->
-
-
-
-          <!-- Body Type Image -->
-          <div class="item">
-            <div class="p-1">
-              <div class="card body-type-card border-0 shadow-alt-sm">
-                <div class="card-body d-flex flex-column align-items-center">
-                  <h5 class="card-title fw-bold fs-sm fs-special m-0">Coupe</h5>
-                  <div class="body-type-img overflow-hidden position-relative my-2">
-                    <img class="img-fluid img-grayscale-max lazy" data-src="./images/body-types/coupe.png" alt="">
-                  </div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                  <div class="body-type-count p-1 px-2 bg-secondary-subtle text-secondary fs-xs lh-level fw-bold d-inline-flex align-middle text-center rounded-pill">25</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END Body Type Image -->
-
-
-
-          <!-- Body Type Image -->
-          <div class="item">
-            <div class="p-1">
-              <div class="card body-type-card border-0 shadow-alt-sm">
-                <div class="card-body d-flex flex-column align-items-center">
-                  <h5 class="card-title fw-bold fs-sm fs-special m-0">Off-Road</h5>
-                  <div class="body-type-img overflow-hidden position-relative my-2">
-                    <img class="img-fluid img-grayscale-max lazy" data-src="./images/body-types/off-road.png" alt="">
-                  </div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                  <div class="body-type-count p-1 px-2 bg-secondary-subtle text-secondary fs-xs lh-level fw-bold d-inline-flex align-middle text-center rounded-pill">17</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END Body Type Image -->
-
-
-
-          <!-- Body Type Image -->
-          <div class="item">
-            <div class="p-1">
-              <div class="card body-type-card border-0 shadow-alt-sm">
-                <div class="card-body d-flex flex-column align-items-center">
-                  <h5 class="card-title fw-bold fs-sm fs-special m-0">Pickup</h5>
-                  <div class="body-type-img overflow-hidden position-relative my-2">
-                    <img class="img-fluid img-grayscale-max lazy" data-src="./images/body-types/pickup.png" alt="">
-                  </div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                  <div class="body-type-count p-1 px-2 bg-secondary-subtle text-secondary fs-xs lh-level fw-bold d-inline-flex align-middle text-center rounded-pill">28</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END Body Type Image -->
-
-
-
-          <!-- Body Type Image -->
-          <div class="item">
-            <div class="p-1">
-              <div class="card body-type-card border-0 shadow-alt-sm">
-                <div class="card-body d-flex flex-column align-items-center">
-                  <h5 class="card-title fw-bold fs-sm fs-special m-0">Roadster</h5>
-                  <div class="body-type-img overflow-hidden position-relative my-2">
-                    <img class="img-fluid img-grayscale-max lazy" data-src="./images/body-types/roadster.png" alt="">
-                  </div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                  <div class="body-type-count p-1 px-2 bg-secondary-subtle text-secondary fs-xs lh-level fw-bold d-inline-flex align-middle text-center rounded-pill">8</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END Body Type Image -->
-
-
-
-          <!-- Body Type Image -->
-          <div class="item">
-            <div class="p-1">
-              <div class="card body-type-card border-0 shadow-alt-sm">
-                <div class="card-body d-flex flex-column align-items-center">
-                  <h5 class="card-title fw-bold fs-sm fs-special m-0">Saloon</h5>
-                  <div class="body-type-img overflow-hidden position-relative my-2">
-                    <img class="img-fluid img-grayscale-max lazy" data-src="./images/body-types/saloon.png" alt="">
-                  </div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                  <div class="body-type-count p-1 px-2 bg-secondary-subtle text-secondary fs-xs lh-level fw-bold d-inline-flex align-middle text-center rounded-pill">16</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END Body Type Image -->
-
-
-
-          <!-- Body Type Image -->
-          <div class="item">
-            <div class="p-1">
-              <div class="card body-type-card border-0 shadow-alt-sm">
-                <div class="card-body d-flex flex-column align-items-center">
-                  <h5 class="card-title fw-bold fs-sm fs-special m-0">Sedan</h5>
-                  <div class="body-type-img overflow-hidden position-relative my-2">
-                    <img class="img-fluid img-grayscale-max lazy" data-src="./images/body-types/sedan.png" alt="">
-                  </div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                  <div class="body-type-count p-1 px-2 bg-secondary-subtle text-secondary fs-xs lh-level fw-bold d-inline-flex align-middle text-center rounded-pill">39</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END Body Type Image -->
-
-
-
-          <!-- Body Type Image -->
-          <div class="item">
-            <div class="p-1">
-              <div class="card body-type-card border-0 shadow-alt-sm">
-                <div class="card-body d-flex flex-column align-items-center">
-                  <h5 class="card-title fw-bold fs-sm fs-special m-0">Sports</h5>
-                  <div class="body-type-img overflow-hidden position-relative my-2">
-                    <img class="img-fluid img-grayscale-max lazy" data-src="./images/body-types/sports.png" alt="">
-                  </div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                  <div class="body-type-count p-1 px-2 bg-secondary-subtle text-secondary fs-xs lh-level fw-bold d-inline-flex align-middle text-center rounded-pill">5</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END Body Type Image -->
-
-
-
-          <!-- Body Type Image -->
-          <div class="item">
-            <div class="p-1">
-              <div class="card body-type-card border-0 shadow-alt-sm">
-                <div class="card-body d-flex flex-column align-items-center">
-                  <h5 class="card-title fw-bold fs-sm fs-special m-0">Wagon</h5>
-                  <div class="body-type-img overflow-hidden position-relative my-2">
-                    <img class="img-fluid img-grayscale-max lazy" data-src="./images/body-types/station-wagon.png" alt="">
-                  </div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                  <div class="body-type-count p-1 px-2 bg-secondary-subtle text-secondary fs-xs lh-level fw-bold d-inline-flex align-middle text-center rounded-pill">19</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END Body Type Image -->
-
-
-
-          <!-- Body Type Image -->
-          <div class="item">
-            <div class="p-1">
-              <div class="card body-type-card border-0 shadow-alt-sm">
-                <div class="card-body d-flex flex-column align-items-center">
-                  <h5 class="card-title fw-bold fs-sm fs-special m-0">SUV</h5>
-                  <div class="body-type-img overflow-hidden position-relative my-2">
-                    <img class="img-fluid img-grayscale-max lazy" data-src="./images/body-types/suv.png" alt="">
-                  </div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                  <div class="body-type-count p-1 px-2 bg-secondary-subtle text-secondary fs-xs lh-level fw-bold d-inline-flex align-middle text-center rounded-pill">24</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END Body Type Image -->
-
-
-
-          <!-- Body Type Image -->
-          <div class="item">
-            <div class="p-1">
-              <div class="card body-type-card border-0 shadow-alt-sm">
-                <div class="card-body d-flex flex-column align-items-center">
-                  <h5 class="card-title fw-bold fs-sm fs-special m-0">Van</h5>
-                  <div class="body-type-img overflow-hidden position-relative my-2">
-                    <img class="img-fluid img-grayscale-max lazy" data-src="./images/body-types/van.png" alt="">
-                  </div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                  <div class="body-type-count p-1 px-2 bg-secondary-subtle text-secondary fs-xs lh-level fw-bold d-inline-flex align-middle text-center rounded-pill">14</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END Body Type Image -->
-
-
-
-        </div>
-      </div>
-
-    </section>
-    <!-- END Browse by body type [image] -->
 
     <!-- Recent Cars -->
     <section class="position-relative custom-color
-            
-            ">
+
+    ">
 
 
       <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" style="background-color: ; background-image: ; opacity: "></span>
@@ -5239,129 +3375,12 @@
       <div class="container position-relative col-xxl-8 py-5 px-3 px-sm-0">
         <div class="row info-v2 g-0">
 
-          <div class="col-lg-5 col-md-10 mx-md-auto">
-            <!-- Reviews Widget  -->
-            <div class="widget reviews-widget reviews-widget-2 p-3 bg-body-tertiary rounded mb-4">
-              <h3 class="widget-title fs-6 text-uppercase mb-3">Expert Reviews</h3>
-              <div class="widget-body">
-                <div class="row g-2">
+          <!-- <div class="col-lg-5 col-md-10 mx-md-auto"> -->
+          <!-- Reviews Widget  -->
 
-
-
-                  <!-- Review Item -->
-                  <div class="col-12">
-                    <div class="card review-item text-bg-dark overflow-hidden">
-                      <img data-src="./images/cars/audi-r8/01.jpg" class="card-img img-fluid h-100 object-fit-cover lazy" alt="...">
-                      <div class="card-img-overlay">
-                        <h5 class="card-title review-title fs-6 fw-bold fs-special text-truncate">Audi RS</h5>
-                        <p class="card-text review-grade fs-sm fw-bold text-uppercase rounded-1 fs-xs text-spacing-sm d-inline-flex RatingPass">
-                          <small>Pass</small>
-                        </p>
-                        <div class="position-absolute top-0 end-0 me-2 mt-2">
-                          <div class="card text-bg-dark mb-3 border-0" style="max-width: 18rem;">
-                            <div class="card-header bg-primary custom-color p-0 d-flex align-content-center justify-content-center fs-sm">score</div>
-                            <div class="card-body py-2">
-                              <p class="card-text review-rating">
-                                <strong>69</strong>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <a href="review-details.html" class="stretched-link"></a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- END Review Item -->
-
-
-
-                  <!-- Review Item -->
-                  <div class="col-12">
-                    <div class="card review-item text-bg-dark overflow-hidden">
-                      <img data-src="./images/cars/volkswagen-tiguan/01.jpg" class="card-img img-fluid h-100 object-fit-cover lazy" alt="...">
-                      <div class="card-img-overlay">
-                        <h5 class="card-title review-title fs-6 fw-bold fs-special text-truncate">Volkswagen Tiguan</h5>
-                        <p class="card-text review-grade fs-sm fw-bold text-uppercase rounded-1 fs-xs text-spacing-sm d-inline-flex RatingGood">
-                          <small>Good</small>
-                        </p>
-                        <div class="position-absolute top-0 end-0 me-2 mt-2">
-                          <div class="card text-bg-dark mb-3 border-0" style="max-width: 18rem;">
-                            <div class="card-header bg-primary custom-color p-0 d-flex align-content-center justify-content-center fs-sm">score</div>
-                            <div class="card-body py-2">
-                              <p class="card-text review-rating">
-                                <strong>89</strong>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <a href="review-details.html" class="stretched-link"></a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- END Review Item -->
-
-
-
-                  <!-- Review Item -->
-                  <div class="col-12">
-                    <div class="card review-item text-bg-dark overflow-hidden">
-                      <img data-src="./images/cars/peugeot-407/01.jpg" class="card-img img-fluid h-100 object-fit-cover lazy" alt="...">
-                      <div class="card-img-overlay">
-                        <h5 class="card-title review-title fs-6 fw-bold fs-special text-truncate">Peugeout 407</h5>
-                        <p class="card-text review-grade fs-sm fw-bold text-uppercase rounded-1 fs-xs text-spacing-sm d-inline-flex RatingAverage">
-                          <small>Average</small>
-                        </p>
-                        <div class="position-absolute top-0 end-0 me-2 mt-2">
-                          <div class="card text-bg-dark mb-3 border-0" style="max-width: 18rem;">
-                            <div class="card-header bg-primary custom-color p-0 d-flex align-content-center justify-content-center fs-sm">score</div>
-                            <div class="card-body py-2">
-                              <p class="card-text review-rating">
-                                <strong>50</strong>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <a href="review-details.html" class="stretched-link"></a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- END Review Item -->
-
-
-
-                  <!-- Review Item -->
-                  <div class="col-12">
-                    <div class="card review-item text-bg-dark overflow-hidden">
-                      <img data-src="./images/cars/suzuki-sx4/01.jpg" class="card-img img-fluid h-100 object-fit-cover lazy" alt="...">
-                      <div class="card-img-overlay">
-                        <h5 class="card-title review-title fs-6 fw-bold fs-special text-truncate">Suzuki SX4</h5>
-                        <p class="card-text review-grade fs-sm fw-bold text-uppercase rounded-1 fs-xs text-spacing-sm d-inline-flex RatingOutstanding">
-                          <small>Outstanding</small>
-                        </p>
-                        <div class="position-absolute top-0 end-0 me-2 mt-2">
-                          <div class="card text-bg-dark mb-3 border-0" style="max-width: 18rem;">
-                            <div class="card-header bg-primary custom-color p-0 d-flex align-content-center justify-content-center fs-sm">score</div>
-                            <div class="card-body py-2">
-                              <p class="card-text review-rating">
-                                <strong>95</strong>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <a href="review-details.html" class="stretched-link"></a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- END Review Item -->
-
-
-
-                </div>
-              </div>
-            </div>
-            <!-- END Reviews Widget  -->
-          </div>
-          <div class="col-lg-7 col-md-10 mx-md-auto">
+          <!-- END Reviews Widget  -->
+          <!-- </div> -->
+          <div class="col-lg-12 col-md-10 mx-md-auto">
             <!-- FAQs Widget  -->
             <div class="widget reviews-widget reviews-widget-2 p-3 bg-body-tertiary rounded mb-4">
               <h3 class="widget-title fs-6 text-uppercase mb-3">Frequently Asked Questions</h3>
@@ -5470,203 +3489,8 @@
     </section>
     <!-- END Careers -->
 
-    <!-- Recent Blog -->
-    <section class="position-relative custom-color
-            
-            ">
 
 
-      <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" style="background-color: ; background-image: ; opacity: "></span>
-
-      <div class="container blog blog-grid col-xxl-8 py-5 px-3 px-sm-0">
-        <h2 class="fs-5 text-uppercase pb-3 mb-4 custom-color ">Automotive Blog</h2>
-        <div class="row">
-
-          <!-- Blog Article -->
-          <div class="col-lg-4 col-md-6">
-            <div class="card blog-item overflow-hidden rounded border h-100 bg-body-tertiary">
-              <div class="blog-image position-relative overflow-hidden">
-                <img data-src="./images/blog/01.jpg" class="card-img-top rounded-top img-fluid h-100 object-fit-cover lazy" alt="...">
-                <div class="overlay rounded-top"></div>
-              </div>
-              <div class="blog-author position-relative d-flex align-items-center align-self-center pe-2 rounded-1 shadow-sm">
-                <span class="author-img d-inline-flex align-self-center me-2">
-                  <img data-src="./images/team/06.jpg" alt="" class="object-fit-cover img-fluid rounded-start-1 lazy">
-                </span>
-                <span class="d-block fs-sm text-muted blog-author-name text-truncate">Tom Jones</span>
-                <span class="blog-author-sep bg-secondary rounded-circle d-flex align-self-center mx-2"></span>
-                <span class="d-block fs-sm text-muted text-uppercase">20<sup>th</sup> Aug 2023</span>
-              </div>
-              <div class="card-body content pt-0 d-flex flex-column">
-                <div class="flex-fill clearfix">
-                  <h5 class="m-0">
-                    <a href="blog-article-classic-2.html" class="card-title title text-body text-decoration-none fs-6 text-primary custom-color">The Top 10 Luxury Cars of the Last Decade</a>
-                  </h5>
-                </div>
-                <div class="post-meta d-flex justify-content-between mt-3">
-                  <ul class="list-unstyled mb-0">
-                    <li class="blog-like-count list-inline-item me-2 pe-1 mb-0 text-muted">22</li>
-                    <li class="blog-comment-count list-inline-item text-muted">55</li>
-                  </ul>
-                  <a href="blog-article-classic-2.html" class="text-decoration-none text-muted blog-readmore">Read More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END Blog Article --><!-- Blog Article -->
-          <div class="col-lg-4 col-md-6">
-            <div class="card blog-item overflow-hidden rounded border h-100 bg-body-tertiary">
-              <div class="blog-image position-relative overflow-hidden">
-                <img data-src="./images/blog/02.jpg" class="card-img-top rounded-top img-fluid h-100 object-fit-cover lazy" alt="...">
-                <div class="overlay rounded-top"></div>
-              </div>
-              <div class="blog-author position-relative d-flex align-items-center align-self-center pe-2 rounded-1 shadow-sm">
-                <span class="author-img d-inline-flex align-self-center me-2">
-                  <img data-src="./images/team/03.jpg" alt="" class="object-fit-cover img-fluid rounded-start-1 lazy">
-                </span>
-                <span class="d-block fs-sm text-muted blog-author-name text-truncate">Jennifer Johnson</span>
-                <span class="blog-author-sep bg-secondary rounded-circle d-flex align-self-center mx-2"></span>
-                <span class="d-block fs-sm text-muted text-uppercase">12<sup>th</sup> Sep 2023</span>
-              </div>
-              <div class="card-body content pt-0 d-flex flex-column">
-                <div class="flex-fill clearfix">
-                  <h5 class="m-0">
-                    <a href="blog-article-classic-2.html" class="card-title title text-body text-decoration-none fs-6 text-primary custom-color">Electric Cars: Shaping the Future of Automotive Industry</a>
-                  </h5>
-                </div>
-                <div class="post-meta d-flex justify-content-between mt-3">
-                  <ul class="list-unstyled mb-0">
-                    <li class="blog-like-count list-inline-item me-2 pe-1 mb-0 text-muted">45</li>
-                    <li class="blog-comment-count list-inline-item text-muted">32</li>
-                  </ul>
-                  <a href="blog-article-classic-2.html" class="text-decoration-none text-muted blog-readmore">Read More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END Blog Article --><!-- Blog Article -->
-          <div class="col-lg-4 col-md-6">
-            <div class="card blog-item overflow-hidden rounded border h-100 bg-body-tertiary">
-              <div class="blog-image position-relative overflow-hidden">
-                <img data-src="./images/blog/03.jpg" class="card-img-top rounded-top img-fluid h-100 object-fit-cover lazy" alt="...">
-                <div class="overlay rounded-top"></div>
-              </div>
-              <div class="blog-author position-relative d-flex align-items-center align-self-center pe-2 rounded-1 shadow-sm">
-                <span class="author-img d-inline-flex align-self-center me-2">
-                  <img data-src="./images/team/01.jpg" alt="" class="object-fit-cover img-fluid rounded-start-1 lazy">
-                </span>
-                <span class="d-block fs-sm text-muted blog-author-name text-truncate">David Brown</span>
-                <span class="blog-author-sep bg-secondary rounded-circle d-flex align-self-center mx-2"></span>
-                <span class="d-block fs-sm text-muted text-uppercase">5<sup>th</sup> Oct 2023</span>
-              </div>
-              <div class="card-body content pt-0 d-flex flex-column">
-                <div class="flex-fill clearfix">
-                  <h5 class="m-0">
-                    <a href="blog-article-classic-2.html" class="card-title title text-body text-decoration-none fs-6 text-primary custom-color">Exploring Classic Cars: A Journey Through Automotive History</a>
-                  </h5>
-                </div>
-                <div class="post-meta d-flex justify-content-between mt-3">
-                  <ul class="list-unstyled mb-0">
-                    <li class="blog-like-count list-inline-item me-2 pe-1 mb-0 text-muted">18</li>
-                    <li class="blog-comment-count list-inline-item text-muted">12</li>
-                  </ul>
-                  <a href="blog-article-classic-2.html" class="text-decoration-none text-muted blog-readmore">Read More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END Blog Article -->
-
-        </div>
-      </div>
-
-    </section>
-    <!-- END Recent Blog -->
-
-    <!-- Our Partners -->
-    <section class="position-relative custom-color
-            
-              bg-body-tertiary
-            
-            ">
-
-      <div class="container position-relative col-xxl-8 py-5 p-0">
-        <h2 class="fs-5 text-uppercase pb-3 mb-4 custom-color ">Our Partners</h2>
-        <div class="our-partners-carousel owl-carousel owl-theme" data-loop="false" data-nav="true" data-dots="false" data-autoplay="false">
-
-          <!-- Partner -->
-          <div class="item">
-            <div class="card border-0">
-              <div class="card-body d-flex flex-column align-items-center">
-                <p class="card-text">
-                  <img class="rounded-1 lazy" data-src="./icons/partners/autogreen.svg" alt="Autogreen">
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Partner -->
-          <!-- Partner -->
-          <div class="item">
-            <div class="card border-0">
-              <div class="card-body d-flex flex-column align-items-center">
-                <p class="card-text">
-                  <img class="rounded-1 lazy" data-src="./icons/partners/firestone.svg" alt="Firestone">
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Partner -->
-          <!-- Partner -->
-          <div class="item">
-            <div class="card border-0">
-              <div class="card-body d-flex flex-column align-items-center">
-                <p class="card-text">
-                  <img class="rounded-1 lazy" data-src="./icons/partners/michelin.svg" alt="Michelin">
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Partner -->
-          <!-- Partner -->
-          <div class="item">
-            <div class="card border-0">
-              <div class="card-body d-flex flex-column align-items-center">
-                <p class="card-text">
-                  <img class="rounded-1 lazy" data-src="./icons/partners/bridgestone.svg" alt="BridgeStone">
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Partner -->
-          <!-- Partner -->
-          <div class="item">
-            <div class="card border-0">
-              <div class="card-body d-flex flex-column align-items-center">
-                <p class="card-text">
-                  <img class="rounded-1 lazy" data-src="./icons/partners/avon.svg" alt="Avon">
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Partner -->
-          <!-- Partner -->
-          <div class="item">
-            <div class="card border-0">
-              <div class="card-body d-flex flex-column align-items-center">
-                <p class="card-text">
-                  <img class="rounded-1 lazy" data-src="./icons/partners/uniroyal.svg" alt="Uniroyal">
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Partner -->
-
-
-        </div>
-      </div>
-
-    </section>
-    <!-- END Our Partners -->
 
     <!-- Miscellaneous -->
 
@@ -5866,12 +3690,6 @@
               <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="about.html">About Us</a>
             </li>
             <li class="mb-2">
-              <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="blog-grid-3-cols.html">Blog</a>
-            </li>
-            <li class="mb-2">
-              <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="careers.html">Careers</a>
-            </li>
-            <li class="mb-2">
               <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="terms-of-service.html">Terms of Service</a>
             </li>
             <li class="mb-2">
@@ -6000,6 +3818,6 @@
 
   <!-- END Scripts -->
 </body>
-    
-    
+
+
 </html>

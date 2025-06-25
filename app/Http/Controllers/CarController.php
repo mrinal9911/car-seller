@@ -22,7 +22,7 @@ class CarController extends Controller
 
         return view('cars.index', compact('cars', 'featuredCars'));
     }
-    
+
     public function homePage()
     {
         return view('cars.home');
@@ -80,5 +80,26 @@ class CarController extends Controller
         }
 
         return redirect('/dashboard')->with('success', 'Car listed successfully!');
+    }
+
+    public function contactUs()
+    {
+        return view('cars.contact-us'); // Make sure the Blade file exists
+    }
+
+    public function postContactUs(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|string|max:100',
+            'email' => 'nullable|email|max:100',
+            'phone' => 'required|string|max:20',
+            'message' => 'required|string|max:500'
+        ]);
+
+        echo "Contact form submitted successfully!";
+        return $request;
+        // Here you can handle the contact form submission, e.g., send an email or save to database
+
+        return redirect('/contact')->with('success', 'Your message has been sent successfully!');
     }
 }

@@ -28,6 +28,9 @@ Route::get('/home', [CarController::class, 'homePage']);
 Route::get('/car/{id}', [CarController::class, 'show']);
 Route::get('/create', [CarController::class, 'create']);
 
+Route::get('/contact', [CarController::class, 'contactUs']);
+Route::post('/post-contact', [CarController::class, 'postContactUs'])->name('post.contactus');
+
 /**
  * | CRUD of Enquiry
  */
