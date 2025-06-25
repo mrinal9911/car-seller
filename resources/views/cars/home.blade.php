@@ -209,490 +209,149 @@
   <!-- END Preloader -->
 
   {{-- CAUTION put this section in layout  --}}
-  <header class="z-1030 position-relative z-2 shadow-sm">
+ <header class="z-1030 position-relative z-2 shadow-sm">
 
-    <!-- Top Bar - Style 1 -->
-
-    <!-- END Top Bar - Style 1 -->
-
-    <div class="container d-flex flex-wrap justify-content-between align-items-center py-4 pb-0 pb-md-4 border-bottom overflow-hidden">
-      <div class="logo mb-3 mx-auto m-lg-0 mb-lg-0">
-        <a class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-decoration-none" href="index.html">
-          <img class="logo-dark" src="images/logo.png" alt="CARMART">
-          <img class="logo-light" src="images/logo-light.png" alt="CARMART">
-        </a>
-      </div>
-      <div class="header-widgets col-12 col-lg-auto mb-1 mb-md-3 mb-lg-0">
-        <div class="row g-4 g-md-5 row-cols-1 row-cols-md-3">
-          <div class="h-widget-location pb-md-0 pb-4 d-inline-flex align-items-center justify-content-center position-relative">
-            <div class="h-widget-icon me-3 text-primary custom-color">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="34" height="34" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7"></path>
-                <path d="M9 4v13"></path>
-                <path d="M15 7v5"></path>
-                <path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z"></path>
-                <path d="M19 18v.01"></path>
-              </svg>
+        <div class="container d-flex flex-wrap justify-content-between align-items-center py-4 pb-0 pb-md-4 border-bottom overflow-hidden">
+            <div class="logo mb-3 mx-auto m-lg-0 mb-lg-0">
+                <a class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-decoration-none" href="index.html">
+                    <img class="logo-dark" src="images/logo.png" alt="CARMART">
+                    <img class="logo-light" src="images/logo-light.png" alt="CARMART">
+                </a>
             </div>
-            <div class="h-widget-content">
-              <p class="m-0 text-nowrap">Our Location
-                <br>
-                <span class="text-muted">Piska more, Ranchi</span>
-              </p>
+            <div class="header-widgets col-12 col-lg-auto mb-1 mb-md-3 mb-lg-0">
+                <div class="row g-4 g-md-5 row-cols-1 row-cols-md-3">
+                    <div class="h-widget-location pb-md-0 pb-4 d-inline-flex align-items-center justify-content-center position-relative">
+                        <div class="h-widget-icon me-3 text-primary custom-color">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="34" height="34" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7"></path>
+                                <path d="M9 4v13"></path>
+                                <path d="M15 7v5"></path>
+                                <path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z"></path>
+                                <path d="M19 18v.01"></path>
+                            </svg>
+                        </div>
+                        <div class="h-widget-content">
+                            <p class="m-0 text-nowrap">Our Location
+                                <br>
+                                <span class="text-muted">77 McKinney, Texas</span>
+                            </p>
+                        </div>
+                        <div class="vr opacity-15 position-absolute end-0 top-0 h-100 d-none d-md-block m-0 ms-md-3 ms-lg-0"></div>
+                        <hr class="hr opacity-15 position-absolute end-0 bottom-0 w-100 d-block d-md-none m-0">
+                    </div>
+                    <div class="h-widget-contact pb-md-0 pb-4 d-inline-flex align-items-center justify-content-center position-relative">
+                        <div class="h-widget-icon me-3 text-primary custom-color">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="34" height="34" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
+                            </svg>
+                        </div>
+                        <div class="h-widget-content">
+                            <p class="m-0 text-nowrap">+1 (800) 445 6677
+                                <br>
+                                <span class="text-muted">info@carmart.com</span>
+                            </p>
+                        </div>
+                        <div class="vr opacity-15 position-absolute end-0 top-0 h-100 d-none d-md-block m-0 ms-md-3 ms-lg-0"></div>
+                        <hr class="hr opacity-15 position-absolute end-0 bottom-0 w-100 d-block d-md-none m-0">
+                    </div>
+                    <div class="h-widget-time pb-md-0 pb-4 d-inline-flex align-items-center justify-content-center">
+                        <div class="h-widget-icon me-3 text-primary custom-color">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="34" height="34" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                                <path d="M12 7v5l3 3"></path>
+                            </svg>
+                        </div>
+                        <div class="h-widget-content">
+                            <p class="m-0 text-nowrap">Mon - Sat: 9AM - 5PM
+                                <br>
+                                <span class="text-muted">Sunday Closed</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="vr opacity-15 position-absolute end-0 top-0 h-100 d-none d-md-block m-0 ms-md-3 ms-lg-0"></div>
-            <hr class="hr opacity-15 position-absolute end-0 bottom-0 w-100 d-block d-md-none m-0">
-          </div>
-          <div class="h-widget-contact pb-md-0 pb-4 d-inline-flex align-items-center justify-content-center position-relative">
-            <div class="h-widget-icon me-3 text-primary custom-color">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="34" height="34" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
-              </svg>
-            </div>
-            <div class="h-widget-content">
-              <p class="m-0 text-nowrap">+1 (800) 445 6677
-                <br>
-                <span class="text-muted">info@carmart.com</span>
-              </p>
-            </div>
-            <div class="vr opacity-15 position-absolute end-0 top-0 h-100 d-none d-md-block m-0 ms-md-3 ms-lg-0"></div>
-            <hr class="hr opacity-15 position-absolute end-0 bottom-0 w-100 d-block d-md-none m-0">
-          </div>
-          <div class="h-widget-time pb-md-0 pb-4 d-inline-flex align-items-center justify-content-center">
-            <div class="h-widget-icon me-3 text-primary custom-color">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="34" height="34" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
-                <path d="M12 7v5l3 3"></path>
-              </svg>
-            </div>
-            <div class="h-widget-content">
-              <p class="m-0 text-nowrap">Mon - Sat: 9AM - 5PM
-                <br>
-                <span class="text-muted">Sunday Closed</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Nav - Style 1 -->
-    <div class="main-nav-1 container p-0 position-relative d-flex">
-      <nav class="navbar navbar-expand-lg z-1030 p-0" aria-label="Main navigation">
-        <div class="container d-flex flex-wrap p-2 p-lg-0">
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navMain">
-
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 me-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color" href="/home" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="/" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Vehicle</a>
-              </li>
-              <li class="nav-item">
-                <a href="new-cars.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">New</a>
-              </li>
-              <li class="nav-item">
-                <a href="cars-sold.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Sold</a>
-              </li>
-              <li class="nav-item">
-                <a href="reviews.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Reviews</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle link-body-emphasis px-3 py-3 fw-bold custom-color" href="#" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown">
-                    <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Car</a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item custom-color" href="car-filter-grid.html">Car Search Grid</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="car-filter-list.html">Car Search List</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="car-details.html">Car Details</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="car-details-v2.html">Car Details v2</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="cars-sold.html">Sold Cars</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="car-sold-details.html">Sold Car Details</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="add-listing.html">Add Car Listing</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="vendor-profile.html">Car Vendor Profile</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item custom-color" href="account-dashboard.html">Dashboard</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="account-settings-profile.html">Edit Profile</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="account-favorites.html">Favorites</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="account-listings.html">Listings</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="add-listing.html">Add Listing</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="account-reviews.html">Reviews Given</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="account-reviews-received.html">Reviews Received</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="account-messages.html">Messages</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Settings</a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item custom-color" href="account-settings-profile.html">Profile</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="account-settings-security.html">Security</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="account-settings-notifications.html">Notifications</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="account-settings-messages.html">Messages</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="account-settings-delete.html">Delete Account</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-                    <ul class="dropdown-menu">
-                      <li class="dropdown">
-                        <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Blog Grid</a>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item custom-color" href="blog-grid-4-cols.html">Four Columns</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item custom-color" href="blog-grid-3-cols.html">Three Columns</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item custom-color" href="blog-grid-sidebar-left.html">Grid Sidebar Left</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item custom-color" href="blog-grid-sidebar-right.html">Grid Sidebar Right</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Blog List</a>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item custom-color" href="blog-list-sidebar-left.html">List Sidebar Left</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item custom-color" href="blog-list-sidebar-right.html">List Sidebar Right</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="blog-minimal.html">Blog Minimal</a>
-                      </li>
-                      <li class="dropdown">
-                        <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Blog Article</a>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item custom-color" href="blog-article-classic.html">Article Classic</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item custom-color" href="blog-article-classic-2.html">Article Classic 2</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item custom-color" href="blog-article-minimal.html">Article Minimal</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item custom-color" href="blog-article-minimal-2.html">Article Minimal 2</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="blog-authors.html">Blog Authors</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="blog-author-profile.html">Author Profile</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="blog-author-profile-2.html">Author Profile 2</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Company</a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item custom-color" href="about.html">About Us</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="about-v2.html">About Us 2</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="services.html">Services</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="services-v2.html">Services 2</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="team.html">Team</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="team-v2.html">Team 2</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="careers.html">Careers</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="career-details.html">Career Details</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="career-application.html">Career Application</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Auth Pages</a>
-                    <ul class="dropdown-menu">
-                      <li class="dropdown">
-                        <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Login</a>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item custom-color" href="auth-login.html">Login Default</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item custom-color" href="auth-login-fullscreen.html">Login Fullscreen</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item custom-color" href="auth-login-modern.html">Login Modern</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item custom-color" href="auth-login-cover.html">Login Cover</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Signup</a>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item custom-color" href="auth-signup.html">Signup Default</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item custom-color" href="auth-signup-fullscreen.html">Signup Fullscreen</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item custom-color" href="auth-signup-modern.html">Signup Modern</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item custom-color" href="auth-signup-cover.html">Signup Cover</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Reset Password</a>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item custom-color" href="auth-forgot-password.html">Password Default</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item custom-color" href="auth-forgot-password-fullscreen.html">Password Fullscreen</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item custom-color" href="auth-forgot-password-modern.html">Password Modern</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item custom-color" href="auth-forgot-password-cover.html">Password Cover</a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Reviews</a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item custom-color" href="reviews.html">All Reviews</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="review-details.html">Review Details</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="review-details-v2.html">Review Details v2</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="reviewers.html">Reviewers</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="reviewer-profile.html">Reviewer Profile</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Brands</a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item custom-color" href="brands.html">Brands v1</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="brands-v2.html">Brands v2</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a class="dropdown-item custom-color" href="compare.html">Compare</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item custom-color" href="testimonials.html">Testimonials</a>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">FAQs</a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item custom-color" href="faqs.html">FAQs 1</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="faqs-v2.html">FAQs 2</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="faqs-v3.html">FAQs 3</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Pricing</a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item custom-color" href="pricing.html">Pricing 1</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="pricing-v2.html">Pricing 2</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Utility</a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item custom-color" href="cookie-policy.html">Cookie Policy</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="privacy-policy.html">Privacy Policy</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="terms-of-service.html">Terms of Service</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item custom-color" href="contact.html">Contact v1</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="contact-v2.html">Contact v2</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="contact-v3.html">Contact v3</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="contact-v4.html">Contact v4</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-item custom-color dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Errors</a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item custom-color" href="error-403.html">Error 403</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="error-404.html">Error 404</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item custom-color" href="error-500.html">Error 500</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="about.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="contact.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Contact</a>
-              </li>
-            </ul>
-
-          </div>
-        </div>
-      </nav>
-
-      <div class="header-access-icons d-flex ms-auto me-2 align-items-center">
-        <div class="header-messages rounded-cirlce">
-          <a href="account-messages.html" class="btn btn-sm position-relative btn-light border rounded-circle ms-2 fs-xs" role="button">
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark z-2">
-              7
-              <span class="visually-hidden">Messages</span>
-            </span>
-          </a>
-        </div>
-        <div class="header-compare rounded-cirlce">
-          <a href="compare.html" class="btn btn-sm position-relative btn-light border rounded-circle ms-2 fs-xs" role="button">
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark z-2">
-              4
-              <span class="visually-hidden">Compare items</span>
-            </span>
-          </a>
-        </div>
-        <div class="header-favorites rounded-cirlce">
-          <a href="account-favorites.html" class="btn btn-sm position-relative btn-light border rounded-circle ms-2 fs-xs" role="button">
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark z-2">
-              3
-              <span class="visually-hidden">Favorites items</span>
-            </span>
-          </a>
-        </div>
-        <div class="header-search rounded-cirlce">
-          <button class="btn btn-sm position-relative btn-light border rounded-circle ms-2 fs-xs" type="button"></button>
         </div>
 
-      </div>
+        <!-- Nav - Style 1 -->
+        <div class="main-nav-1 container p-0 position-relative d-flex">
+            <nav class="navbar navbar-expand-lg z-1030 p-0" aria-label="Main navigation">
+                <div class="container d-flex flex-wrap p-2 p-lg-0">
 
-    </div>
-    <!-- END Nav - Style 1 -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-  </header>
+                    <div class="collapse navbar-collapse" id="navMain">
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 me-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color" href="/home" aria-expanded="false">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="used-cars.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Used</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="new-cars.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">New</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="cars-sold.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Sold</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="reviews.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Reviews</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color" href="#" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/contact" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header-access-icons d-flex ms-auto me-2 align-items-center">
+                <div class="header-messages rounded-cirlce">
+                    <a href="account-messages.html" class="btn btn-sm position-relative btn-light border rounded-circle ms-2 fs-xs" role="button">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark z-2">
+                            7
+                            <span class="visually-hidden">Messages</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="header-compare rounded-cirlce">
+                    <a href="compare.html" class="btn btn-sm position-relative btn-light border rounded-circle ms-2 fs-xs" role="button">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark z-2">
+                            4
+                            <span class="visually-hidden">Compare items</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="header-favorites rounded-cirlce">
+                    <a href="account-favorites.html" class="btn btn-sm position-relative btn-light border rounded-circle ms-2 fs-xs" role="button">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark z-2">
+                            3
+                            <span class="visually-hidden">Favorites items</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="header-search rounded-cirlce">
+                    <button class="btn btn-sm position-relative btn-light border rounded-circle ms-2 fs-xs" type="button"></button>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END Nav - Style 1 -->
+
+    </header>
 
 
 
@@ -705,236 +364,14 @@
 
       <div class="jarallax" data-jarallax data-speed="0.2">
 
-        <img class="jarallax-img lazy" data-src="./images/cars/bmw-x5/01.jpg" alt="">
+        <img class="jarallax-img lazy" data-src="./images/cars/bmw-x5/021.jpg" alt="">
 
 
         <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" style="background-color: ; background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.42) 0px, rgba(255, 255, 255, 0.08) 67%); opacity: "></span>
 
         <div class="container position-relative col-xxl-8 py-5">
-          <div class="row g-0 align-items-start">
-            <div class="col-lg-4 bg-blur bg-dark bg-opacity-25 border border-light border-opacity-25 rounded-3 p-4 my-3 my-md-5 text-white">
-              <form id="hero-filter" class="row">
-                <div class="col-12 mb-3 d-grid">
-                  <div class="btn-group bg-white bg-opacity-25 text-white" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="btnradio" id="btn_any" autocomplete="off" checked>
-                    <label class="btn btn-outline-success custom-color border bg-body-tertiary text-body" for="btn_any">Any</label>
-                    <input type="radio" class="btn-check" name="btnradio" id="btn_new" autocomplete="off">
-                    <label class="btn btn-outline-success custom-color border bg-body-tertiary text-body" for="btn_new">New</label>
-                    <input type="radio" class="btn-check" name="btnradio" id="btn_used" autocomplete="off">
-                    <label class="btn btn-outline-success custom-color border bg-body-tertiary text-body" for="btn_used">Used</label>
-                  </div>
-                </div>
-                <div class="col-12 mb-3 d-none">
-                  <label for="auto-keyword" class="form-label text-uppercase fs-sm fw-bold">Keyword</label>
-                  <input type="text" class="form-control bg-white bg-opacity-25 border-light border-opacity-50" id="auto-keyword" name="auto-keyword">
-                </div>
-                <div class="col-12 col-sm-6 mb-3">
-                  <label for="brand-select" class="form-label text-uppercase fs-sm fw-bold">Brand</label>
-                  <select id="brand-select" name="brand-select" class="form-select custom-color  bg-white bg-opacity-25 border-light border-opacity-50" aria-label="Select auto brand">
-                    <option selected>Any</option>
-
-                    <option value="Abarth">Abarth</option>
-
-                    <option value="Acura">Acura</option>
-
-                    <option value="Alfa Romeo">Alfa Romeo</option>
-
-                    <option value="Alpina">Alpina</option>
-
-                    <option value="Aston Martin">Aston Martin</option>
-
-                    <option value="Audi">Audi</option>
-
-                    <option value="Baojun">Baojun</option>
-
-                    <option value="Bentley">Bentley</option>
-
-                    <option value="Bertone">Bertone</option>
-
-                    <option value="BMW">BMW</option>
-
-                    <option value="Borgward">Borgward</option>
-
-                    <option value="Bugatti">Bugatti</option>
-
-                    <option value="Buick">Buick</option>
-
-                    <option value="BYD">BYD</option>
-
-                    <option value="Cadillac">Cadillac</option>
-
-                    <option value="Changan">Changan</option>
-
-                    <option value="Chevrolet">Chevrolet</option>
-
-                    <option value="Chrysler">Chrysler</option>
-
-                    <option value="Citroen">Citroen</option>
-
-                    <option value="Corvette">Corvette</option>
-
-                    <option value="Cupra">Cupra</option>
-
-                    <option value="Dacia">Dacia</option>
-
-                    <option value="Daewoo">Daewoo</option>
-
-                    <option value="Dodge">Dodge</option>
-
-                    <option value="Faw">Faw</option>
-
-                    <option value="DS">DS</option>
-
-                    <option value="Ferrari">Ferrari</option>
-
-                    <option value="Fiat">Fiat</option>
-
-                    <option value="Ford">Ford</option>
-
-                    <option value="GAC Motor">GAC Motor</option>
-
-                    <option value="Genesis">Genesis</option>
-
-                    <option value="Gillet">Gillet</option>
-
-                    <option value="GMC">GMC</option>
-
-                    <option value="Honda">Honda</option>
-
-                    <option value="Hyundai">Hyundai</option>
-
-                    <option value="Infiniti">Infiniti</option>
-
-                    <option value="Iveco">Iveco</option>
-
-                    <option value="Jaguar">Jaguar</option>
-
-                    <option value="Jeep">Jeep</option>
-
-                    <option value="Kia">Kia</option>
-
-                    <option value="Koenigsegg">Koenigsegg</option>
-
-                    <option value="Lamborghini">Lamborghini</option>
-
-                    <option value="Lancia">Lancia</option>
-
-                    <option value="Land Rover">Land Rover</option>
-
-                    <option value="Lexus">Lexus</option>
-
-                    <option value="Lincoln">Lincoln</option>
-
-                    <option value="Lotus">Lotus</option>
-
-                    <option value="Luxgen">Luxgen</option>
-
-                    <option value="Maserati">Maserati</option>
-
-                    <option value="Maybach">Maybach</option>
-
-                    <option value="Mazda">Mazda</option>
-
-                    <option value="McLaren">McLaren</option>
-
-                    <option value="Mercedes-Benz">Mercedes-Benz</option>
-
-                    <option value="Mercury">Mercury</option>
-
-                    <option value="MG">MG</option>
-
-                    <option value="MINI">MINI</option>
-
-                    <option value="Mini Cooper">Mini Cooper</option>
-
-                    <option value="Mitsubishi">Mitsubishi</option>
-
-                    <option value="Nissan">Nissan</option>
-
-                    <option value="OldMobile">OldMobile</option>
-
-                    <option value="Opel">Opel</option>
-
-                    <option value="Peterbilt">Peterbilt</option>
-
-                    <option value="Pontiac">Pontiac</option>
-
-                    <option value="Peugeot">Peugeot</option>
-
-                    <option value="Porsche">Porsche</option>
-
-                    <option value="Qoros">Qoros</option>
-
-                    <option value="Renault">Renault</option>
-
-                    <option value="Roewe">Roewe</option>
-
-                    <option value="Rolls Royce">Rolls Royce</option>
-
-                    <option value="Saab">Saab</option>
-
-                    <option value="Saic Motor">Saic Motor</option>
-
-                    <option value="Seat">Seat</option>
-
-                    <option value="Skoda">Skoda</option>
-
-                    <option value="Subaru">Subaru</option>
-
-                    <option value="Suzuki">Suzuki</option>
-
-                    <option value="Tata">Tata</option>
-
-                    <option value="Tesla">Tesla</option>
-
-                    <option value="Toyota">Toyota</option>
-
-                    <option value="Vauxhall">Vauxhall</option>
-
-                    <option value="Volkswagen">Volkswagen</option>
-
-                    <option value="Volvo">Volvo</option>
-
-                    <option value="Wiesmann">Wiesmann</option>
-
-                    <option value="Wuling">Wuling</option>
-
-                  </select>
-                </div>
-                <div class="col-12 col-sm-6 mb-3">
-                  <label for="model-select" class="form-label text-uppercase fs-sm fw-bold">Model</label>
-                  <select id="model-select" name="model-select" class="form-select custom-color  bg-white bg-opacity-25 border-light border-opacity-50" aria-label="Select brand model">
-                    <option selected>Any</option>
-                  </select>
-                </div>
-                <div class="col-12 col-sm-6 mb-3">
-                  <label for="min-price-filter" class="form-label text-uppercase fs-sm fw-bold">Min Price</label>
-                  <select id="min-price-filter" name="min-price-filter" class="form-select custom-color  bg-white bg-opacity-25 border-light border-opacity-50" aria-label="Select min price">
-                    <option selected>Any</option>
-                  </select>
-                </div>
-                <div class="col-12 col-sm-6 mb-3">
-                  <label for="max-price-filter" class="form-label text-uppercase fs-sm fw-bold">Max Price</label>
-                  <select id="max-price-filter" name="max-price-filter" class="form-select custom-color  bg-white bg-opacity-25 border-light border-opacity-50" aria-label="Select maximum price">
-                    <option selected>Any</option>
-                  </select>
-                </div>
-                <div class="col-12 col-sm-6 mb-3">
-                  <label for="min-year-filter" class="form-label text-uppercase fs-sm fw-bold">Year (From)</label>
-                  <select id="min-year-filter" name="min-year-filter" class="form-select custom-color  bg-white bg-opacity-25 border-light border-opacity-50" aria-label="Select auto's minimum year">
-                    <option selected>Any</option>
-                  </select>
-                </div>
-                <div class="col-12 col-sm-6 mb-3">
-                  <label for="max-year-filter" class="form-label text-uppercase fs-sm fw-bold">Year (To)</label>
-                  <select id="max-year-filter" name="max-year-filter" class="form-select custom-color  bg-white bg-opacity-25 border-light border-opacity-50" aria-label="Select auto's maximum year">
-                    <option selected>Any</option>
-                  </select>
-                </div>
-                <div class="col-12 mt-2 d-grid">
-                  <button type="submit" class="btn btn-warning text-spacing-md text-uppercase fw-bold">Search</button>
-                </div>
-              </form>
+          <div class="row g-0 align-items-start" style="height: 70vh; !important">
+            <div class="col-lg-4 rounded-3 p-4 my-3 my-md-5 text-white">
             </div>
           </div>
         </div>
