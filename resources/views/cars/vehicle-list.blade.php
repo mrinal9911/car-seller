@@ -351,7 +351,7 @@
                                 </div>
                                 <div class="card-body">
                                     <h3 class="card-title">
-                                        <a href="car-details.html" class="fw-bold fs-5 text-decoration-none link-body-emphasis link-opacity-100 link-opacity-75-hover">BMW X5</a>
+                                        <a href="{{ url('/vehicles/1' ) }}" class="fw-bold fs-5 text-decoration-none link-body-emphasis link-opacity-100 link-opacity-75-hover">BMW X5</a>
                                     </h3>
                                     <p class="card-text">
                                         <span class="car-price text-primary fs-special fs-5 fw-bold custom-color">$95,895</span>

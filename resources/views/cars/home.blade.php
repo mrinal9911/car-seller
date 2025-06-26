@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from www.themecrest.top/templates/carmart/demo/contact-v2.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Jun 2025 16:46:50 GMT -->
-
 <head>
-
-  <script src="js/color-modes.js"></script>
-
-
+  <script src="/js/color-modes.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
+  <title>Home Page</title>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
 
   <!-- Load Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com/">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&amp;display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap"
+    rel="stylesheet">
 
+  {{-- <!-- Owl Carousel stylesheet --> change  --}}
+  <link rel="stylesheet" href="/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="/libs/owl.carousel/dist/assets/owl.theme.default.min.css">
 
-
-
-  <!-- Simplebar stylesheet -->
-  <link rel="stylesheet" href="libs/simplebar/dist/simplebar.min.css">
+  {{-- <!-- Simplebar stylesheet --> change  --}}
+  <link rel="stylesheet" href="/libs/simplebar/dist/simplebar.min.css">
   <noscript>
     <style>
       /**
@@ -50,19 +47,150 @@
   </noscript>
 
   <!-- Jarallax stylesheet -->
-  <link rel="stylesheet" href="libs/jarallax/dist/jarallax.min.css">
+  <link rel="stylesheet" href="/libs/jarallax/dist/jarallax.min.css">
 
   <!-- Site stylesheet -->
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="/css/style.min.css">
 
   <!-- Color scheme -->
-  <link id="templateColorScheme" rel="stylesheet" href="css/color-schemes/tc_red.css">
+  <link id="templateColorScheme" rel="stylesheet" href="/css/color-schemes/tc_red.css">
 
   <!-- Preloader stylesheet -->
-  <link rel="stylesheet" href="css/preloader.css">
+  <link rel="stylesheet" href="/css/preloader.css">
 
   <!-- Preloader JavaScript -->
-  <script src="js/preloader.js"></script>
+  <script src="/js/preloader.js"></script>
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReadyDrive</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #0a0a0a;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 4rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    nav a {
+      margin-left: 2rem;
+      color: #bbb;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a.active,
+    nav a:hover {
+      color: #f00;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      /* background: url("{{ asset('storage/images/car-hero2.jpg') }}") no-repeat center center/cover; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 2rem;
+      padding-top: 12px;
+      justify-content: flex-start;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: #ddd;
+      margin-top: 1rem;
+      max-width: 600px;
+    }
+
+    .carousel-caption .btn {
+      margin-top: 2rem;
+      background-color: transparent;
+      border: 2px solid #f00;
+      color: #f00;
+      padding: 0.75rem 2rem;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .carousel-caption {
+      bottom: 10.25rem !important;
+    }
+
+    .carousel-caption .btn:hover {
+
+      background-color: #f00;
+      color: white;
+    }
+
+    .hero .btn {
+      margin-top: 2rem;
+      background-color: transparent;
+      border: 2px solid #f00;
+      color: #f00;
+      padding: 0.75rem 2rem;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .hero .btn:hover {
+      background-color: #f00;
+      color: white;
+    }
+
+    .scroll-indicator {
+      margin-top: 3rem;
+      font-size: 2rem;
+      color: #eee;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(10px);
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -80,10 +208,8 @@
   </div>
   <!-- END Preloader -->
 
-  <!-- Header -->
-  <!-- Header Style 1 -->
+  {{-- CAUTION put this section in layout  --}}
   <header class="z-1030 position-relative z-2 shadow-sm">
-
 
     <div class="container d-flex flex-wrap justify-content-between align-items-center py-4 pb-0 pb-md-4 border-bottom overflow-hidden">
       <div class="logo mb-3 mx-auto m-lg-0 mb-lg-0">
