@@ -31,6 +31,9 @@ Route::get('/create', [CarController::class, 'create']);
 Route::get('/contact', [CarController::class, 'contactUs']);
 Route::post('/post-contact', [CarController::class, 'postContactUs'])->name('post.contactus');
 
+Route::get('/vehicles', [CarController::class, 'vehicleList']);
+Route::get('/vehicles/{id}', [CarController::class, 'vehicleDetails']);
+
 /**
  * | CRUD of Enquiry
  */

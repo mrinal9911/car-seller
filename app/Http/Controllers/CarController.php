@@ -89,17 +89,30 @@ class CarController extends Controller
 
     public function postContactUs(Request $request)
     {
-        $request->validate([
-            'name' => 'required|string|max:100',
-            'email' => 'nullable|email|max:100',
-            'phone' => 'required|string|max:20',
-            'message' => 'required|string|max:500'
-        ]);
+        // $request->validate([
+        //     'name' => 'required|string|max:100',
+        //     'email' => 'nullable|email|max:100',
+        //     'phone' => 'required|string|max:20',
+        //     'message' => 'required|string|max:500'
+        // ]);
 
         echo "Contact form submitted successfully!";
         return $request;
         // Here you can handle the contact form submission, e.g., send an email or save to database
 
         return redirect('/contact')->with('success', 'Your message has been sent successfully!');
+    }
+
+    public function vehicleList()
+    {
+        $cars = Car::with('images')->where('status', 'approved')->latest()->paginate(10);
+        return view('cars.vehicle-list', compact('cars'));
+    }
+
+    public function vehicleDetails()
+    {
+        // $car = Car::with('images', 'user')->findOrFail($id);
+        // return view('cars.vehicle-details', compact('car'));
+        return view('cars.vehicle-details');
     }
 }
