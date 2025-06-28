@@ -260,16 +260,6 @@
     <!-- Main -->
     <main>
 
-
-
-
-
-
-
-
-
-
-
         <div class="container py-5 mb-md-4">
             <div class="row">
                 <!-- Sidebar -->
@@ -300,11 +290,12 @@
                 </aside>
 
                 <!-- Content -->
-                <section class="cars col-lg-9">
+                <!-- make the col-12 for the car class and the sm-12 with md 4 -->
+                <section class="cars col-lg-12">
 
                     <div class="row cars-grid">
-                        <!-- Car -->
-                        <div class="col-sm-10 col-md-6 mb-4 mx-auto mx-md-0">
+                        <!-- Car  1-->
+                        <div class="col-sm-12 col-md-4 mb-4 mx-auto mx-md-0">
                             <div class="card car-item border bg-body-tertiary">
                                 <div class="position-absolute end-0 top-0 pt-3 pe-3 z-2">
 
@@ -446,8 +437,8 @@
 
 
 
-                        <!-- Car -->
-                        <div class="col-sm-10 col-md-6 mb-4 mx-auto mx-md-0">
+                        <!-- Car 2-->
+                        <div class="col-sm-12 col-md-4 mb-4 mx-auto mx-md-0">
                             <div class="card car-item border bg-body-tertiary">
                                 <div class="position-absolute end-0 top-0 pt-3 pe-3 z-2">
 
@@ -588,7 +579,7 @@
 
 
                         <!-- Car -->
-                        <div class="col-sm-10 col-md-6 mb-4 mx-auto mx-md-0">
+                        <div class="col-sm-12 col-md-4 mb-4 mx-auto mx-md-0">
                             <div class="card car-item border bg-body-tertiary">
                                 <div class="position-absolute end-0 top-0 pt-3 pe-3 z-2">
 
@@ -731,7 +722,7 @@
 
 
                         <!-- Car -->
-                        <div class="col-sm-10 col-md-6 mb-4 mx-auto mx-md-0">
+                        <div class="col-sm-12 col-md-4 mb-4 mx-auto mx-md-0">
                             <div class="card car-item border bg-body-tertiary">
                                 <div class="position-absolute end-0 top-0 pt-3 pe-3 z-2">
 
@@ -874,7 +865,7 @@
 
 
                         <!-- Car -->
-                        <div class="col-sm-10 col-md-6 mb-4 mx-auto mx-md-0">
+                        <div class="col-sm-12 col-md-4 mb-4 mx-auto mx-md-0">
                             <div class="card car-item border bg-body-tertiary">
                                 <div class="position-absolute end-0 top-0 pt-3 pe-3 z-2">
 
@@ -1015,7 +1006,7 @@
 
 
                         <!-- Car -->
-                        <div class="col-sm-10 col-md-6 mb-4 mx-auto mx-md-0">
+                        <div class="col-sm-12 col-md-4 mb-4 mx-auto mx-md-0">
                             <div class="card car-item border bg-body-tertiary">
                                 <div class="position-absolute end-0 top-0 pt-3 pe-3 z-2">
 
