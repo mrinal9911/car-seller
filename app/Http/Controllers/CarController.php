@@ -115,4 +115,14 @@ class CarController extends Controller
         // return view('cars.vehicle-details', compact('car'));
         return view('cars.vehicle-details');
     }
+
+    public function accountListing()
+    {
+        return view('cars.account-listing');
+    }
+
+    public function addListing()
+    {
+        return view('cars.add-listing');
+    }
 }

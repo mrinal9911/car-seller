@@ -34,6 +34,9 @@ Route::post('/post-contact', [CarController::class, 'postContactUs'])->name('pos
 Route::get('/vehicles', [CarController::class, 'vehicleList']);
 Route::get('/vehicle-details', [CarController::class, 'vehicleDetails']);
 
+Route::get('/account-listing', [CarController::class, 'accountListing']);
+Route::get('/add-listing', [CarController::class, 'addListing']);
+
 /**
  * | CRUD of Enquiry
  */
