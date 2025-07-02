@@ -109,7 +109,7 @@ class CarController extends Controller
         return view('cars.vehicle-list', compact('cars'));
     }
 
-    public function vehicleDetails($id)
+    public function vehicleDetails()
     {
         // $car = Car::with('images', 'user')->findOrFail($id);
         // return view('cars.vehicle-details', compact('car'));

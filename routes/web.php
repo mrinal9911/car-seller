@@ -23,8 +23,8 @@ Route::middleware('auth')->group(function () {
 /**
  * | From GPT
  */
-Route::get('/', [CarController::class, 'index']);
-Route::get('/home', [CarController::class, 'homePage']);
+Route::get('/', [CarController::class, 'homePage']);
+Route::get('/home', [CarController::class, 'index']);
 Route::get('/car/{id}', [CarController::class, 'show']);
 Route::get('/create', [CarController::class, 'create']);
 
@@ -32,7 +32,7 @@ Route::get('/contact', [CarController::class, 'contactUs']);
 Route::post('/post-contact', [CarController::class, 'postContactUs'])->name('post.contactus');
 
 Route::get('/vehicles', [CarController::class, 'vehicleList']);
-Route::get('/vehicles/{id}', [CarController::class, 'vehicleDetails']);
+Route::get('/vehicle-details', [CarController::class, 'vehicleDetails']);
 
 /**
  * | CRUD of Enquiry
