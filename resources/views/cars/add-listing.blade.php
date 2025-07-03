@@ -167,28 +167,22 @@
 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 me-auto">
                             <li class="nav-item dropdown">
-                                <a href="/" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Home</a>
+                                <a class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color" href="/" aria-expanded="false">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="used-cars.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Used</a>
+                                <a href="/vehicles" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Vehicles</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">New</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Sold</a>
                             </li>
                             <li class="nav-item">
-                                <a href="new-cars.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">New</a>
+                                <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="cars-sold.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Sold</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="reviews.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Reviews</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Pages</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="about.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Contact</a>
+                                <a href="/contact" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Contact</a>
                             </li>
                         </ul>
 
@@ -242,154 +236,6 @@
 
     <!-- Main -->
     <main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

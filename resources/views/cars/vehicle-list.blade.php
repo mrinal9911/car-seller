@@ -161,25 +161,19 @@
 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 me-auto">
                             <li class="nav-item dropdown">
-                                <a class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color" href="/home" aria-expanded="false">Home</a>
+                                <a class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color" href="/" aria-expanded="false">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="used-cars.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Used</a>
+                                <a href="/vehicles" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Vehicles</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">New</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Sold</a>
                             </li>
                             <li class="nav-item">
-                                <a href="new-cars.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">New</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="cars-sold.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Sold</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="reviews.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Reviews</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color" href="#" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="about.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">About</a>
+                                <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">About</a>
                             </li>
                             <li class="nav-item">
                                 <a href="/contact" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Contact</a>
@@ -319,7 +313,7 @@
                                 </div>
                                 <div class="card-body">
                                     <h3 class="card-title">
-                                        <a href="{{ url('/vehicles/1' ) }}" class="fw-bold fs-5 text-decoration-none link-body-emphasis link-opacity-100 link-opacity-75-hover">BMW X5</a>
+                                        <a href="{{ url('/vehicle-details' ) }}" class="fw-bold fs-5 text-decoration-none link-body-emphasis link-opacity-100 link-opacity-75-hover">BMW X5</a>
                                     </h3>
                                     <p class="card-text">
                                         <span class="car-price text-primary fs-special fs-5 fw-bold custom-color">$95,895</span>

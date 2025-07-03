@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Car;
 use App\Models\Enquiry;
+use Exception;
 use Illuminate\Http\Request;
 
 class CarController extends Controller
@@ -90,28 +91,33 @@ class CarController extends Controller
 
     public function postContactUs(Request $request)
     {
-        $request->validate([
-            'carId'      => 'nullable|numeric|max:100',
-            'salutation' => 'required|numeric|max:100',
-            'userName'   => 'required|string|max:100',
-            'userPhone'  => 'required|string|max:20',
-            'userEmail'  => 'nullable|email|max:100',
-            'message'    => 'required|string|max:500'
-        ]);
+        try {
 
-        $mEnquiry =  new Enquiry();
-        $mEnquiry->car_id    = $request->input('carId', null);
-        $mEnquiry->name      = $request->input('userName');
-        $mEnquiry->phone     = $request->input('userPhone');
-        $mEnquiry->email     = $request->input('userEmail');
-        $mEnquiry->message   = $request->input('message');
-        $mEnquiry->save();
+            $request->validate([
+                'carId'          => 'nullable|numeric|max:100',
+                'userSalutation' => 'required|string|max:100',
+                'userName'       => 'required|string|max:100',
+                'userPhone'      => 'required|string|max:20',
+                'userEmail'      => 'nullable|email|max:100',
+                'message'        => 'required|string|max:500'
+            ]);
 
-        echo "Contact form submitted successfully!";
-        return $request;
-        // Here you can handle the contact form submission, e.g., send an email or save to database
+            $mEnquiry            =  new Enquiry();
+            $mEnquiry->car_id     = $request->input('carId', null);
+            $mEnquiry->salutation = $request->input('userSalutation');
+            $mEnquiry->name       = $request->input('userName');
+            $mEnquiry->phone      = $request->input('userPhone');
+            $mEnquiry->email      = $request->input('userEmail');
+            $mEnquiry->message    = $request->input('message');
+            $mEnquiry->save();
 
-        return redirect('/contact')->with('success', 'Your message has been sent successfully!');
+            echo "Contact form submitted successfully!";
+
+            return redirect('/contact')->with('success', 'Your message has been sent successfully!');
+        } catch (Exception $e) {
+            return redirect('/contact')->with('error', $e->getMessage());
+            // return redirect('/contact')->with('error', 'There was an error sending your message. Please try again later.');
+        }
     }
 
     public function vehicleList()

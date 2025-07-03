@@ -167,28 +167,22 @@
 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 me-auto">
                             <li class="nav-item dropdown">
-                                <a href="/" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Home</a>
+                                <a class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color" href="/" aria-expanded="false">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="used-cars.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Used</a>
+                                <a href="/vehicles" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Vehicles</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">New</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Sold</a>
                             </li>
                             <li class="nav-item">
-                                <a href="new-cars.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">New</a>
+                                <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="cars-sold.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Sold</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="reviews.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Reviews</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Pages</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="about.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Contact</a>
+                                <a href="/contact" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Contact</a>
                             </li>
                         </ul>
 
@@ -418,6 +412,55 @@
 
                 <!-- Content -->
                 <section class="col-12">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="bg-body-tertiary border rounded p-2 mb-4">
+                                <ul class="nav flex-wrap border-transparent">
+                                    <!-- <li class="nav-item my-1">
+                                        <a class="btn btn-sm d-flex align-items-center nav-link px-3 px-lg-4 mx-1
+                            
+                            bg-body-tertiary text-body-secondary fs-6" href="account-dashboard.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-layout-dashboard me-2">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                <path d="M5 4h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1" />
+                                                <path d="M5 16h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1" />
+                                                <path d="M15 12h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1" />
+                                                <path d="M15 4h4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1" />
+                                            </svg>Dashboard
+                                        </a>
+                                    </li> -->
+                                    <li class="nav-item my-1">
+                                        <a class="btn btn-sm d-flex align-items-center nav-link px-3 px-lg-4 mx-1
+                            bg-body text-body-emphasis text-primary custom-color border border-light-subtle
+                            " href="account-listings.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-list-details me-2">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                <path d="M13 5h8" />
+                                                <path d="M13 9h5" />
+                                                <path d="M13 15h8" />
+                                                <path d="M13 19h5" />
+                                                <path d="M3 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                                                <path d="M3 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                                            </svg>Listings
+                                        </a>
+                                    </li>
+                                    <li class="nav-item my-1">
+                                        <a class="btn btn-sm d-flex align-items-center nav-link px-3 px-lg-4 mx-1
+                            
+                            bg-body-tertiary text-body-secondary fs-6" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages me-2">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
+                                                <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
+                                            </svg>Messages
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="row">
                         <div class="col-12">

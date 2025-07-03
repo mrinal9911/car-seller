@@ -163,25 +163,19 @@
 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 me-auto">
                             <li class="nav-item dropdown">
-                                <a class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color" href="/home" aria-expanded="false">Home</a>
+                                <a class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color" href="/" aria-expanded="false">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="used-cars.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Used</a>
+                                <a href="/vehicles" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Vehicles</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">New</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Sold</a>
                             </li>
                             <li class="nav-item">
-                                <a href="new-cars.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">New</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="cars-sold.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Sold</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="reviews.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Reviews</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color" href="#" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="about.html" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">About</a>
+                                <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">About</a>
                             </li>
                             <li class="nav-item">
                                 <a href="/contact" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Contact</a>
@@ -209,6 +203,19 @@
     <!-- END Header -->
 
     <!-- Breadcrumb -->
+    @if (session('success'))
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ session('success') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    @endif
+
+    @if (session('error'))
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{ session('error') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    @endif
 
     <!-- Breadcrumb Style 1 -->
     <div class="breadcrumb-style-1
@@ -226,7 +233,6 @@
         </div>
     </div>
     <!-- END Breadcrumb Style 1 -->
-
 
 
 
@@ -251,7 +257,7 @@
                             @csrf
                             <div class=" mb-3">
                                 <label for="user-title" class="form-label fw-bold">Title</label>
-                                <select class="form-select custom-color text-dark-emphasis rounded-1" name="user-salutation" aria-label="Select your title and salutation">
+                                <select class="form-select custom-color text-dark-emphasis rounded-1" name="userSalutation" aria-label="Select your title and salutation">
                                     <option selected>Select title</option>
                                     <option value="mr">Mr</option>
                                     <option value="mrs">Mrs</option>
@@ -261,23 +267,23 @@
                             </div>
                             <div class="row">
                                 <div class="mb-3 col-md-6">
-                                    <label for="userName" class="form-label fw-bold">Name</label>
-                                    <input type="text" class="form-control custom-color" id="user-name" name="user-name">
+                                    <label for="user-name" class="form-label fw-bold">Name</label>
+                                    <input type="text" class="form-control custom-color" id="user-name" name="userName">
                                 </div>
                                 <div class="mb-3 col-md-6">
-                                    <label for="userPhone" class="form-label fw-bold">Phone <span class="text-secondary fs-sm">(Optional)</span>
+                                    <label for="user-phone" class="form-label fw-bold">Phone <span class="text-secondary fs-sm">(Optional)</span>
                                     </label>
-                                    <input type="text" class="form-control custom-color" id="user-phone" name="user-phone">
+                                    <input type="text" class="form-control custom-color" id="user-phone" name="userPhone">
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="userEmail" class="form-label fw-bold">Email</label>
-                                <input type="email" class="form-control custom-color" id="user-email" name="user-email" aria-describedby="contactEmailHelp">
+                                <label for="user-email" class="form-label fw-bold">Email</label>
+                                <input type="email" class="form-control custom-color" id="user-email" name="userEmail" aria-describedby="contactEmailHelp">
                                 <div id="contactEmailHelp" class="form-text">We'll never share your email with anyone else.</div>
                             </div>
                             <div class="mb-3">
-                                <label for="message" class="form-label fw-bold">Message</label>
-                                <textarea class="form-control custom-color" id="user-message" name="user-message" rows="3"></textarea>
+                                <label for="user-message" class="form-label fw-bold">Message</label>
+                                <textarea class="form-control custom-color" id="user-message" name="message" rows="3"></textarea>
                             </div>
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input custom-color" id="confirm-terms" name="confirm-terms" checked>
