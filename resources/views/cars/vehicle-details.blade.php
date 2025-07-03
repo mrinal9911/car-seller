@@ -24,6 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Owl Carousel stylesheet -->
     <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.carousel.min.css">
@@ -201,34 +202,12 @@
             </nav>
 
             <div class="header-access-icons d-flex ms-auto me-2 align-items-center">
-                <div class="header-messages rounded-cirlce">
-                    <a href="account-messages.html" class="btn btn-sm position-relative btn-light border rounded-circle ms-2 fs-xs" role="button">
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark z-2">
-                            7
-                            <span class="visually-hidden">Messages</span>
-                        </span>
+                <div class="header-login rounded-circle">
+                    <a href="/login" class="btn btn-sm position-relative btn-light border rounded-circle ms-2 fs-xs" role="button">
+                        <i class="bi bi-person"></i> <!-- Bootstrap Icon (person) -->
+                        <span class="visually-hidden">Login</span>
                     </a>
                 </div>
-                <div class="header-compare rounded-cirlce">
-                    <a href="compare.html" class="btn btn-sm position-relative btn-light border rounded-circle ms-2 fs-xs" role="button">
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark z-2">
-                            4
-                            <span class="visually-hidden">Compare items</span>
-                        </span>
-                    </a>
-                </div>
-                <div class="header-favorites rounded-cirlce">
-                    <a href="account-favorites.html" class="btn btn-sm position-relative btn-light border rounded-circle ms-2 fs-xs" role="button">
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark z-2">
-                            3
-                            <span class="visually-hidden">Favorites items</span>
-                        </span>
-                    </a>
-                </div>
-                <div class="header-search rounded-cirlce">
-                    <button class="btn btn-sm position-relative btn-light border rounded-circle ms-2 fs-xs" type="button"></button>
-                </div>
-
             </div>
 
         </div>

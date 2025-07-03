@@ -25,11 +25,11 @@ class EnquiryController extends Controller
     {
         return "lorem";
         $validated = $request->validate([
-            'car_id' => 'nullable|integer',
-            'name'   => 'required|string|max:100',
-            'phone'  => 'required|string|max:20',
-            'email'  => 'nullable|email|max:100',
-            'notes'  => 'required|string|max:500',
+            'car_id'   => 'nullable|integer',
+            'name'     => 'required|string|max:100',
+            'phone'    => 'required|string|max:20',
+            'email'    => 'nullable|email|max:100',
+            'message'  => 'required|string|max:500',
         ]);
 
         Enquiry::create($validated);

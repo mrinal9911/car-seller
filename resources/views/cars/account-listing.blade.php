@@ -427,7 +427,7 @@
                                 <div class="card-header p-3 border-bottom d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between align-items-center bg-body">
                                     <h5 class="card-title mb-3 m-sm-0">My Listings <span class="badge bg-primary bg-opacity-10 text-primary ms-2">15 Items</span>
                                     </h5>
-                                    <a href="add-listing.html" role="button" class="btn btn-warning fs-sm fw-bold d-flex align-items-center text-uppercase me-1">
+                                    <a href="/add-listing" role="button" class="btn btn-warning fs-sm fw-bold d-flex align-items-center text-uppercase me-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-plus me-1">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <path d="M12 5l0 14" />

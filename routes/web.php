@@ -29,7 +29,7 @@ Route::get('/car/{id}', [CarController::class, 'show']);
 Route::get('/create', [CarController::class, 'create']);
 
 Route::get('/contact', [CarController::class, 'contactUs']);
-Route::post('/post-contact', [CarController::class, 'postContactUs'])->name('post.contactus');
+Route::post('/post-contact', [CarController::class, 'postContactUs']);
 
 Route::get('/vehicles', [CarController::class, 'vehicleList']);
 Route::get('/vehicle-details', [CarController::class, 'vehicleDetails']);

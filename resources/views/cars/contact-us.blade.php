@@ -24,6 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
 
 
@@ -192,34 +193,12 @@
             </nav>
 
             <div class="header-access-icons d-flex ms-auto me-2 align-items-center">
-                <div class="header-messages rounded-cirlce">
-                    <a href="account-messages.html" class="btn btn-sm position-relative btn-light border rounded-circle ms-2 fs-xs" role="button">
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark z-2">
-                            7
-                            <span class="visually-hidden">Messages</span>
-                        </span>
+                <div class="header-login rounded-circle">
+                    <a href="/login" class="btn btn-sm position-relative btn-light border rounded-circle ms-2 fs-xs" role="button">
+                        <i class="bi bi-person"></i> <!-- Bootstrap Icon (person) -->
+                        <span class="visually-hidden">Login</span>
                     </a>
                 </div>
-                <div class="header-compare rounded-cirlce">
-                    <a href="compare.html" class="btn btn-sm position-relative btn-light border rounded-circle ms-2 fs-xs" role="button">
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark z-2">
-                            4
-                            <span class="visually-hidden">Compare items</span>
-                        </span>
-                    </a>
-                </div>
-                <div class="header-favorites rounded-cirlce">
-                    <a href="account-favorites.html" class="btn btn-sm position-relative btn-light border rounded-circle ms-2 fs-xs" role="button">
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark z-2">
-                            3
-                            <span class="visually-hidden">Favorites items</span>
-                        </span>
-                    </a>
-                </div>
-                <div class="header-search rounded-cirlce">
-                    <button class="btn btn-sm position-relative btn-light border rounded-circle ms-2 fs-xs" type="button"></button>
-                </div>
-
             </div>
 
         </div>
@@ -282,22 +261,22 @@
                             </div>
                             <div class="row">
                                 <div class="mb-3 col-md-6">
-                                    <label for="user-name" class="form-label fw-bold">Name</label>
+                                    <label for="userName" class="form-label fw-bold">Name</label>
                                     <input type="text" class="form-control custom-color" id="user-name" name="user-name">
                                 </div>
                                 <div class="mb-3 col-md-6">
-                                    <label for="user-phone" class="form-label fw-bold">Phone <span class="text-secondary fs-sm">(Optional)</span>
+                                    <label for="userPhone" class="form-label fw-bold">Phone <span class="text-secondary fs-sm">(Optional)</span>
                                     </label>
                                     <input type="text" class="form-control custom-color" id="user-phone" name="user-phone">
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="user-email" class="form-label fw-bold">Email</label>
+                                <label for="userEmail" class="form-label fw-bold">Email</label>
                                 <input type="email" class="form-control custom-color" id="user-email" name="user-email" aria-describedby="contactEmailHelp">
                                 <div id="contactEmailHelp" class="form-text">We'll never share your email with anyone else.</div>
                             </div>
                             <div class="mb-3">
-                                <label for="user-message" class="form-label fw-bold">Message</label>
+                                <label for="message" class="form-label fw-bold">Message</label>
                                 <textarea class="form-control custom-color" id="user-message" name="user-message" rows="3"></textarea>
                             </div>
                             <div class="mb-3 form-check">
