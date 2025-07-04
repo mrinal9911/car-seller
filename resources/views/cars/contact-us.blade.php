@@ -1,5 +1,9 @@
 @extends('layouts.landing.app')
 
+@section('title')
+Contact Us
+@endsection
+
 @section('page-content')
 <!-- Breadcrumb Style 1 -->
 <div class="breadcrumb-style-1

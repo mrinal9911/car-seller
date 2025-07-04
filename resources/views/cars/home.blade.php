@@ -1,7 +1,134 @@
 @extends('layouts.landing.app')
 
-@section('css-links')
+@section('title')
+Home
+@endsection
 
+
+@section('css-links')
+<link rel="stylesheet" href="/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="/libs/owl.carousel/dist/assets/owl.theme.default.min.css">
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* 
+  body {
+    background-color: #0a0a0a;
+    color: white;
+    overflow-x: hidden;
+  } */
+
+  /* header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    position: relative;
+    z-index: 10;
+  } */
+
+  nav a {
+    margin-left: 2rem;
+    color: #bbb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  nav a.active,
+  nav a:hover {
+    color: #f00;
+  }
+
+  .hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /* background: url("{{ asset('storage/images/car-hero2.jpg') }}") no-repeat center center/cover; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    padding-top: 12px;
+    justify-content: flex-start;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 1rem;
+    max-width: 600px;
+  }
+
+  .carousel-caption .btn {
+    margin-top: 2rem;
+    background-color: transparent;
+    border: 2px solid #f00;
+    color: #f00;
+    padding: 0.75rem 2rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .carousel-caption {
+    bottom: 10.25rem !important;
+  }
+
+  .carousel-caption .btn:hover {
+
+    background-color: #f00;
+    color: white;
+  }
+
+  .hero .btn {
+    margin-top: 2rem;
+    background-color: transparent;
+    border: 2px solid #f00;
+    color: #f00;
+    padding: 0.75rem 2rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .hero .btn:hover {
+    background-color: #f00;
+    color: white;
+  }
+
+  .scroll-indicator {
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: #eee;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(10px);
+    }
+  }
+</style>
 @endsection
 
 @section('page-content')
