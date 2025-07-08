@@ -28,13 +28,6 @@ Add Listing
 <!-- Main -->
 <main>
 
-
-
-
-
-
-
-
     <div class="container py-5 mb-md-4">
         <div class="row">
 
@@ -63,11 +56,10 @@ Add Listing
                                                         <div class="row row-cols-sm-2 row-cols-md-3">
 
 
-
-                                                            <!-- Listing manufacturer -->
+                                                            <!-- Listing brand -->
                                                             <div class="mb-3">
-                                                                <label for="listing-manufacturer" class="form-label fw-semibold fs-special mb-1">Manufacturer</label>
-                                                                <select id="listing-manufacturer" name="listing-manufacturer" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select manufacturer">
+                                                                <label for="listing-brand" class="form-label fw-semibold fs-special mb-1">Brand</label>
+                                                                <select id="listing-brand" name="listing-brand" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select brand">
                                                                     <option selected>Select</option>
 
                                                                     <option value="Audi">Audi</option>
@@ -122,7 +114,8 @@ Add Listing
 
                                                                 </select>
                                                             </div>
-                                                            <!-- END Listing manufacturer -->
+                                                            <!-- END Listing brand -->
+
 
                                                             <!-- Listing model -->
                                                             <div class="mb-3">
@@ -135,20 +128,6 @@ Add Listing
                                                                 </select>
                                                             </div>
                                                             <!-- END Listing model -->
-
-
-                                                            <!-- Listing series -->
-                                                            <div class="mb-3">
-                                                                <label for="listing-series" class="form-label fw-semibold fs-special mb-1">Series</label>
-                                                                <select id="listing-series" name="listing-series" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select series">
-                                                                    <option selected>Select</option>
-
-
-
-                                                                </select>
-                                                            </div>
-                                                            <!-- END Listing series -->
-
 
 
                                                             <!-- Listing body -->
@@ -181,9 +160,6 @@ Add Listing
                                                             <!-- END Listing body -->
 
 
-
-
-
                                                             <!-- Listing transmission -->
                                                             <div class="mb-3">
                                                                 <label for="listing-transmission" class="form-label fw-semibold fs-special mb-1">Transmission</label>
@@ -201,9 +177,6 @@ Add Listing
                                                                 </select>
                                                             </div>
                                                             <!-- END Listing transmission -->
-
-
-
 
 
                                                             <!-- Listing fuel -->
@@ -228,9 +201,6 @@ Add Listing
                                                                 </select>
                                                             </div>
                                                             <!-- END Listing fuel -->
-
-
-
 
 
                                                             <!-- Listing engine -->
@@ -260,36 +230,13 @@ Add Listing
                                                             <!-- END Listing engine -->
 
 
-                                                            <!-- Listing doors -->
-                                                            <div class="mb-3">
-                                                                <label for="listing-doors" class="form-label fw-semibold fs-special mb-1">Doors</label>
-                                                                <select id="listing-doors" name="listing-doors" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select doors">
-                                                                    <option selected>Select</option>
-
-
-
-                                                                    <option value="2">2 Doors</option>
-
-                                                                    <option value="3">3 Doors</option>
-
-                                                                    <option value="4">4 Doors</option>
-
-                                                                    <option value="5">5 Doors</option>
-
-                                                                    <option value="6">6 Doors</option>
-
-
-
-                                                                </select>
-                                                            </div>
-                                                            <!-- END Listing doors -->
-
                                                             <!-- Listing power -->
                                                             <div class="mb-3">
                                                                 <label for="listing-power" class="form-label fw-semibold fs-special mb-1">Power</label>
                                                                 <input type="text" class="form-control custom-color" id="listing-power" name="listing-power">
                                                             </div>
                                                             <!-- END Listing power -->
+
 
                                                             <!-- Listing vin -->
                                                             <div class="mb-3">
@@ -298,7 +245,12 @@ Add Listing
                                                             </div>
                                                             <!-- END Listing vin -->
 
-
+                                                            <!-- Listing Name -->
+                                                            <div class="mb-3">
+                                                                <label for="listing-name" class="form-label fw-semibold fs-special mb-1">Name</label>
+                                                                <input type="text" class="form-control custom-color" id="listing-name" name="listing-name">
+                                                            </div>
+                                                            <!-- END Listing name -->
 
                                                         </div>
                                                     </div>
@@ -320,9 +272,6 @@ Add Listing
                                                         <div class="row row-cols-sm-2 row-cols-md-3">
 
 
-
-
-
                                                             <!-- Listing reg-year -->
                                                             <div class="mb-3">
                                                                 <label for="listing-reg-year" class="form-label fw-semibold fs-special mb-1">Registration Year</label>
@@ -330,19 +279,9 @@ Add Listing
                                                                     <option selected>Select</option>
 
 
-
-
-
                                                                 </select>
                                                             </div>
                                                             <!-- END Listing reg-year -->
-
-
-
-
-
-
-
 
 
                                                             <!-- Listing reg-month -->
@@ -352,15 +291,9 @@ Add Listing
                                                                     <option selected>Select</option>
 
 
-
-
-
                                                                 </select>
                                                             </div>
                                                             <!-- END Listing reg-month -->
-
-
-
 
 
                                                             <!-- Listing drive-type -->
@@ -384,10 +317,6 @@ Add Listing
                                                             <!-- END Listing drive-type -->
 
 
-
-
-
-
                                                             <!-- Listing condition -->
                                                             <div class="mb-3">
                                                                 <label for="listing-condition" class="form-label fw-semibold fs-special mb-1">Condition</label>
@@ -395,13 +324,9 @@ Add Listing
                                                                     <option selected>Select</option>
 
 
-
-
-
                                                                     <option value="New">New</option>
 
                                                                     <option value="Used">Used</option>
-
 
 
                                                                 </select>
@@ -409,25 +334,12 @@ Add Listing
                                                             <!-- END Listing condition -->
 
 
-
-
-
-
-
-
-
-
-
-                                                            <!-- Listing mileage -->
+                                                            <!-- Listing driven -->
                                                             <div class="mb-3">
-                                                                <label for="listing-mileage" class="form-label fw-semibold fs-special mb-1">Mileage(KM)</label>
-                                                                <input type="text" class="form-control custom-color" id="listing-mileage" name="listing-mileage">
+                                                                <label for="listing-driven" class="form-label fw-semibold fs-special mb-1">Driven(KM)</label>
+                                                                <input type="text" class="form-control custom-color" id="listing-driven" name="listing-driven">
                                                             </div>
-                                                            <!-- END Listing mileage -->
-
-
-
-
+                                                            <!-- END Listing driven -->
 
 
                                                             <!-- Listing price -->
@@ -436,14 +348,6 @@ Add Listing
                                                                 <input type="text" class="form-control custom-color" id="listing-price" name="listing-price">
                                                             </div>
                                                             <!-- END Listing price -->
-
-
-
-
-
-
-
-
 
 
                                                             <!-- Listing price-negotiable -->
@@ -456,23 +360,12 @@ Add Listing
                                                             <!-- END Listing price-negotiable -->
 
 
-
-
-
-
-
-
-
-
-
                                                             <!-- Listing description -->
                                                             <div class="mb-2 w-100">
                                                                 <label for="listing-description" class="form-label fw-semibold fs-special mb-1">Description</label>
                                                                 <textarea class="form-control custom-color" id="listing-description" name="listing-description" rows="6"></textarea>
                                                             </div>
                                                             <!-- END Listing description -->
-
-
 
                                                         </div>
                                                     </div>
@@ -497,95 +390,6 @@ Add Listing
                                                         </div>
 
                                                         <div class="row row-cols-auto g-3 justify-content-center py-4 pt-2 my-2">
-
-
-                                                            <div class="text-dark-emphasis">
-                                                                <div class="image-upload d-flex flex-column justify-content-center align-items-center position-relative bg-body-tertiary rounded border border-2">
-                                                                    <input class="form-control custom-color" type="file" id="uploadImage1" name="uploadImage1" accept="image/*">
-                                                                    <span class="upload-icon"></span>
-                                                                    <span class="upload-text fs-xs fs-special text-uppercase mx-3 text-center mt-2">Upload Photo</span>
-                                                                    <div id="previewImage1">
-                                                                        <span class="remove-upload rounded-circle" role="button"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="text-dark-emphasis">
-                                                                <div class="image-upload d-flex flex-column justify-content-center align-items-center position-relative bg-body-tertiary rounded border border-2">
-                                                                    <input class="form-control custom-color" type="file" id="uploadImage2" name="uploadImage2" accept="image/*">
-                                                                    <span class="upload-icon"></span>
-                                                                    <span class="upload-text fs-xs fs-special text-uppercase mx-3 text-center mt-2">Upload Photo</span>
-                                                                    <div id="previewImage2">
-                                                                        <span class="remove-upload rounded-circle" role="button"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="text-dark-emphasis">
-                                                                <div class="image-upload d-flex flex-column justify-content-center align-items-center position-relative bg-body-tertiary rounded border border-2">
-                                                                    <input class="form-control custom-color" type="file" id="uploadImage3" name="uploadImage3" accept="image/*">
-                                                                    <span class="upload-icon"></span>
-                                                                    <span class="upload-text fs-xs fs-special text-uppercase mx-3 text-center mt-2">Upload Photo</span>
-                                                                    <div id="previewImage3">
-                                                                        <span class="remove-upload rounded-circle" role="button"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="text-dark-emphasis">
-                                                                <div class="image-upload d-flex flex-column justify-content-center align-items-center position-relative bg-body-tertiary rounded border border-2">
-                                                                    <input class="form-control custom-color" type="file" id="uploadImage4" name="uploadImage4" accept="image/*">
-                                                                    <span class="upload-icon"></span>
-                                                                    <span class="upload-text fs-xs fs-special text-uppercase mx-3 text-center mt-2">Upload Photo</span>
-                                                                    <div id="previewImage4">
-                                                                        <span class="remove-upload rounded-circle" role="button"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="text-dark-emphasis">
-                                                                <div class="image-upload d-flex flex-column justify-content-center align-items-center position-relative bg-body-tertiary rounded border border-2">
-                                                                    <input class="form-control custom-color" type="file" id="uploadImage5" name="uploadImage5" accept="image/*">
-                                                                    <span class="upload-icon"></span>
-                                                                    <span class="upload-text fs-xs fs-special text-uppercase mx-3 text-center mt-2">Upload Photo</span>
-                                                                    <div id="previewImage5">
-                                                                        <span class="remove-upload rounded-circle" role="button"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="text-dark-emphasis">
-                                                                <div class="image-upload d-flex flex-column justify-content-center align-items-center position-relative bg-body-tertiary rounded border border-2">
-                                                                    <input class="form-control custom-color" type="file" id="uploadImage6" name="uploadImage6" accept="image/*">
-                                                                    <span class="upload-icon"></span>
-                                                                    <span class="upload-text fs-xs fs-special text-uppercase mx-3 text-center mt-2">Upload Photo</span>
-                                                                    <div id="previewImage6">
-                                                                        <span class="remove-upload rounded-circle" role="button"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="text-dark-emphasis">
-                                                                <div class="image-upload d-flex flex-column justify-content-center align-items-center position-relative bg-body-tertiary rounded border border-2">
-                                                                    <input class="form-control custom-color" type="file" id="uploadImage7" name="uploadImage7" accept="image/*">
-                                                                    <span class="upload-icon"></span>
-                                                                    <span class="upload-text fs-xs fs-special text-uppercase mx-3 text-center mt-2">Upload Photo</span>
-                                                                    <div id="previewImage7">
-                                                                        <span class="remove-upload rounded-circle" role="button"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="text-dark-emphasis">
-                                                                <div class="image-upload d-flex flex-column justify-content-center align-items-center position-relative bg-body-tertiary rounded border border-2">
-                                                                    <input class="form-control custom-color" type="file" id="uploadImage8" name="uploadImage8" accept="image/*">
-                                                                    <span class="upload-icon"></span>
-                                                                    <span class="upload-text fs-xs fs-special text-uppercase mx-3 text-center mt-2">Upload Photo</span>
-                                                                    <div id="previewImage8">
-                                                                        <span class="remove-upload rounded-circle" role="button"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
 
                                                             <div class="text-dark-emphasis">
                                                                 <div class="image-upload d-flex flex-column justify-content-center align-items-center position-relative bg-body-tertiary rounded border border-2">
@@ -663,7 +467,6 @@ Add Listing
                                                                     </div>
                                                                 </div>
                                                             </div>
-
 
                                                         </div>
                                                     </div>
@@ -772,24 +575,6 @@ Add Listing
             </section>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
