@@ -212,11 +212,19 @@
     <!-- END Header -->
 
     <!-- Breadcrumb -->
+    @if (session('success'))
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ session('success') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    @endif
 
-
-
-
-
+    @if (session('error'))
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{ session('error') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    @endif
 
 
 
@@ -294,10 +302,11 @@
                                         <div id="addOfferModalLabel" class="d-none">Add Offer</div>
 
                                         <!-- Add Offer -->
-                                        <form id="add-offer-form" action="#">
+                                        <form id="add-offer-form" action="{{ url('post-contact') }}" method="POST">
+                                            @csrf
                                             <div class="mb-3">
                                                 <label for="user-title" class="form-label">Title</label>
-                                                <select class="form-select custom-color text-dark-emphasis rounded-1" name="user-salutation" aria-label="Select your title and salutation">
+                                                <select class="form-select custom-color text-dark-emphasis rounded-1" name="userSalutation" aria-label="Select your title and salutation">
                                                     <option selected>Select title</option>
                                                     <option value="mr">Mr</option>
                                                     <option value="mrs">Mrs</option>
@@ -307,27 +316,30 @@
                                             </div>
                                             <div class="mb-3">
                                                 <label for="user-name" class="form-label">Name</label>
-                                                <input type="text" class="form-control custom-color" id="user-name" name="user-name">
+                                                <input type="text" class="form-control custom-color" id="user-name" name="userName">
                                             </div>
                                             <div class="mb-3">
                                                 <label for="user-phone" class="form-label">Phone <span class="text-secondary fs-sm">(Optional)</span>
                                                 </label>
-                                                <input type="text" class="form-control custom-color" id="user-phone" name="user-phone">
+                                                <input type="text" class="form-control custom-color" id="user-phone" name="userPhone">
                                             </div>
                                             <div class="mb-3">
                                                 <label for="user-email" class="form-label">Email</label>
-                                                <input type="email" class="form-control custom-color" id="user-email" name="user-email" aria-describedby="offerEmailHelp">
+                                                <input type="email" class="form-control custom-color" id="user-email" name="userEmail" aria-describedby="offerEmailHelp">
                                                 <div id="offerEmailHelp" class="form-text">We'll never share your email with anyone else.</div>
                                             </div>
                                             <div class="mb-3">
                                                 <label for="user-offer" class="form-label">Your Offer Price</label>
-                                                <input type="text" class="form-control custom-color" id="user-offer" name="user-offer">
+                                                <input type="text" class="form-control custom-color" id="user-offer" name="message">
                                             </div>
                                             <div class="mb-3 form-check">
                                                 <input type="checkbox" class="form-check-input custom-color" id="confirm-terms-add-offer" name="confirm-terms-add-offer" checked>
                                                 <label class="form-check-label text-body-secondary" for="confirm-terms-add-offer">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="privacy-policy.html">Privacy Policy</a>
                                                 </label>
                                             </div>
+                                            <!-- Hidden input to send static page name -->
+                                            <input type="hidden" name="page_name" value="vehicleDetailPage">
+                                            <input type="hidden" name="page_tag" value="offer">
                                             <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Submit</button>
                                         </form>
                                         <!-- END Add Offer -->
@@ -575,201 +587,6 @@
                         </div>
                     </div>
 
-                    <!-- Modal Reserve Vehicle  -->
-                    <div class="modal fade reserve-vehicle-modal" id="reserveVehicle" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="reserveVehicleLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable" data-simplebar data-simplebar-auto-hide="false">
-                            <div class="modal-content">
-                                <div class="modal-header bg-secondary-subtle py-2">
-                                    <h5 class="modal-title">Reserve Vehicle</h5>
-                                    <button type="button" class="btn-close rounded-circle z-1" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body p-lg-4">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div id="reserveVehicleLabel" class="d-none">Reserve Vehicle</div>
-
-                                            <!-- Reserve Vehicle Form -->
-                                            <form id="reserve-vehicle-form" action="#">
-                                                <div class="mb-3 pb-1 row g-0">
-                                                    <div class="col-12 col-sm-5 mb-3 mb-sm-0">
-                                                        <div class="rounded-1 overflow-hidden" style="max-width: 160px; max-height: 90px">
-                                                            <img data-src="./images/cars/bmw-x5/01.jpg" class="d-block w-100 rounded-1 lazy" alt="...">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-sm-7">
-                                                        <h6 class="mb-2">2022 BMW X5</h6>
-                                                        <div class="w-100 lh-sm">
-                                                            <span class="fw-bold me-2 fs-sm">Color:</span>
-                                                            <span class="text-body-secondary fs-sm">White</span>
-                                                        </div>
-                                                        <div class="w-100 lh-sm">
-                                                            <span class="fw-bold me-2 fs-sm">Stock #:</span>
-                                                            <span class="text-body-secondary fs-sm">74587</span>
-                                                        </div>
-                                                        <div class="w-100 lh-sm">
-                                                            <span class="fw-bold me-2 fs-sm">VIN:</span>
-                                                            <span class="text-body-secondary fs-sm">1G54A547136H66J98</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <hr class="hr opacity-15 d-block w-100 my-3">
-                                                <div class="row">
-                                                    <div class="col-12 col-md-6">
-                                                        <div class="mb-3">
-                                                            <label for="user-title" class="form-label">Title</label>
-                                                            <select class="form-select custom-color text-dark-emphasis rounded-1" name="user-salutation" aria-label="Select your title and salutation">
-                                                                <option selected>Select title</option>
-                                                                <option value="mr">Mr</option>
-                                                                <option value="mrs">Mrs</option>
-                                                                <option value="miss">Miss</option>
-                                                                <option value="sir">Sir</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-md-6">
-                                                        <div class="mb-3">
-                                                            <label for="user-name" class="form-label">Name</label>
-                                                            <input type="text" class="form-control custom-color" id="user-name" name="user-name">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="user-phone" class="form-label">Phone <span class="text-secondary fs-sm">(Optional)</span>
-                                                    </label>
-                                                    <input type="text" class="form-control custom-color" id="user-phone" name="user-phone">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="user-email" class="form-label">Email</label>
-                                                    <input type="email" class="form-control custom-color" id="user-email" name="user-email" aria-describedby="reserveVehicleEmailHelp">
-                                                    <div id="reserveVehicleEmailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="vehicle-color" class="form-label">Preferred Color</label>
-                                                    <input type="text" class="form-control custom-color" id="vehicle-color" name="vehicle-color">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="pickup-date" class="form-label">Desired Pickup Date and Time</label>
-                                                    <input type="text" class="form-control custom-color" id="pickup-date" name="pickup-date">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="user-notes" class="form-label">Pickup Details / Return Details / Special Requests</label>
-                                                    <textarea class="form-control custom-color" id="user-notes" name="user-notes" rows="3"></textarea>
-                                                </div>
-                                                <div class="mb-3 form-check">
-                                                    <input type="checkbox" class="form-check-input custom-color" id="confirm-terms-reserve-car" name="confirm-terms-reserve-car" checked>
-                                                    <label class="form-check-label text-body-secondary" for="confirm-terms-reserve-car">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="privacy-policy.html">Privacy Policy</a>
-                                                    </label>
-                                                </div>
-                                                <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Submit</button>
-                                            </form>
-                                            <!-- END Reserve Vehicle Form -->
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END - Modal Reserve Vehicle -->
-                    <!-- Book Testdrive  -->
-                    <div class="modal fade book-testdrive-modal" id="bookTestdrive" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="bookTestdriveLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable" data-simplebar data-simplebar-auto-hide="false">
-                            <div class="modal-content">
-                                <div class="modal-header bg-secondary-subtle py-2">
-                                    <h5 class="modal-title">Book Testdrive</h5>
-                                    <button type="button" class="btn-close rounded-circle z-1" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body p-lg-4">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div id="bookTestdriveLabel" class="d-none">Book Testdrive</div>
-
-                                            <!-- Book Test Drive -->
-                                            <form id="book-test-drive-form" action="#">
-                                                <div class="mb-3 pb-1 row g-0">
-                                                    <div class="col-12 col-sm-5 mb-3 mb-sm-0">
-                                                        <div class="rounded-1 overflow-hidden" style="max-width: 160px; max-height: 90px">
-                                                            <img data-src="./images/cars/bmw-x5/01.jpg" class="d-block w-100 rounded-1 lazy" alt="...">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-sm-7">
-                                                        <h6 class="mb-2">2022 BMW X5</h6>
-                                                        <div class="w-100 lh-sm">
-                                                            <span class="fw-bold me-2 fs-sm">Color:</span>
-                                                            <span class="text-body-secondary fs-sm">White</span>
-                                                        </div>
-                                                        <div class="w-100 lh-sm">
-                                                            <span class="fw-bold me-2 fs-sm">Stock #:</span>
-                                                            <span class="text-body-secondary fs-sm">74587</span>
-                                                        </div>
-                                                        <div class="w-100 lh-sm">
-                                                            <span class="fw-bold me-2 fs-sm">VIN:</span>
-                                                            <span class="text-body-secondary fs-sm">1G54A547136H66J98</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <hr class="hr opacity-15 d-block w-100 my-3">
-                                                <div class="row">
-                                                    <div class="col-12 col-md-6">
-                                                        <div class="mb-3">
-                                                            <label for="user-title" class="form-label">Title</label>
-                                                            <select class="form-select custom-color text-dark-emphasis rounded-1" name="user-salutation" aria-label="Select your title and salutation">
-                                                                <option selected>Select title</option>
-                                                                <option value="mr">Mr</option>
-                                                                <option value="mrs">Mrs</option>
-                                                                <option value="miss">Miss</option>
-                                                                <option value="sir">Sir</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-md-6">
-                                                        <div class="mb-3">
-                                                            <label for="user-first-name" class="form-label">Name</label>
-                                                            <input type="text" class="form-control custom-color" id="user-first-name" name="user-first-name">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="user-phone" class="form-label">Phone <span class="text-secondary fs-sm">(Optional)</span>
-                                                    </label>
-                                                    <input type="text" class="form-control custom-color" id="user-phone" name="user-phone">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="user-email" class="form-label">Email</label>
-                                                    <input type="email" class="form-control custom-color" id="user-email" name="user-email" aria-describedby="testDriveEmailHelp">
-                                                    <div id="testDriveEmailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="test-drive-date" class="form-label">Date</label>
-                                                    <input type="text" class="form-control custom-color" id="test-drive-date" name="test-drive-date" aria-describedby="testDriveDateHelp">
-                                                    <div id="testDriveDateHelp" class="form-text">Select the date you would like to test drive this car.</div>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="test-drive-time" class="form-label">Time</label>
-                                                    <input type="text" class="form-control custom-color" id="test-drive-time" name="test-drive-time" aria-describedby="testDriveTimeHelp" placeholder="Morning">
-                                                    <div id="testDriveTimeHelp" class="form-text">Select the time you would like to test drive this car.</div>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="test-drive-message" class="form-label">Notes <span class="text-secondary fs-sm">(Optional)</span>
-                                                    </label>
-                                                    <textarea class="form-control custom-color" id="test-drive-message" name="test-drive-message" rows="3"></textarea>
-                                                </div>
-                                                <div class="mb-3 form-check">
-                                                    <input type="checkbox" class="form-check-input custom-color" id="confirm-terms-book-testdrive" name="confirm-terms-book-testdrive" checked>
-                                                    <label class="form-check-label text-body-secondary" for="confirm-terms-book-testdrive">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="privacy-policy.html">Privacy Policy</a>
-                                                    </label>
-                                                </div>
-                                                <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Submit</button>
-                                            </form>
-                                            <!-- END Book Test Drive -->
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END - Book Testdrive -->
                     <!-- Modal Send Enquiry  -->
                     <div class="modal fade send-enquiry-modal" id="sendEnquiry" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="sendEnquiryLabel" aria-hidden="true">
                         <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable" data-simplebar data-simplebar-auto-hide="false">
@@ -784,7 +601,8 @@
                                             <div id="sendEnquiryLabel" class="d-none">Send Enquiry</div>
 
                                             <!-- Add Enquiry -->
-                                            <form id="add-enquiry-form" action="#">
+                                            <form id="add-enquiry-form" action="{{ url('post-contact') }}" method="POST">
+                                                @csrf
                                                 <div class="mb-3 pb-1 row g-0">
                                                     <div class="col-12 col-sm-5 mb-3 mb-sm-0">
                                                         <div class="rounded-1 overflow-hidden" style="max-width: 160px; max-height: 90px">
@@ -812,7 +630,7 @@
                                                     <div class="col-12 col-md-6">
                                                         <div class="mb-3">
                                                             <label for="user-title" class="form-label">Title</label>
-                                                            <select class="form-select custom-color text-dark-emphasis rounded-1" name="user-salutation" aria-label="Select your title and salutation">
+                                                            <select class="form-select custom-color text-dark-emphasis rounded-1" name="userSalutation" aria-label="Select your title and salutation">
                                                                 <option selected>Select title</option>
                                                                 <option value="mr">Mr</option>
                                                                 <option value="mrs">Mrs</option>
@@ -824,29 +642,32 @@
                                                     <div class="col-12 col-md-6">
                                                         <div class="mb-3">
                                                             <label for="user-name" class="form-label">Name</label>
-                                                            <input type="text" class="form-control custom-color" id="user-name" name="user-name">
+                                                            <input type="text" class="form-control custom-color" id="user-name" name="userName">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="user-phone" class="form-label">Phone <span class="text-secondary fs-sm">(Optional)</span>
                                                     </label>
-                                                    <input type="text" class="form-control custom-color" id="user-phone" name="user-phone">
+                                                    <input type="text" class="form-control custom-color" id="user-phone" name="userPhone">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="user-email" class="form-label">Email</label>
-                                                    <input type="email" class="form-control custom-color" id="user-email" name="user-email" aria-describedby="enquiryEmailHelp">
+                                                    <input type="email" class="form-control custom-color" id="user-email" name="userEmail" aria-describedby="enquiryEmailHelp">
                                                     <div id="enquiryEmailHelp" class="form-text">We'll never share your email with anyone else.</div>
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="user-enquiry" class="form-label">Notes</label>
-                                                    <textarea class="form-control custom-color" id="user-enquiry" name="user-enquiry" rows="3"></textarea>
+                                                    <textarea class="form-control custom-color" id="user-enquiry" name="message" rows="3"></textarea>
                                                 </div>
                                                 <div class="mb-3 form-check">
                                                     <input type="checkbox" class="form-check-input custom-color" id="confirm-terms-add-enquiry" name="confirm-terms-add-enquiry" checked>
                                                     <label class="form-check-label text-body-secondary" for="confirm-terms-add-enquiry">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="privacy-policy.html">Privacy Policy</a>
                                                     </label>
                                                 </div>
+                                                <!-- Hidden input to send static page name -->
+                                                <input type="hidden" name="page_name" value="vehicleDetailPage">
+                                                <input type="hidden" name="page_tag" value="enquiry">
                                                 <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Submit</button>
                                             </form>
                                             <!-- END Add Enquiry -->
@@ -858,79 +679,7 @@
                         </div>
                     </div>
                     <!-- END - Modal Send Enquiry -->
-                    <!-- Modal Report Listing  -->
-                    <div class="modal fade report-listing-modal" id="reportListing" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="reportListingLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable" data-simplebar data-simplebar-auto-hide="false">
-                            <div class="modal-content">
-                                <div class="modal-header bg-secondary-subtle py-2">
-                                    <h5 class="modal-title">Report Listing</h5>
-                                    <button type="button" class="btn-close rounded-circle z-1" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body p-lg-4">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div id="reportListingLabel" class="d-none">Report Listing</div>
 
-                                            <!-- Report Ad -->
-                                            <form id="report-ad-form" action="#">
-                                                <div class="mb-3">
-                                                    <label for="user-title" class="form-label">Report this ad as:</label>
-                                                    <select class="form-select custom-color text-dark-emphasis rounded-1" name="user-report" aria-label="Select ad report reason">
-                                                        <option selected></option>
-                                                        <option value="sold">Sold</option>
-                                                        <option value="duplicate">Duplicate Ad</option>
-                                                        <option value="incorrect-images">Incorrect Images</option>
-                                                        <option value="blurry-images">Blurry Images</option>
-                                                        <option value="watermarked-images">Watermarked Images</option>
-                                                        <option value="incorrect-model-make">Incorrect Model/Make</option>
-                                                        <option value="incorrect-year">Incorrect Year</option>
-                                                        <option value="incorrect-pricing">Incorrect Pricing</option>
-                                                        <option value="incorrect-transmission">Incorrect Transmission</option>
-                                                        <option value="incorrect-mileage">Incorrect Mileage</option>
-                                                        <option value="invalid-contact">Invalid Contact Details</option>
-                                                        <option value="irrelevant">Irrelevancy</option>
-                                                        <option value="misleading">Misleading Content</option>
-                                                        <option value="other">Other</option>
-                                                    </select>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="user-name" class="form-label">Name</label>
-                                                    <input type="text" class="form-control custom-color" id="user-name" name="user-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="user-phone" class="form-label">Phone <span class="text-secondary fs-sm">(Optional)</span>
-                                                    </label>
-                                                    <input type="text" class="form-control custom-color" id="user-phone" name="user-phone">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="user-email" class="form-label">Email</label>
-                                                    <input type="email" class="form-control custom-color" id="user-email" name="user-email" aria-describedby="reportAdEmailHelp">
-                                                    <div id="reportAdEmailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="user-phone" class="form-label">Location</label>
-                                                    <input type="text" class="form-control custom-color" id="user-localtion" name="user-location">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="user-message" class="form-label">Message</label>
-                                                    <textarea class="form-control custom-color" id="user-message" name="user-message" rows="3"></textarea>
-                                                </div>
-                                                <div class="mb-3 form-check">
-                                                    <input type="checkbox" class="form-check-input custom-color" id="confirm-terms" name="confirm-terms" checked>
-                                                    <label class="form-check-label text-body-secondary" for="confirm-terms">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="privacy-policy.html">Privacy Policy</a>
-                                                    </label>
-                                                </div>
-                                                <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Submit</button>
-                                            </form>
-                                            <!-- END Report Ad -->
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END - Modal Report Listing -->
                 </div>
 
             </div>

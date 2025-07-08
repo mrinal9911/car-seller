@@ -109,14 +109,19 @@ class CarController extends Controller
             $mEnquiry->phone      = $request->input('userPhone');
             $mEnquiry->email      = $request->input('userEmail');
             $mEnquiry->message    = $request->input('message');
+            $mEnquiry->tag        = $request->input('page_tag') ?? "message";
             $mEnquiry->save();
 
-            echo "Contact form submitted successfully!";
-
-            return redirect('/contact')->with('success', 'Your message has been sent successfully!');
+            if (isset($request->page_name) && $request->page_name === 'vehicleDetailPage') {
+                return redirect()->back()->with('success', 'Your enquiry has been sent successfully!');
+            } else
+                return redirect('/contact')->with('success', 'Your message has been sent successfully!');
         } catch (Exception $e) {
-            return redirect('/contact')->with('error', $e->getMessage());
-            // return redirect('/contact')->with('error', 'There was an error sending your message. Please try again later.');
+            if ($request->page_name === 'vehicleDetailPage') {
+                return redirect()->back()->with('error', 'There was an error sending your enquiry: ' . $e->getMessage());
+            } else {
+                return redirect('/contact')->with('error', 'There was an error sending your message: ' . $e->getMessage());
+            }
         }
     }
 
