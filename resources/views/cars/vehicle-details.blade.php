@@ -271,16 +271,7 @@
                                 <div class="car-price text-end">
                                     <span class="price-val d-block fs-special fs-2 fw-bold text-body-emphasis text-primary custom-color">$95,000</span>
                                     <div class="d-flex flex-grow-1 align-items-center justify-content-end">
-                                        <span class="price-val-extra text-body-secondary fs-xs border bg-body rounded-pill px-2 pe-1 lh-lg d-flex align-items-center position-relative">$4,245/m
-                                            <a tabindex="0" class="ps-1 lh-sm link-secondary stretched-link popover-dismiss" role="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="focus" data-bs-title="Monthly Payment" data-bs-content="Estimated monthly payment based on loan amount, payment term, trade in value and expected taxes.">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-circle" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
-                                                    <path d="M12 9h.01"></path>
-                                                    <path d="M11 12h1v4h1"></path>
-                                                </svg>
-                                            </a>
-                                        </span>
+
                                         <button type="button" class="btn btn-warning btn-sm ms-2 fs-xs" data-bs-toggle="modal" data-bs-target="#addOfferModal">Make an Offer</button>
                                     </div>
                                 </div>
@@ -564,37 +555,6 @@
                             <div class="card-body">
                                 <div class="container p-0">
                                     <div class="row row-cols-1 g-2">
-                                        <div class="col">
-                                            <button type="button" class="btn btn-warning w-100 d-flex justify-content-start align-items-center rounded-1" data-bs-toggle="modal" data-bs-target="#reserveVehicle">
-                                                <span class="me-3">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-address-book" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                        <path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z"></path>
-                                                        <path d="M10 16h6"></path>
-                                                        <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                        <path d="M4 8h3"></path>
-                                                        <path d="M4 12h3"></path>
-                                                        <path d="M4 16h3"></path>
-                                                    </svg>
-                                                </span>
-                                                <span class="">Reserve Vehicle</span>
-                                            </button>
-                                        </div>
-                                        <div class="col">
-                                            <button type="button" class="btn btn-warning w-100 d-flex justify-content-start align-items-center rounded-1" data-bs-toggle="modal" data-bs-target="#bookTestdrive">
-                                                <span class="me-3">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-steering-wheel" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                                                        <path d="M12 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                        <path d="M12 14l0 7"></path>
-                                                        <path d="M10 12l-6.75 -2"></path>
-                                                        <path d="M14 12l6.75 -2"></path>
-                                                    </svg>
-                                                </span>
-                                                <span class="">Book Test Drive</span>
-                                            </button>
-                                        </div>
                                         <div class="col">
                                             <button type="button" class="btn btn-warning w-100 d-flex justify-content-start align-items-center rounded-1" data-bs-toggle="modal" data-bs-target="#sendEnquiry">
                                                 <span class="me-3">
