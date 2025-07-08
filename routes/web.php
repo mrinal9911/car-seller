@@ -34,9 +34,10 @@ Route::post('/post-contact', [CarController::class, 'postContactUs']);
 Route::get('/vehicles', [CarController::class, 'vehicleList']);
 Route::get('/vehicle-details', [CarController::class, 'vehicleDetails']);
 
-Route::get('/account-listing', [CarController::class, 'accountListing']);
-Route::get('/add-listing', [CarController::class, 'addListing']);
-
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', [CarController::class, 'dashboard'])->name('dashboard');
+    Route::get('/add-listing', [CarController::class, 'addListing']);
+});
 /**
  * | CRUD of Enquiry
  */
@@ -49,7 +50,7 @@ Route::controller(EnquiryController::class)->prefix('enquiry')->group(function (
 
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/dashboard', [CarController::class, 'dashboard'])->name('dashboard');
+    // Route::get('/dashboard', [CarController::class, 'dashboard'])->name('dashboard');
     Route::post('/car/store', [CarController::class, 'store']);
 });
 

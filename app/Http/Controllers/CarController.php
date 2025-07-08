@@ -36,11 +36,11 @@ class CarController extends Controller
         return view('cars.show', compact('car'));
     }
 
-    public function dashboard()
-    {
-        $cars = auth()->user()->cars()->with('images')->latest()->get();
-        return view('cars.dashboard', compact('cars'));
-    }
+    // public function dashboard()
+    // {
+    //     $cars = auth()->user()->cars()->with('images')->latest()->get();
+    //     return view('cars.dashboard', compact('cars'));
+    // }
 
     public function create()
     {
@@ -133,7 +133,7 @@ class CarController extends Controller
         return view('cars.vehicle-details');
     }
 
-    public function accountListing()
+    public function dashboard()
     {
         return view('cars.account-listing');
     }
