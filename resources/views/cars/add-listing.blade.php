@@ -56,6 +56,14 @@ Add Listing
                                                         <div class="row row-cols-sm-2 row-cols-md-3">
 
 
+                                                            <!-- Listing Name -->
+                                                            <div class="mb-3">
+                                                                <label for="listing-name" class="form-label fw-semibold fs-special mb-1">Car Title/Name</label>
+                                                                <input type="text" class="form-control custom-color" id="listing-name" name="listing-name">
+                                                            </div>
+                                                            <!-- END Listing name -->
+
+
                                                             <!-- Listing brand -->
                                                             <div class="mb-3">
                                                                 <label for="listing-brand" class="form-label fw-semibold fs-special mb-1">Brand</label>
@@ -120,12 +128,8 @@ Add Listing
                                                             <!-- Listing model -->
                                                             <div class="mb-3">
                                                                 <label for="listing-model" class="form-label fw-semibold fs-special mb-1">Model</label>
-                                                                <select id="listing-model" name="listing-model" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select model">
-                                                                    <option selected>Select</option>
+                                                                <input type="text" class="form-control custom-color" id="listing-model" name="listing-model">
 
-
-
-                                                                </select>
                                                             </div>
                                                             <!-- END Listing model -->
 
@@ -203,6 +207,29 @@ Add Listing
                                                             <!-- END Listing fuel -->
 
 
+                                                            <!-- Listing Color -->
+                                                            <div class="mb-3">
+                                                                <label for="listing-color" class="form-label fw-semibold fs-special mb-1">Color</label>
+                                                                <select id="listing-color" name="listing-color" class="form-select custom-color text-dark-emphasis rounded-1">
+                                                                    <option selected>Select</option>
+                                                                    <option value="White">White</option>
+                                                                    <option value="Black">Black</option>
+                                                                    <option value="Silver">Silver</option>
+                                                                    <option value="Gray">Gray</option>
+                                                                    <option value="Red">Red</option>
+                                                                    <option value="Blue">Blue</option>
+                                                                    <option value="Green">Green</option>
+                                                                    <option value="Yellow">Yellow</option>
+                                                                    <option value="Brown">Brown</option>
+                                                                    <option value="Orange">Orange</option>
+                                                                    <option value="Maroon">Maroon</option>
+                                                                    <option value="Gold">Gold</option>
+                                                                    <option value="Beige">Beige</option>
+                                                                </select>
+                                                            </div>
+                                                            <!-- END Listing Color -->
+
+
                                                             <!-- Listing engine -->
                                                             <div class="mb-3">
                                                                 <label for="listing-engine" class="form-label fw-semibold fs-special mb-1">Engine</label>
@@ -238,20 +265,6 @@ Add Listing
                                                             <!-- END Listing power -->
 
 
-                                                            <!-- Listing vin -->
-                                                            <div class="mb-3">
-                                                                <label for="listing-vin" class="form-label fw-semibold fs-special mb-1">VIN/Chassis Number</label>
-                                                                <input type="text" class="form-control custom-color" id="listing-vin" name="listing-vin">
-                                                            </div>
-                                                            <!-- END Listing vin -->
-
-                                                            <!-- Listing Name -->
-                                                            <div class="mb-3">
-                                                                <label for="listing-name" class="form-label fw-semibold fs-special mb-1">Name</label>
-                                                                <input type="text" class="form-control custom-color" id="listing-name" name="listing-name">
-                                                            </div>
-                                                            <!-- END Listing name -->
-
                                                         </div>
                                                     </div>
                                                 </div>
@@ -277,11 +290,23 @@ Add Listing
                                                                 <label for="listing-reg-year" class="form-label fw-semibold fs-special mb-1">Registration Year</label>
                                                                 <select id="listing-reg-year" name="listing-reg-year" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select year of registration">
                                                                     <option selected>Select</option>
-
-
                                                                 </select>
                                                             </div>
                                                             <!-- END Listing reg-year -->
+
+                                                            <!-- Script to populate registration year -->
+                                                            <script>
+                                                                const select = document.getElementById('listing-reg-year');
+                                                                const currentYear = new Date().getFullYear();
+                                                                const startYear = 2000;
+
+                                                                for (let year = currentYear; year >= startYear; year--) {
+                                                                    const option = document.createElement('option');
+                                                                    option.value = year;
+                                                                    option.textContent = year;
+                                                                    select.appendChild(option);
+                                                                }
+                                                            </script>
 
 
                                                             <!-- Listing reg-month -->
@@ -295,26 +320,35 @@ Add Listing
                                                             </div>
                                                             <!-- END Listing reg-month -->
 
+                                                            <!-- Script to populate registration month -->
+                                                            <script>
+                                                                const monthSelect = document.getElementById('listing-reg-month');
+                                                                const months = [
+                                                                    "January", "February", "March", "April", "May", "June",
+                                                                    "July", "August", "September", "October", "November", "December"
+                                                                ];
 
-                                                            <!-- Listing drive-type -->
+                                                                months.forEach((month, index) => {
+                                                                    const option = document.createElement('option');
+                                                                    option.value = index + 1; // 1 for Jan, 12 for Dec
+                                                                    option.textContent = month;
+                                                                    monthSelect.appendChild(option);
+                                                                });
+                                                            </script>
+
+
+                                                            <!-- Listing ownership-type -->
                                                             <div class="mb-3">
-                                                                <label for="listing-drive-type" class="form-label fw-semibold fs-special mb-1">Drive Type</label>
-                                                                <select id="listing-drive-type" name="listing-drive-type" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select drive type">
+                                                                <label for="listing-ownership-type" class="form-label fw-semibold fs-special mb-1">Ownership Type</label>
+                                                                <select id="listing-ownership-type" name="listing-ownership-type" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select ownership type">
                                                                     <option selected>Select</option>
-
-
-                                                                    <option value="FWD">FWD</option>
-
-                                                                    <option value="RWD">RWD</option>
-
-                                                                    <option value="AWD">AWD</option>
-
-                                                                    <option value="4WD">4WD</option>
-
-
+                                                                    <option value="First">First Owner</option>
+                                                                    <option value="Second">Second Owner</option>
+                                                                    <option value="Third">Third Owner</option>
+                                                                    <option value="Fourth or more">Fourth or more Owner</option>
                                                                 </select>
                                                             </div>
-                                                            <!-- END Listing drive-type -->
+                                                            <!-- END Listing ownership-type -->
 
 
                                                             <!-- Listing condition -->
@@ -323,10 +357,9 @@ Add Listing
                                                                 <select id="listing-condition" name="listing-condition" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select condition">
                                                                     <option selected>Select</option>
 
+                                                                    <option value="clean">No Accident History</option>
 
-                                                                    <option value="New">New</option>
-
-                                                                    <option value="Used">Used</option>
+                                                                    <option value="restored">Restored After Accident</option>
 
 
                                                                 </select>
@@ -476,14 +509,14 @@ Add Listing
                                     </div>
 
                                     <div class="col-12">
-                                        <div class="accordion mb-4" id="listing-360-view-accordion">
+                                        <div class="accordion mb-4" id="listing-main-view-accordion">
                                             <div class="accordion-item mb-2 border rounded overflow-hidden">
                                                 <h2 class="accordion-header">
-                                                    <button class="accordion-button bg-light-subtle custom-color fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#listing-360-view" aria-expanded="true" aria-controls="listing-360-view">
-                                                        Listing 360 View Images
+                                                    <button class="accordion-button bg-light-subtle custom-color fs-5 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#listing-main-view" aria-expanded="true" aria-controls="listing-main-view">
+                                                        Listing Main View Images
                                                     </button>
                                                 </h2>
-                                                <div id="listing-360-view" class="accordion-collapse collapse show" data-bs-parent="#listing-360-view-accordion">
+                                                <div id="listing-main-view" class="accordion-collapse collapse show" data-bs-parent="#listing-main-view-accordion">
                                                     <div class="accordion-body">
 
                                                         <div class="form-text w-100 mn-2">
@@ -492,12 +525,12 @@ Add Listing
 
                                                         <div class="row row-cols-auto g-3 justify-content-center py-4 pt-2 my-2 mb-0 pb-0">
 
-                                                            <div class="upload-container-360 w-100 custom-color">
-                                                                <div id="drag-drop-area-360" class="drag-drop-area-360 bg-body-tertiary rounded border border-2 cursor-pointer text-secondary p-5 fs-6">
+                                                            <div class="upload-container-main w-100 custom-color">
+                                                                <div id="drag-drop-area-main" class="drag-drop-area-main bg-body-tertiary rounded border border-2 cursor-pointer text-secondary p-5 fs-6">
                                                                     <p class="m-0">Drag and drop images here or click to select files</p>
-                                                                    <input class="d-none" type="file" id="file-input" name="images-360" multiple accept="image/*">
+                                                                    <input class="d-none" type="file" id="file-input" name="images-main" multiple accept="image/*">
                                                                 </div>
-                                                                <div id="gallery-360" class="gallery-360 d-flex flex-wrap justify-content-center position-relative gap-2 p-4"></div>
+                                                                <div id="gallery-main" class="gallery-main d-flex flex-wrap justify-content-center position-relative gap-2 p-4"></div>
                                                             </div>
 
                                                         </div>
