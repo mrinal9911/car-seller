@@ -167,139 +167,734 @@ Home
 
     <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" style="background-color: var(--bs-primary); background-image: ; opacity: 0.04"></span>
 
-    <div class="container position-relative col-xxl-8 py-5 px-3 px-sm-0">
-      <h2 class="fs-5 text-uppercase pb-3 mb-4 custom-color ">Browse by Brand</h2>
-      <div class="browse-brands-carousel owl-carousel owl-theme" data-loop="false" data-nav="true" data-dots="true" data-autoplay="false">
+      <div class="container position-relative col-xxl-8 py-5 px-3 px-sm-0">
+        <h2 class="fs-5 text-uppercase pb-3 mb-4 custom-color ">Browse by Brand</h2>
+        <div class="browse-brands-carousel owl-carousel owl-theme" data-loop="false" data-nav="true" data-dots="false" data-autoplay="false">
 
 
 
-        <!-- Brand Item -->
-        <div class="item">
-          <div class="card border bg-light-subtle border-light-subtle">
-            <div class="card-body d-flex flex-column align-items-center">
-              <h5 class="card-title fw-bold fs-6 fs-special">Abarth</h5>
-              <p class="card-text">
-              <div class="car-brand-logo overflow-hidden">
-                <div style="--car-brand-logo: url(../images/brand-logo/abarth.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                <a href="javascript:void(0)" class="stretched-link"></a>
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Alfa Romeo</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/alfaromeo.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
               </div>
-              </p>
-            </div>
-            <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-              <strong>8</strong> Offers Available
             </div>
           </div>
-        </div>
-        <!-- END Brand Item -->
+          <!-- END Brand Item -->
 
 
 
-        <!-- Brand Item -->
-        <div class="item">
-          <div class="card border bg-light-subtle border-light-subtle">
-            <div class="card-body d-flex flex-column align-items-center">
-              <h5 class="card-title fw-bold fs-6 fs-special">Acura</h5>
-              <p class="card-text">
-              <div class="car-brand-logo overflow-hidden">
-                <div style="--car-brand-logo: url(../images/brand-logo/acura.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                <a href="javascript:void(0)" class="stretched-link"></a>
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Aston Martin</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/astonmartin.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
               </div>
-              </p>
-            </div>
-            <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-              <strong>2</strong> Offers Available
             </div>
           </div>
-        </div>
-        <!-- END Brand Item -->
+          <!-- END Brand Item -->
 
 
 
-        <!-- Brand Item -->
-        <div class="item">
-          <div class="card border bg-light-subtle border-light-subtle">
-            <div class="card-body d-flex flex-column align-items-center">
-              <h5 class="card-title fw-bold fs-6 fs-special">Alfa Romeo</h5>
-              <p class="card-text">
-              <div class="car-brand-logo overflow-hidden">
-                <div style="--car-brand-logo: url(../images/brand-logo/alfa-romeo.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                <a href="javascript:void(0)" class="stretched-link"></a>
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Audi</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/audi.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
               </div>
-              </p>
-            </div>
-            <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-              <strong>8</strong> Offers Available
             </div>
           </div>
-        </div>
-        <!-- END Brand Item -->
+          <!-- END Brand Item -->
 
 
 
-        <!-- Brand Item -->
-        <div class="item">
-          <div class="card border bg-light-subtle border-light-subtle">
-            <div class="card-body d-flex flex-column align-items-center">
-              <h5 class="card-title fw-bold fs-6 fs-special">Alpina</h5>
-              <p class="card-text">
-              <div class="car-brand-logo overflow-hidden">
-                <div style="--car-brand-logo: url(../images/brand-logo/alpina.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                <a href="javascript:void(0)" class="stretched-link"></a>
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Bentley</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/bentley.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
               </div>
-              </p>
-            </div>
-            <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-              <strong>8</strong> Offers Available
             </div>
           </div>
-        </div>
-        <!-- END Brand Item -->
+          <!-- END Brand Item -->
 
 
 
-        <!-- Brand Item -->
-        <div class="item">
-          <div class="card border bg-light-subtle border-light-subtle">
-            <div class="card-body d-flex flex-column align-items-center">
-              <h5 class="card-title fw-bold fs-6 fs-special">Aston Martin</h5>
-              <p class="card-text">
-              <div class="car-brand-logo overflow-hidden">
-                <div style="--car-brand-logo: url(../images/brand-logo/aston-martin.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                <a href="javascript:void(0)" class="stretched-link"></a>
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">BMW</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/bmw.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
               </div>
-              </p>
-            </div>
-            <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-              <strong>15</strong> Offers Available
             </div>
           </div>
-        </div>
-        <!-- END Brand Item -->
+          <!-- END Brand Item -->
 
 
 
-        <!-- Brand Item -->
-        <div class="item">
-          <div class="card border bg-light-subtle border-light-subtle">
-            <div class="card-body d-flex flex-column align-items-center">
-              <h5 class="card-title fw-bold fs-6 fs-special">Audi</h5>
-              <p class="card-text">
-              <div class="car-brand-logo overflow-hidden">
-                <div style="--car-brand-logo: url(../images/brand-logo/audi.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                <a href="javascript:void(0)" class="stretched-link"></a>
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Bugatti</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/bugatti.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
               </div>
-              </p>
-            </div>
-            <div class="card-footer text-body-secondary text-primary custom-color text-center text-uppercase fs-sm">
-              <strong>3</strong> Offers Available
             </div>
           </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Chevrolet</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/chevrolet.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Chrysler</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/chrysler.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Citroen</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/citroen.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Ferrari</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/ferrari.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Fiat</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/fiat.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Ford</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/ford.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">GMC</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/gmc.svg)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Honda</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/honda.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Hyundai</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/hyundai.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Infiniti</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/infiniti.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Jaguar</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/jaguar.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Jeep</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/jeep.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Kia</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/kia.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Lamborghini</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/lamborghini.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Land Rover</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/landrover.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Maserati</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/maserati.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Mazda</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/mazda.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">McLaren</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/mclaren.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Mercedes-Benz</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/mercedes.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">MINI</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/mini.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Mitsubishi</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/mitsubishi.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Nissan</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/nissan.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Opel</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/opel.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Peugeot</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/peugeot.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Porsche</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/porsche.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Renault</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/renault.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Rolls Royce</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/rollsroyce.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Subaru</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/subaru.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Suzuki</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/suzuki.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Tesla</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/tesla.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Toyota</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/toyota.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Vauxhall</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/vauxhall.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Volkswagen</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/volkswagen.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
+          <!-- Brand Item -->
+          <div class="item">
+            <div class="card border border-light-subtle">
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title fw-bold fs-6 fs-special">Volvo</h5>
+                <p class="card-text">
+                <div class="car-brand-img overflow-hidden position-relative">
+                  <div style="--car-brand-icon: url(../icons/brands/volvo.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                  <a href="javascript:void(0)" class="stretched-link"></a>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END Brand Item -->
+
+
+
         </div>
-        <!-- END Brand Item -->
-
-
       </div>
-    </div>
 
   </section>
   <!-- END Browse by brand logo -->
@@ -2874,3 +3469,14 @@ Home
 </main>
 <!-- END Main -->
 @endsection
+
+ @section('page-src')
+    <!-- Owl Carousel plugin -->
+    <script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
+    <!-- Magnific Popup plugin -->
+    <script src="libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <!-- Judo Spin plugin -->
+    <script src="libs/judo-spin/dist/js/judo-spin.min.js"></script>
+    <!-- Plyr plugin -->
+    <script src="libs/plyr/dist/plyr.min.js"></script>
+     @endsection
