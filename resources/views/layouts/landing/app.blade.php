@@ -353,14 +353,6 @@
     <!-- jQuery -->
     <script src="libs/jquery/dist/jquery.min.js"></script>
 
-
-
-
-
-
-
-
-
     <!-- jQuery Lazy plugin -->
     <script src="libs/jquery-lazy/jquery.lazy.min.js"></script>
 
@@ -380,8 +372,9 @@
     <!-- Main JavaScript -->
     <script src="js/script.min.js"></script>
 
-
     <script src="switcher/switcher.min.js"></script>
+
+    @yield('page-src')
 
     <!-- END Scripts -->
 </body>
