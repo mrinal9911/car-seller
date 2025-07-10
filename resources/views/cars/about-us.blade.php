@@ -20,25 +20,6 @@ About Us
             <h3 class="h3 mb-3 mb-lg-0">About Us</h3>
         </div>
 
-        <div class="order-lg-2 mb-0">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start m-0 fs-sm">
-                    <li class="breadcrumb-item">
-                        <a class="link-body-emphasis text-nowrap link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-50-hover" href="index-2.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home mt-n1-sm me-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
-                                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
-                                <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
-                            </svg>Home
-                        </a>
-                    </li>
-
-                    <li class="breadcrumb-item text-nowrap active" aria-current="page">About</li>
-
-                </ol>
-            </nav>
-        </div>
     </div>
 </div>
 <!-- END Breadcrumb Style 1 -->
@@ -60,7 +41,7 @@ About Us
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                <img class="img-fluid object-fit-cover lazy" data-src="./images/yard.jpg" alt="Our Showroom">
+                <img class="img-fluid object-fit-cover lazy" data-src="https://www.themecrest.top/templates/carmart/demo/images/yard.jpg" alt="Our Showroom">
             </div>
         </div>
     </div>
