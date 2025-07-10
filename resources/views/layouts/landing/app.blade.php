@@ -171,9 +171,9 @@
                             <!-- <li class="nav-item">
                                 <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">New</a>
                             </li> -->
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Sold</a>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
                                 <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">About</a>
                             </li>

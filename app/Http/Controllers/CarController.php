@@ -184,6 +184,11 @@ class CarController extends Controller
         return view('cars.vehicle-details');
     }
 
+    public function aboutUs()
+    {
+        return view('cars.about-us');
+    }
+
     public function dashboard()
     {
         return view('cars.account-listing');

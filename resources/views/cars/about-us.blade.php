@@ -1,7 +1,7 @@
 @extends('layouts.landing.app')
 
 @section('title')
-Contact Us
+About Us
 @endsection
 
 @section('page-content')
@@ -17,122 +17,93 @@ Contact Us
     <div class="container d-lg-flex position-relative z-1 justify-content-between align-items-center py-2 py-lg-3">
 
         <div class="order-lg-1 pe-lg-4 text-center text-lg-start">
-            <h3 class="h3 mb-3 mb-lg-0">Contact Us</h3>
+            <h3 class="h3 mb-3 mb-lg-0">About Us</h3>
+        </div>
+
+        <div class="order-lg-2 mb-0">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start m-0 fs-sm">
+                    <li class="breadcrumb-item">
+                        <a class="link-body-emphasis text-nowrap link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-50-hover" href="index-2.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home mt-n1-sm me-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+                                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                                <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+                            </svg>Home
+                        </a>
+                    </li>
+
+                    <li class="breadcrumb-item text-nowrap active" aria-current="page">About</li>
+
+                </ol>
+            </nav>
         </div>
     </div>
 </div>
 <!-- END Breadcrumb Style 1 -->
 
+
 <!-- Main -->
 <main>
 
-    <div class="bg-body">
-        <div class="container col-xxl-8 py-5 p-0 px-3 px-sm-0">
-            <div class="row g-5">
+    <div class="container col-xxl-8 py-5">
+        <div class="row g-4">
+            <div class="col-12 col-md-6">
+                <div class="pe-4">
+                    <h2 class="fs-5 text-uppercase mb-3 custom-color">About Us</h2>
+                    <p>Welcome to CarMart, where passion meets precision on the road. At CarMart, we are more than just a dealership; we are automotive enthusiasts dedicated to delivering unparalleled driving adventures. Our commitment to excellence extends beyond the vehicles we offer - it's embedded in our culture. </p>
 
-                <div class="col-md-6">
+                    <p>As avid automotive enthusiasts, we've crafted a haven for fellow car connoisseurs and seekers of driving exhilaration. We transcend the ordinary, curating an immersive experience that celebrates the artistry, innovation, and sheer thrill of the automotive world.</p>
 
-                    <h3 class="fs-5 mb-4 custom-color">Send Us A Message</h3>
-
-                    <!-- Contact Us Form -->
-                    <form id="contact-us-form" action="{{ url('post-contact') }}" method="POST">
-                        @csrf
-                        <div class=" mb-3">
-                            <label for="user-title" class="form-label fw-bold">Title</label>
-                            <select class="form-select custom-color text-dark-emphasis rounded-1" name="userSalutation" aria-label="Select your title and salutation">
-                                <option selected>Select title</option>
-                                <option value="mr">Mr</option>
-                                <option value="mrs">Mrs</option>
-                                <option value="miss">Miss</option>
-                                <option value="sir">Sir</option>
-                            </select>
-                        </div>
-                        <div class="row">
-                            <div class="mb-3 col-md-6">
-                                <label for="user-name" class="form-label fw-bold">Name</label>
-                                <input type="text" class="form-control custom-color" id="user-name" name="userName">
-                            </div>
-                            <div class="mb-3 col-md-6">
-                                <label for="user-phone" class="form-label fw-bold">Phone <span class="text-secondary fs-sm">(Optional)</span>
-                                </label>
-                                <input type="text" class="form-control custom-color" id="user-phone" name="userPhone">
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="user-email" class="form-label fw-bold">Email</label>
-                            <input type="email" class="form-control custom-color" id="user-email" name="userEmail" aria-describedby="contactEmailHelp">
-                            <div id="contactEmailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="user-message" class="form-label fw-bold">Message</label>
-                            <textarea class="form-control custom-color" id="user-message" name="message" rows="3"></textarea>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input custom-color" id="confirm-terms" name="confirm-terms" checked>
-                            <label class="form-check-label text-body-secondary" for="confirm-terms">I agree to <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="terms-of-service.html">Terms of Service</a> and <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="privacy-policy.html">Privacy Policy</a>
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Submit</button>
-                    </form>
-                    <!-- END Contact Us Form -->
-
+                    <p>Join us as we navigate the highways of style, performance, and cutting-edge technology, steering towards a horizon of automotive excellence. Drive with us, where the journey is as extraordinary as the destination.</p>
                 </div>
-
-                <div class="col-md-6">
-
-                    <h3 class="fs-5 mb-4 custom-color">Contact Information</h3>
-
-                    <h4 class="fs-sm text-muted text-uppercase">Address</h4>
-                    <div class="mb-4 fs-special fs-6">
-                        CarMart
-                        <br>
-                        Automotive Street
-                        <br>
-                        77 McKinney, Texas
-                    </div>
-
-                    <h4 class="fs-sm text-muted text-uppercase">Phone</h4>
-                    <div class="mb-4 fs-special fs-6">
-                        +1 800 123 4567
-                        <br>
-                        +1 800 765 4321
-                    </div>
-
-                    <h4 class="fs-sm text-muted text-uppercase">Email</h4>
-                    <div class="mb-4 fs-special fs-6">
-                        info@carmartsite.com
-                        <br>
-                        sales@carmartsite.com
-                        <br>
-                        support@carmartsite.com
-                    </div>
-
-                    <h4 class="fs-sm text-muted text-uppercase">Opening Times</h4>
-                    <div class="mb-4 fs-special fs-6">
-                        Monday - Friday 9.00AM to 6.00PM
-                        <br>
-                        Saturday - 10.00AM to 5.00PM
-                        <br>
-                        Sunday - Please call us to book appointment
-                    </div>
-
-                </div>
-
+            </div>
+            <div class="col-12 col-md-6">
+                <img class="img-fluid object-fit-cover lazy" data-src="./images/yard.jpg" alt="Our Showroom">
             </div>
         </div>
     </div>
 
+    <!-- Counters -->
+    <section class="stats-counter border-top border-bottom position-relative custom-color
+            
+            ">
 
 
+        <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" style="background-color: ; background-image: ; opacity: "></span>
 
+        <div class="container">
+            <div class="row row-cols-lg-4 row-cols-2 g-0 fs-special py-5">
 
+                <div class="d-flex flex-column align-items-center text-center position-relative my-4">
+                    <span class="fw-semibold fs-3">44,785</span>
+                    <span class="text-muted text-uppercase">Cars Sold</span>
+                    <div class="vr h-100 position-absolute end-0 top-0 opacity-15"></div>
+                </div>
 
+                <div class="d-flex flex-column align-items-center text-center position-relative my-4">
+                    <span class="fw-semibold fs-3">39,687</span>
+                    <span class="text-muted text-uppercase">Happy Customers</span>
+                    <div class="vr h-100 position-absolute end-0 top-0 opacity-15 d-none d-lg-block"></div>
+                </div>
 
+                <div class="d-flex flex-column align-items-center text-center position-relative my-4">
+                    <span class="fw-semibold fs-3">32,650</span>
+                    <span class="text-muted text-uppercase">Positive Reviews</span>
+                    <div class="vr h-100 position-absolute end-0 top-0 opacity-15"></div>
+                </div>
 
+                <div class="d-flex flex-column align-items-center text-center position-relative my-4">
+                    <span class="fw-semibold fs-3">79</span>
+                    <span class="text-muted text-uppercase">Awards Received</span>
+                </div>
 
+            </div>
+        </div>
 
-
-
+    </section>
+    <!-- END Counters -->
 
 
 
@@ -302,5 +273,6 @@ Contact Us
 
 
 </main>
+<!-- END Main -->
 <!-- END Main -->
 @endsection

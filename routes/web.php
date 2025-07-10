@@ -34,6 +34,9 @@ Route::post('/post-contact', [CarController::class, 'postContactUs']);
 Route::get('/vehicles', [CarController::class, 'vehicleList']);
 Route::get('/vehicle-details', [CarController::class, 'vehicleDetails']);
 
+Route::get('/about', [CarController::class, 'aboutUs']);
+
+
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [CarController::class, 'dashboard'])->name('dashboard');
     Route::get('/add-listing', [CarController::class, 'addListing']);
