@@ -37,7 +37,8 @@ Add Listing
                 <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-12 g-4">
 
                     <!-- Add Listing -->
-                    <form id="add-listing-form" class="w-100 submit-listing-form" action="#">
+                    <form id="add-listing-form" class="w-100 submit-listing-form" action="{{ url('car/store') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
 
                         <div class="row">
                             <div class="col-lg-9">
@@ -58,16 +59,16 @@ Add Listing
 
                                                             <!-- Listing Name -->
                                                             <div class="mb-3">
-                                                                <label for="listing-name" class="form-label fw-semibold fs-special mb-1">Car Title/Name</label>
-                                                                <input type="text" class="form-control custom-color" id="listing-name" name="listing-name">
+                                                                <label for="title" class="form-label fw-semibold fs-special mb-1">Car Title/Name</label>
+                                                                <input type="text" class="form-control custom-color" id="title" name="title">
                                                             </div>
                                                             <!-- END Listing name -->
 
 
                                                             <!-- Listing brand -->
                                                             <div class="mb-3">
-                                                                <label for="listing-brand" class="form-label fw-semibold fs-special mb-1">Brand</label>
-                                                                <select id="listing-brand" name="listing-brand" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select brand">
+                                                                <label for="brand" class="form-label fw-semibold fs-special mb-1">Brand</label>
+                                                                <select id="brand" name="brand" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select brand">
                                                                     <option selected>Select</option>
 
                                                                     <option value="Audi">Audi</option>
@@ -127,8 +128,8 @@ Add Listing
 
                                                             <!-- Listing model -->
                                                             <div class="mb-3">
-                                                                <label for="listing-model" class="form-label fw-semibold fs-special mb-1">Model</label>
-                                                                <input type="text" class="form-control custom-color" id="listing-model" name="listing-model">
+                                                                <label for="model" class="form-label fw-semibold fs-special mb-1">Model</label>
+                                                                <input type="text" class="form-control custom-color" id="model" name="model">
 
                                                             </div>
                                                             <!-- END Listing model -->
@@ -136,8 +137,8 @@ Add Listing
 
                                                             <!-- Listing body -->
                                                             <div class="mb-3">
-                                                                <label for="listing-body" class="form-label fw-semibold fs-special mb-1">Body</label>
-                                                                <select id="listing-body" name="listing-body" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select body">
+                                                                <label for="bodyType" class="form-label fw-semibold fs-special mb-1">Body</label>
+                                                                <select id="bodyType" name="bodyType" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select body">
                                                                     <option selected>Select</option>
 
 
@@ -166,8 +167,8 @@ Add Listing
 
                                                             <!-- Listing transmission -->
                                                             <div class="mb-3">
-                                                                <label for="listing-transmission" class="form-label fw-semibold fs-special mb-1">Transmission</label>
-                                                                <select id="listing-transmission" name="listing-transmission" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select transmission">
+                                                                <label for="transmission" class="form-label fw-semibold fs-special mb-1">Transmission</label>
+                                                                <select id="transmission" name="transmission" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select transmission">
                                                                     <option selected>Select</option>
 
 
@@ -185,8 +186,8 @@ Add Listing
 
                                                             <!-- Listing fuel -->
                                                             <div class="mb-3">
-                                                                <label for="listing-fuel" class="form-label fw-semibold fs-special mb-1">Fuel</label>
-                                                                <select id="listing-fuel" name="listing-fuel" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select fuel">
+                                                                <label for="fuelType" class="form-label fw-semibold fs-special mb-1">Fuel</label>
+                                                                <select id="fuelType" name="fuelType" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select fuel">
                                                                     <option selected>Select</option>
 
                                                                     <option value="petrol">Petrol</option>
@@ -209,8 +210,8 @@ Add Listing
 
                                                             <!-- Listing Color -->
                                                             <div class="mb-3">
-                                                                <label for="listing-color" class="form-label fw-semibold fs-special mb-1">Color</label>
-                                                                <select id="listing-color" name="listing-color" class="form-select custom-color text-dark-emphasis rounded-1">
+                                                                <label for="color" class="form-label fw-semibold fs-special mb-1">Color</label>
+                                                                <select id="color" name="color" class="form-select custom-color text-dark-emphasis rounded-1">
                                                                     <option selected>Select</option>
                                                                     <option value="White">White</option>
                                                                     <option value="Black">Black</option>
@@ -231,9 +232,9 @@ Add Listing
 
 
                                                             <!-- Listing engine -->
-                                                            <div class="mb-3">
-                                                                <label for="listing-engine" class="form-label fw-semibold fs-special mb-1">Engine</label>
-                                                                <select id="listing-engine" name="listing-engine" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select engine">
+                                                            <!-- <div class="mb-3">
+                                                                <label for="engine" class="form-label fw-semibold fs-special mb-1">Engine</label>
+                                                                <select id="engine" name="engine" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select engine">
                                                                     <option selected>Select</option>
 
 
@@ -253,14 +254,14 @@ Add Listing
 
 
                                                                 </select>
-                                                            </div>
+                                                            </div> -->
                                                             <!-- END Listing engine -->
 
 
                                                             <!-- Listing power -->
                                                             <div class="mb-3">
-                                                                <label for="listing-power" class="form-label fw-semibold fs-special mb-1">Power</label>
-                                                                <input type="text" class="form-control custom-color" id="listing-power" name="listing-power">
+                                                                <label for="engine" class="form-label fw-semibold fs-special mb-1">Engine (CC)</label>
+                                                                <input type="text" class="form-control custom-color" id="engine" name="engine">
                                                             </div>
                                                             <!-- END Listing power -->
 
@@ -287,8 +288,8 @@ Add Listing
 
                                                             <!-- Listing reg-year -->
                                                             <div class="mb-3">
-                                                                <label for="listing-reg-year" class="form-label fw-semibold fs-special mb-1">Registration Year</label>
-                                                                <select id="listing-reg-year" name="listing-reg-year" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select year of registration">
+                                                                <label for="regYear" class="form-label fw-semibold fs-special mb-1">Registration Year</label>
+                                                                <select id="regYear" name="regYear" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select year of registration">
                                                                     <option selected>Select</option>
                                                                 </select>
                                                             </div>
@@ -296,7 +297,7 @@ Add Listing
 
                                                             <!-- Script to populate registration year -->
                                                             <script>
-                                                                const select = document.getElementById('listing-reg-year');
+                                                                const select = document.getElementById('regYear');
                                                                 const currentYear = new Date().getFullYear();
                                                                 const startYear = 2000;
 
@@ -311,8 +312,8 @@ Add Listing
 
                                                             <!-- Listing reg-month -->
                                                             <div class="mb-3">
-                                                                <label for="listing-reg-month" class="form-label fw-semibold fs-special mb-1">Registration Month</label>
-                                                                <select id="listing-reg-month" name="listing-reg-month" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select month of registration">
+                                                                <label for="regMonth" class="form-label fw-semibold fs-special mb-1">Registration Month</label>
+                                                                <select id="regMonth" name="regMonth" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select month of registration">
                                                                     <option selected>Select</option>
 
 
@@ -322,7 +323,7 @@ Add Listing
 
                                                             <!-- Script to populate registration month -->
                                                             <script>
-                                                                const monthSelect = document.getElementById('listing-reg-month');
+                                                                const monthSelect = document.getElementById('regMonth');
                                                                 const months = [
                                                                     "January", "February", "March", "April", "May", "June",
                                                                     "July", "August", "September", "October", "November", "December"
@@ -339,8 +340,8 @@ Add Listing
 
                                                             <!-- Listing ownership-type -->
                                                             <div class="mb-3">
-                                                                <label for="listing-ownership-type" class="form-label fw-semibold fs-special mb-1">Ownership Type</label>
-                                                                <select id="listing-ownership-type" name="listing-ownership-type" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select ownership type">
+                                                                <label for="ownershipType" class="form-label fw-semibold fs-special mb-1">Ownership Type</label>
+                                                                <select id="ownershipType" name="ownershipType" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select ownership type">
                                                                     <option selected>Select</option>
                                                                     <option value="First">First Owner</option>
                                                                     <option value="Second">Second Owner</option>
@@ -353,13 +354,13 @@ Add Listing
 
                                                             <!-- Listing condition -->
                                                             <div class="mb-3">
-                                                                <label for="listing-condition" class="form-label fw-semibold fs-special mb-1">Condition</label>
-                                                                <select id="listing-condition" name="listing-condition" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select condition">
+                                                                <label for="condition" class="form-label fw-semibold fs-special mb-1">Condition</label>
+                                                                <select id="condition" name="condition" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select condition">
                                                                     <option selected>Select</option>
 
-                                                                    <option value="clean">No Accident History</option>
+                                                                    <option value="No Accident History">No Accident History</option>
 
-                                                                    <option value="restored">Restored After Accident</option>
+                                                                    <option value="Restored After Accident">Restored After Accident</option>
 
 
                                                                 </select>
@@ -369,25 +370,28 @@ Add Listing
 
                                                             <!-- Listing driven -->
                                                             <div class="mb-3">
-                                                                <label for="listing-driven" class="form-label fw-semibold fs-special mb-1">Driven(KM)</label>
-                                                                <input type="text" class="form-control custom-color" id="listing-driven" name="listing-driven">
+                                                                <label for="driven" class="form-label fw-semibold fs-special mb-1">Driven(KM)</label>
+                                                                <input type="text" class="form-control custom-color" id="driven" name="driven">
                                                             </div>
                                                             <!-- END Listing driven -->
 
 
                                                             <!-- Listing price -->
                                                             <div class="mb-3">
-                                                                <label for="listing-price" class="form-label fw-semibold fs-special mb-1">Price</label>
-                                                                <input type="text" class="form-control custom-color" id="listing-price" name="listing-price">
+                                                                <label for="price" class="form-label fw-semibold fs-special mb-1">Price</label>
+                                                                <input type="text" class="form-control custom-color" id="price" name="price">
                                                             </div>
                                                             <!-- END Listing price -->
 
 
                                                             <!-- Listing price-negotiable -->
                                                             <div class="mb-3 d-inline-flex align-items-end">
+                                                                <!-- Hidden input to submit false when checkbox is not checked -->
+                                                                <input type="hidden" name="isNegotiable" value="0">
+
                                                                 <div class="form-check d-flex align-items-top mb-1">
-                                                                    <input class="form-check-input custom-color" type="checkbox" id="listing-price-negotiable" name="listing-price-negotiable">
-                                                                    <label class="form-check-label" for="listing-price-negotiable">Price Negotiable</label>
+                                                                    <input class="form-check-input custom-color" type="checkbox" id="isNegotiable" name="isNegotiable" value="1">
+                                                                    <label class="form-check-label" for="isNegotiable">Price Negotiable</label>
                                                                 </div>
                                                             </div>
                                                             <!-- END Listing price-negotiable -->
@@ -395,8 +399,8 @@ Add Listing
 
                                                             <!-- Listing description -->
                                                             <div class="mb-2 w-100">
-                                                                <label for="listing-description" class="form-label fw-semibold fs-special mb-1">Description</label>
-                                                                <textarea class="form-control custom-color" id="listing-description" name="listing-description" rows="6"></textarea>
+                                                                <label for="description" class="form-label fw-semibold fs-special mb-1">Description</label>
+                                                                <textarea class="form-control custom-color" id="description" name="description" rows="6"></textarea>
                                                             </div>
                                                             <!-- END Listing description -->
 
@@ -418,90 +422,13 @@ Add Listing
                                                 <div id="listing-images" class="accordion-collapse collapse show" data-bs-parent="#listing-images-accordion">
                                                     <div class="accordion-body">
 
-                                                        <div class="form-text w-100 mn-2">
-                                                            Max file size is 5 MB. We accept PNG, JPG and JPEG.
+                                                        <div class="form-text mb-2">You can select multiple. PNG, JPG, JPEG. Max 5MB each.</div>
+
+                                                        <div class="mb-3">
+                                                            <input type="file" name="images[]" id="gallery_images_input" multiple accept="image/*" class="form-control">
                                                         </div>
 
-                                                        <div class="row row-cols-auto g-3 justify-content-center py-4 pt-2 my-2">
-
-                                                            <div class="text-dark-emphasis">
-                                                                <div class="image-upload d-flex flex-column justify-content-center align-items-center position-relative bg-body-tertiary rounded border border-2">
-                                                                    <input class="form-control custom-color" type="file" id="uploadImage9" name="uploadImage9" accept="image/*">
-                                                                    <span class="upload-icon"></span>
-                                                                    <span class="upload-text fs-xs fs-special text-uppercase mx-3 text-center mt-2">Upload Photo</span>
-                                                                    <div id="previewImage9">
-                                                                        <span class="remove-upload rounded-circle" role="button"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="text-dark-emphasis">
-                                                                <div class="image-upload d-flex flex-column justify-content-center align-items-center position-relative bg-body-tertiary rounded border border-2">
-                                                                    <input class="form-control custom-color" type="file" id="uploadImage10" name="uploadImage10" accept="image/*">
-                                                                    <span class="upload-icon"></span>
-                                                                    <span class="upload-text fs-xs fs-special text-uppercase mx-3 text-center mt-2">Upload Photo</span>
-                                                                    <div id="previewImage10">
-                                                                        <span class="remove-upload rounded-circle" role="button"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="text-dark-emphasis">
-                                                                <div class="image-upload d-flex flex-column justify-content-center align-items-center position-relative bg-body-tertiary rounded border border-2">
-                                                                    <input class="form-control custom-color" type="file" id="uploadImage11" name="uploadImage11" accept="image/*">
-                                                                    <span class="upload-icon"></span>
-                                                                    <span class="upload-text fs-xs fs-special text-uppercase mx-3 text-center mt-2">Upload Photo</span>
-                                                                    <div id="previewImage11">
-                                                                        <span class="remove-upload rounded-circle" role="button"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="text-dark-emphasis">
-                                                                <div class="image-upload d-flex flex-column justify-content-center align-items-center position-relative bg-body-tertiary rounded border border-2">
-                                                                    <input class="form-control custom-color" type="file" id="uploadImage12" name="uploadImage12" accept="image/*">
-                                                                    <span class="upload-icon"></span>
-                                                                    <span class="upload-text fs-xs fs-special text-uppercase mx-3 text-center mt-2">Upload Photo</span>
-                                                                    <div id="previewImage12">
-                                                                        <span class="remove-upload rounded-circle" role="button"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="text-dark-emphasis">
-                                                                <div class="image-upload d-flex flex-column justify-content-center align-items-center position-relative bg-body-tertiary rounded border border-2">
-                                                                    <input class="form-control custom-color" type="file" id="uploadImage13" name="uploadImage13" accept="image/*">
-                                                                    <span class="upload-icon"></span>
-                                                                    <span class="upload-text fs-xs fs-special text-uppercase mx-3 text-center mt-2">Upload Photo</span>
-                                                                    <div id="previewImage13">
-                                                                        <span class="remove-upload rounded-circle" role="button"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="text-dark-emphasis">
-                                                                <div class="image-upload d-flex flex-column justify-content-center align-items-center position-relative bg-body-tertiary rounded border border-2">
-                                                                    <input class="form-control custom-color" type="file" id="uploadImage14" name="uploadImage14" accept="image/*">
-                                                                    <span class="upload-icon"></span>
-                                                                    <span class="upload-text fs-xs fs-special text-uppercase mx-3 text-center mt-2">Upload Photo</span>
-                                                                    <div id="previewImage14">
-                                                                        <span class="remove-upload rounded-circle" role="button"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="text-dark-emphasis">
-                                                                <div class="image-upload d-flex flex-column justify-content-center align-items-center position-relative bg-body-tertiary rounded border border-2">
-                                                                    <input class="form-control custom-color" type="file" id="uploadImage15" name="uploadImage15" accept="image/*">
-                                                                    <span class="upload-icon"></span>
-                                                                    <span class="upload-text fs-xs fs-special text-uppercase mx-3 text-center mt-2">Upload Photo</span>
-                                                                    <div id="previewImage15">
-                                                                        <span class="remove-upload rounded-circle" role="button"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
+                                                        <div id="gallery_images_preview" class="d-flex flex-wrap gap-3"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -519,21 +446,13 @@ Add Listing
                                                 <div id="listing-main-view" class="accordion-collapse collapse show" data-bs-parent="#listing-main-view-accordion">
                                                     <div class="accordion-body">
 
-                                                        <div class="form-text w-100 mn-2">
-                                                            Max file size is 5 MB. We accept PNG, JPG and JPEG.
+                                                        <div class="form-text mb-2">Only one image. PNG, JPG, JPEG. Max 5MB.</div>
+
+                                                        <div class="mb-3">
+                                                            <input type="file" name="main_image" id="main_image_input" accept="image/*" class="form-control">
                                                         </div>
 
-                                                        <div class="row row-cols-auto g-3 justify-content-center py-4 pt-2 my-2 mb-0 pb-0">
-
-                                                            <div class="upload-container-main w-100 custom-color">
-                                                                <div id="drag-drop-area-main" class="drag-drop-area-main bg-body-tertiary rounded border border-2 cursor-pointer text-secondary p-5 fs-6">
-                                                                    <p class="m-0">Drag and drop images here or click to select files</p>
-                                                                    <input class="d-none" type="file" id="file-input" name="images-main" multiple accept="image/*">
-                                                                </div>
-                                                                <div id="gallery-main" class="gallery-main d-flex flex-wrap justify-content-center position-relative gap-2 p-4"></div>
-                                                            </div>
-
-                                                        </div>
+                                                        <div id="main_image_preview" class="mt-2"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -548,7 +467,8 @@ Add Listing
 
                                                 </div>
                                                 <div class="text-lg-end">
-                                                    <a href="add-listing-payment.html" role="button" class="btn btn-lg btn-primary custom-color fs-6 px-4 py-3 text-uppercase fw-bold text-spacing-md d-inline-flex align-content-center">
+                                                    <a href="#" role="button" onclick="submitListingForm(event)"
+                                                        class="btn btn-lg btn-primary custom-color fs-6 px-4 py-3 text-uppercase fw-bold text-spacing-md d-inline-flex align-content-center">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-device-floppy me-3">
                                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                                             <path d="M6 4h10l4 4v10a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2" />
@@ -793,5 +713,82 @@ Add Listing
 
 </main>
 <!-- END Main -->
+
+<script>
+    function submitListingForm(event) {
+        event.preventDefault(); // prevent anchor default navigation
+        document.getElementById('add-listing-form').submit();
+    }
+</script>
+
+<!-- Image Upload Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mainInput = document.getElementById('main_image_input');
+        const mainPreview = document.getElementById('main_image_preview');
+
+        const galleryInput = document.getElementById('gallery_images_input');
+        const galleryPreview = document.getElementById('gallery_images_preview');
+
+        // 🔸 Main Image Preview
+        mainInput.addEventListener('change', () => {
+            const file = mainInput.files[0];
+            mainPreview.innerHTML = ''; // Clear previous
+
+            if (file && file.type.startsWith('image/')) {
+                const reader = new FileReader();
+                reader.onload = e => {
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.style.width = '150px';
+                    img.style.height = '150px';
+                    img.style.objectFit = 'cover';
+                    img.className = 'rounded shadow-sm';
+                    mainPreview.appendChild(img);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // 🔸 Gallery Images Preview (Multiple)
+        galleryInput.addEventListener('change', () => {
+            const files = Array.from(galleryInput.files);
+            galleryPreview.innerHTML = ''; // Clear previous
+
+            files.forEach(file => {
+                if (!file.type.startsWith('image/')) return;
+
+                const reader = new FileReader();
+                reader.onload = e => {
+                    const wrapper = document.createElement('div');
+                    wrapper.className = 'position-relative';
+                    wrapper.style.width = '100px';
+
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.style.width = '100px';
+                    img.style.height = '100px';
+                    img.style.objectFit = 'cover';
+                    img.className = 'rounded shadow-sm';
+
+                    const removeBtn = document.createElement('button');
+                    removeBtn.innerHTML = '&times;';
+                    removeBtn.type = 'button';
+                    removeBtn.className = 'btn btn-sm btn-danger position-absolute top-0 end-0';
+                    removeBtn.style.borderRadius = '50%';
+                    removeBtn.style.width = '24px';
+                    removeBtn.style.height = '24px';
+                    removeBtn.style.padding = '0';
+                    removeBtn.onclick = () => wrapper.remove();
+
+                    wrapper.appendChild(img);
+                    wrapper.appendChild(removeBtn);
+                    galleryPreview.appendChild(wrapper);
+                };
+                reader.readAsDataURL(file);
+            });
+        });
+    });
+</script>
 
 @endsection

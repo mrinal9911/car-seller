@@ -37,6 +37,7 @@ Route::get('/vehicle-details', [CarController::class, 'vehicleDetails']);
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [CarController::class, 'dashboard'])->name('dashboard');
     Route::get('/add-listing', [CarController::class, 'addListing']);
+    Route::post('/car/store', [CarController::class, 'store']);
 });
 /**
  * | CRUD of Enquiry
@@ -51,7 +52,7 @@ Route::controller(EnquiryController::class)->prefix('enquiry')->group(function (
 
 Route::middleware(['auth'])->group(function () {
     // Route::get('/dashboard', [CarController::class, 'dashboard'])->name('dashboard');
-    Route::post('/car/store', [CarController::class, 'store']);
+    // Route::post('/car/store', [CarController::class, 'store']);
 });
 
 require __DIR__ . '/auth.php';

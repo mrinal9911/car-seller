@@ -13,17 +13,23 @@ return new class extends Migration
     {
         Schema::create('cars', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('title');
             $table->string('brand');
             $table->string('model');
-            $table->year('year');
-            $table->decimal('price', 10, 2);
-            $table->string('fuel_type');
+            $table->string('body_type');
             $table->string('transmission');
-            $table->integer('mileage');
+            $table->string('fuel_type');
+            $table->string('color');
+            $table->string('engine');
+            $table->unsignedTinyInteger('month');
+            $table->year('year');
+            $table->string('ownership_type');
+            $table->string('condition');
+            $table->integer('driven');
+            $table->decimal('price', 10, 2);
+            $table->unsignedTinyInteger('is_price_negotiable')->default(0);
+            $table->enum('status', ['published', 'sold', 'archived'])->default('published');
             $table->text('description');
-            $table->enum('status', ['pending', 'approved'])->default('pending');
             $table->timestamps();
         });
     }

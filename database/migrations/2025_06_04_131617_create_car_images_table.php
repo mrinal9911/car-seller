@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('car_id')->constrained()->onDelete('cascade');
             $table->string('image_path');
+            $table->tinyInteger('is_main')->default(false); // To indicate if this is the main image
             $table->timestamps();
         });
     }
