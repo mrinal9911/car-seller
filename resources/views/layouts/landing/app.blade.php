@@ -234,7 +234,7 @@
                         </div>
                         <p class="mb-4">Buy and drive your dream car from the most trusted automotive specialists.</p>
                         <p class="fw-bold fs-special mt-auto">
-                            &copy; 2024. All Rights Reserved.
+                            &copy; 2025. All Rights Reserved.
                         </p>
                     </div>
                 </div>
@@ -242,16 +242,10 @@
                     <h4 class="fs-6 text-uppercase fw-bold mb-3">Information</h4>
                     <ul class="list-unstyled">
                         <li class="mb-2">
-                            <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="index.html">Home</a>
+                            <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="/">Home</a>
                         </li>
                         <li class="mb-2">
-                            <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="about.html">About Us</a>
-                        </li>
-                        <li class="mb-2">
-                            <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="blog-grid-3-cols.html">Blog</a>
-                        </li>
-                        <li class="mb-2">
-                            <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="careers.html">Careers</a>
+                            <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="/about">About Us</a>
                         </li>
                         <li class="mb-2">
                             <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="terms-of-service.html">Terms of Service</a>
@@ -264,23 +258,20 @@
                 <div class="col-lg-3 col-sm-6 mb-lg-0 mb-5 ps-lg-5 order-lg-2 order-1">
                     <h4 class="fs-6 text-uppercase fw-bold mb-3">Quick Links</h4>
                     <ul class="list-unstyled">
-                        <li class="mb-2">
+                        <!-- <li class="mb-2">
                             <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="car-filter-grid.html">Inventory</a>
-                        </li>
-                        <li class="mb-2">
+                        </li> -->
+                        <!-- <li class="mb-2">
                             <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="cars-sold.html">Sold</a>
-                        </li>
-                        <li class="mb-2">
+                        </li> -->
+                        <!-- <li class="mb-2">
                             <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="reviews.html">Reviews</a>
-                        </li>
+                        </li> -->
                         <li class="mb-2">
                             <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="faqs.html">FAQs</a>
                         </li>
                         <li class="mb-2">
-                            <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="testimonials.html">Testimonials</a>
-                        </li>
-                        <li class="mb-2">
-                            <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="contact.html">Contact us</a>
+                            <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="/contact">Contact us</a>
                         </li>
                     </ul>
                 </div>

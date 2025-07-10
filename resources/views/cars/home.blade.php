@@ -167,749 +167,747 @@ Home
 
     <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" style="background-color: var(--bs-primary); background-image: ; opacity: 0.04"></span>
 
-      <div class="container position-relative col-xxl-8 py-5 px-3 px-sm-0">
-        <h2 class="fs-5 text-uppercase pb-3 mb-4 custom-color ">Browse by Brand</h2>
-        <div class="browse-brands-carousel owl-carousel owl-theme" data-loop="false" data-nav="true" data-dots="false" data-autoplay="false">
+    <div class="container position-relative col-xxl-8 py-5 px-3 px-sm-0">
+      <h2 class="fs-5 text-uppercase pb-3 mb-4 custom-color ">Browse by Brand</h2>
+      <div class="browse-brands-carousel owl-carousel owl-theme" data-loop="false" data-nav="true" data-dots="false" data-autoplay="false">
 
 
 
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Alfa Romeo</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/alfaromeo.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Alfa Romeo</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/alfaromeo.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
               </div>
+              </p>
             </div>
           </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Aston Martin</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/astonmartin.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Audi</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/audi.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Bentley</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/bentley.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">BMW</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/bmw.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Bugatti</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/bugatti.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Chevrolet</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/chevrolet.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Chrysler</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/chrysler.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Citroen</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/citroen.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Ferrari</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/ferrari.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Fiat</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/fiat.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Ford</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/ford.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">GMC</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/gmc.svg)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Honda</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/honda.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Hyundai</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/hyundai.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Infiniti</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/infiniti.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Jaguar</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/jaguar.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Jeep</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/jeep.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Kia</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/kia.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Lamborghini</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/lamborghini.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Land Rover</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/landrover.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Maserati</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/maserati.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Mazda</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/mazda.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">McLaren</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/mclaren.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Mercedes-Benz</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/mercedes.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">MINI</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/mini.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Mitsubishi</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/mitsubishi.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Nissan</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/nissan.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Opel</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/opel.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Peugeot</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/peugeot.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Porsche</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/porsche.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Renault</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/renault.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Rolls Royce</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/rollsroyce.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Subaru</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/subaru.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Suzuki</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/suzuki.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Tesla</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/tesla.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Toyota</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/toyota.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Vauxhall</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/vauxhall.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Volkswagen</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/volkswagen.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
-          <!-- Brand Item -->
-          <div class="item">
-            <div class="card border border-light-subtle">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title fw-bold fs-6 fs-special">Volvo</h5>
-                <p class="card-text">
-                <div class="car-brand-img overflow-hidden position-relative">
-                  <div style="--car-brand-icon: url(../icons/brands/volvo.html)" class="car-brand text-primary fs-5 fw-bold"></div>
-                  <a href="javascript:void(0)" class="stretched-link"></a>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- END Brand Item -->
-
-
-
         </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Aston Martin</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/astonmartin.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Audi</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/audi.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Bentley</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/bentley.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">BMW</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/bmw.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Bugatti</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/bugatti.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Chevrolet</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/chevrolet.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Chrysler</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/chrysler.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Citroen</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/citroen.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Ferrari</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/ferrari.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Fiat</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/fiat.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Ford</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/ford.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">GMC</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/gmc.svg)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Honda</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/honda.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Hyundai</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/hyundai.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Infiniti</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/infiniti.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Jaguar</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/jaguar.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Jeep</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/jeep.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Kia</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/kia.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Lamborghini</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/lamborghini.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Land Rover</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/landrover.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Maserati</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/maserati.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Mazda</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/mazda.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">McLaren</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/mclaren.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Mercedes-Benz</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/mercedes.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">MINI</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/mini.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Mitsubishi</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/mitsubishi.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Nissan</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/nissan.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Opel</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/opel.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Peugeot</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/peugeot.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Porsche</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/porsche.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Renault</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/renault.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Rolls Royce</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/rollsroyce.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Subaru</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/subaru.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Suzuki</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/suzuki.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Tesla</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/tesla.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Toyota</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/toyota.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Vauxhall</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/vauxhall.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Volkswagen</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/volkswagen.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
+        <!-- Brand Item -->
+        <div class="item">
+          <div class="card border border-light-subtle">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title fw-bold fs-6 fs-special">Volvo</h5>
+              <p class="card-text">
+              <div class="car-brand-img overflow-hidden position-relative">
+                <div style="--car-brand-icon: url(../icons/brands/volvo.html)" class="car-brand text-primary fs-5 fw-bold"></div>
+                <a href="javascript:void(0)" class="stretched-link"></a>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END Brand Item -->
+
+
+
       </div>
+    </div>
 
   </section>
   <!-- END Browse by brand logo -->
 
 
-  <!-- Recent Cars -->
-  <section class="position-relative custom-color
-
-    ">
+  <!-- Featured Cars -->
+  <section class="position-relative custom-color">
 
 
     <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" style="background-color: ; background-image: ; opacity: "></span>
 
     <div class="container position-relative col-xxl-8 py-5 px-3 px-sm-0 position-relative">
-      <h2 class="fs-5 text-uppercase pb-3 mb-4 custom-color ">Recent Cars</h2>
+      <h2 class="fs-5 text-uppercase pb-3 mb-4 custom-color ">Featured Cars</h2>
       <div class="recent-cars-carousel basic-carousel owl-carousel owl-theme" data-loop="false" data-nav="true" data-dots="false" data-autoplay="false">
 
 
@@ -962,7 +960,7 @@ Home
             </div>
             <div class="card-body">
               <h3 class="card-title">
-                <a href="car-details.html" class="fw-bold fs-5 text-decoration-none link-body-emphasis link-opacity-100 link-opacity-75-hover">BMW X5</a>
+                <a href="/vehicle-details" class="fw-bold fs-5 text-decoration-none link-body-emphasis link-opacity-100 link-opacity-75-hover">BMW X5</a>
               </h3>
               <p class="card-text">
                 <span class="car-price text-primary fs-special fs-5 fw-bold custom-color">$95,895</span>
@@ -2618,526 +2616,10 @@ Home
     </div>
 
   </section>
-  <!-- END Recent Cars -->
-
-  <!-- Featured Cars - v3 -->
-  <section class="featured-cars-grid featured-cars-v3 position-relative custom-color
-            
-              bg-body-tertiary
-            
-            ">
-
-    <div class="container position-relative col-xxl-8 py-5 px-3 px-sm-0">
-      <div class="row align-items-start g-4">
-        <div class="col-lg-12">
-          <h2 class="fs-5 text-uppercase pb-3 mb-0 custom-color ">Featured Cars</h2>
-        </div>
-        <div class="col-lg-6">
-          <div class="card border border-light-subtle mb-4">
-            <div class="position-absolute start-0 top-0 pt-3 ps-3 z-2 d-flex align-items-start">
-              <span class="badge text-bg-danger text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">Sold</span>
-            </div>
-            <div class="row g-0">
-              <div class="col-md-6 card-image">
-                <div id="item11Carousel" class="item-preview carousel slide carousel-fade max-w-h">
-                  <div class="carousel-inner rounded-start max-w-h">
-                    <div class="carousel-item d-flex align-items-center rounded-start max-w-h active">
-                      <img data-src="./images/cars/mercedes-gt-r-amg/01.jpg" class="d-block object-fit-cover rounded-start lazy" alt="...">
-                    </div>
-                    <div class="carousel-item d-flex align-items-center rounded-start max-w-h">
-                      <img data-src="./images/cars/mercedes-gt-r-amg/02.jpg" class="d-block object-fit-cover rounded-start lazy" alt="...">
-                    </div>
-                    <div class="carousel-item d-flex align-items-center rounded-start max-w-h">
-                      <img data-src="./images/cars/mercedes-gt-r-amg/03.jpg" class="d-block object-fit-cover rounded-start lazy" alt="...">
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#item11Carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#item11Carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a href="car-details.html" class="fw-bold fs-5 text-decoration-none link-body-emphasis link-opacity-100 link-opacity-75-hover d-block text-truncate">Mercedes GTR AMG</a>
-                  </h3>
-                  <p class="card-text">
-                    <span class="car-price text-primary fs-special fs-5 fw-bold custom-color">$29,999</span>
-                  </p>
-                  <div class="card-text border-top pt-2 row row-cols-2 g-2">
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-calendar-bolt" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M13.5 21h-7.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5"></path>
-                          <path d="M16 3v4"></path>
-                          <path d="M8 3v4"></path>
-                          <path d="M4 11h16"></path>
-                          <path d="M19 16l-2 3h4l-2 3"></path>
-                        </svg>
-                        2023
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-gauge" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                          <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                          <path d="M13.41 10.59l2.59 -2.59"></path>
-                          <path d="M7 12a5 5 0 0 1 5 -5"></path>
-                        </svg>
-                        14km
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-manual-gearbox" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M5 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M12 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M19 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M5 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M12 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M5 8l0 8"></path>
-                          <path d="M12 8l0 8"></path>
-                          <path d="M19 8v2a2 2 0 0 1 -2 2h-12"></path>
-                        </svg>
-                        Automatic
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-engine" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M3 10v6"></path>
-                          <path d="M12 5v3"></path>
-                          <path d="M10 5h4"></path>
-                          <path d="M5 13h-2"></path>
-                          <path d="M6 10h2l2 -2h3.382a1 1 0 0 1 .894 .553l1.448 2.894a1 1 0 0 0 .894 .553h1.382v-2h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2v-2h-3v2a1 1 0 0 1 -1 1h-3.465a1 1 0 0 1 -.832 -.445l-1.703 -2.555h-2v-6z">
-                          </path>
-                        </svg>
-                        1900cc
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-gas-station" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M14 11h1a2 2 0 0 1 2 2v3a1.5 1.5 0 0 0 3 0v-7l-3 -3"></path>
-                          <path d="M4 20v-14a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v14"></path>
-                          <path d="M3 20l12 0"></path>
-                          <path d="M18 7v1a1 1 0 0 0 1 1h1"></path>
-                          <path d="M4 11l10 0"></path>
-                        </svg>
-                        Petrol
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-palette" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25">
-                          </path>
-                          <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                          <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                          <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                        </svg>
-                        Blue
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card border border-light-subtle mb-4">
-            <div class="position-absolute start-0 top-0 pt-3 ps-3 z-2 d-flex align-items-start">
-              <span class="badge text-bg-primary text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">Used</span>
-            </div>
-            <div class="row g-0">
-              <div class="col-md-6 card-image">
-                <div id="item2Carousel" class="item-preview carousel slide carousel-fade max-w-h">
-                  <div class="carousel-inner rounded-start max-w-h">
-                    <div class="carousel-item d-flex align-items-center rounded-start max-w-h active">
-                      <img data-src="./images/cars/audi-r8/01.jpg" class="d-block object-fit-cover rounded-start lazy" alt="...">
-                    </div>
-                    <div class="carousel-item d-flex align-items-center rounded-start max-w-h">
-                      <img data-src="./images/cars/audi-r8/02.jpg" class="d-block object-fit-cover rounded-start lazy" alt="...">
-                    </div>
-                    <div class="carousel-item d-flex align-items-center rounded-start max-w-h">
-                      <img data-src="./images/cars/audi-r8/03.jpg" class="d-block object-fit-cover rounded-start lazy" alt="...">
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#item2Carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#item2Carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a href="car-details.html" class="fw-bold fs-5 text-decoration-none link-body-emphasis link-opacity-100 link-opacity-75-hover d-block text-truncate">Audi R8</a>
-                  </h3>
-                  <p class="card-text">
-                    <span class="car-price text-primary fs-special fs-5 fw-bold custom-color">$38,965</span>
-                  </p>
-                  <div class="card-text border-top pt-2 row row-cols-2 g-2">
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-calendar-bolt" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M13.5 21h-7.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5"></path>
-                          <path d="M16 3v4"></path>
-                          <path d="M8 3v4"></path>
-                          <path d="M4 11h16"></path>
-                          <path d="M19 16l-2 3h4l-2 3"></path>
-                        </svg>
-                        2023
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-gauge" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                          <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                          <path d="M13.41 10.59l2.59 -2.59"></path>
-                          <path d="M7 12a5 5 0 0 1 5 -5"></path>
-                        </svg>
-                        25km
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-manual-gearbox" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M5 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M12 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M19 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M5 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M12 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M5 8l0 8"></path>
-                          <path d="M12 8l0 8"></path>
-                          <path d="M19 8v2a2 2 0 0 1 -2 2h-12"></path>
-                        </svg>
-                        Manual
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-engine" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M3 10v6"></path>
-                          <path d="M12 5v3"></path>
-                          <path d="M10 5h4"></path>
-                          <path d="M5 13h-2"></path>
-                          <path d="M6 10h2l2 -2h3.382a1 1 0 0 1 .894 .553l1.448 2.894a1 1 0 0 0 .894 .553h1.382v-2h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2v-2h-3v2a1 1 0 0 1 -1 1h-3.465a1 1 0 0 1 -.832 -.445l-1.703 -2.555h-2v-6z">
-                          </path>
-                        </svg>
-                        3500cc
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-gas-station" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M14 11h1a2 2 0 0 1 2 2v3a1.5 1.5 0 0 0 3 0v-7l-3 -3"></path>
-                          <path d="M4 20v-14a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v14"></path>
-                          <path d="M3 20l12 0"></path>
-                          <path d="M18 7v1a1 1 0 0 0 1 1h1"></path>
-                          <path d="M4 11l10 0"></path>
-                        </svg>
-                        Diesel
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-palette" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25">
-                          </path>
-                          <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                          <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                          <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                        </svg>
-                        Grey
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card border border-light-subtle mb-4">
-            <div class="position-absolute start-0 top-0 pt-3 ps-3 z-2 d-flex align-items-start">
-              <span class="badge text-bg-danger text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">Sold</span>
-            </div>
-            <div class="row g-0">
-              <div class="col-md-6 card-image">
-                <div id="item3Carousel" class="item-preview carousel slide carousel-fade max-w-h">
-                  <div class="carousel-inner rounded-start max-w-h">
-                    <div class="carousel-item d-flex align-items-center rounded-start max-w-h active">
-                      <img data-src="./images/cars/toyota-camry/01.jpg" class="d-block object-fit-cover rounded-start lazy" alt="...">
-                    </div>
-                    <div class="carousel-item d-flex align-items-center rounded-start max-w-h">
-                      <img data-src="./images/cars/toyota-camry/02.jpg" class="d-block object-fit-cover rounded-start lazy" alt="...">
-                    </div>
-                    <div class="carousel-item d-flex align-items-center rounded-start max-w-h">
-                      <img data-src="./images/cars/toyota-camry/03.jpg" class="d-block object-fit-cover rounded-start lazy" alt="...">
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#item3Carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#item3Carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a href="car-details.html" class="fw-bold fs-5 text-decoration-none link-body-emphasis link-opacity-100 link-opacity-75-hover d-block text-truncate">Toyota Camry</a>
-                  </h3>
-                  <p class="card-text">
-                    <span class="car-price text-primary fs-special fs-5 fw-bold custom-color">$29,999</span>
-                  </p>
-                  <div class="card-text border-top pt-2 row row-cols-2 g-2">
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-calendar-bolt" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M13.5 21h-7.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5"></path>
-                          <path d="M16 3v4"></path>
-                          <path d="M8 3v4"></path>
-                          <path d="M4 11h16"></path>
-                          <path d="M19 16l-2 3h4l-2 3"></path>
-                        </svg>
-                        2023
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-gauge" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                          <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                          <path d="M13.41 10.59l2.59 -2.59"></path>
-                          <path d="M7 12a5 5 0 0 1 5 -5"></path>
-                        </svg>
-                        14km
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-manual-gearbox" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M5 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M12 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M19 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M5 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M12 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M5 8l0 8"></path>
-                          <path d="M12 8l0 8"></path>
-                          <path d="M19 8v2a2 2 0 0 1 -2 2h-12"></path>
-                        </svg>
-                        Automatic
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-engine" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M3 10v6"></path>
-                          <path d="M12 5v3"></path>
-                          <path d="M10 5h4"></path>
-                          <path d="M5 13h-2"></path>
-                          <path d="M6 10h2l2 -2h3.382a1 1 0 0 1 .894 .553l1.448 2.894a1 1 0 0 0 .894 .553h1.382v-2h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2v-2h-3v2a1 1 0 0 1 -1 1h-3.465a1 1 0 0 1 -.832 -.445l-1.703 -2.555h-2v-6z">
-                          </path>
-                        </svg>
-                        1900cc
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-gas-station" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M14 11h1a2 2 0 0 1 2 2v3a1.5 1.5 0 0 0 3 0v-7l-3 -3"></path>
-                          <path d="M4 20v-14a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v14"></path>
-                          <path d="M3 20l12 0"></path>
-                          <path d="M18 7v1a1 1 0 0 0 1 1h1"></path>
-                          <path d="M4 11l10 0"></path>
-                        </svg>
-                        Petrol
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-palette" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25">
-                          </path>
-                          <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                          <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                          <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                        </svg>
-                        Blue
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card border border-light-subtle mb-4">
-            <div class="position-absolute start-0 top-0 pt-3 ps-3 z-2 d-flex align-items-start">
-              <span class="badge text-bg-primary text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">Used</span>
-            </div>
-            <div class="row g-0">
-              <div class="col-md-6 card-image">
-                <div id="item4Carousel" class="item-preview carousel slide carousel-fade max-w-h">
-                  <div class="carousel-inner rounded-start max-w-h">
-                    <div class="carousel-item d-flex align-items-center rounded-start max-w-h active">
-                      <img data-src="./images/cars/mercedes-g63-amg/01.jpg" class="d-block object-fit-cover rounded-start lazy" alt="...">
-                    </div>
-                    <div class="carousel-item d-flex align-items-center rounded-start max-w-h">
-                      <img data-src="./images/cars/mercedes-g63-amg/02.jpg" class="d-block object-fit-cover rounded-start lazy" alt="...">
-                    </div>
-                    <div class="carousel-item d-flex align-items-center rounded-start max-w-h">
-                      <img data-src="./images/cars/mercedes-g63-amg/03.jpg" class="d-block object-fit-cover rounded-start lazy" alt="...">
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#item4Carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#item4Carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h3 class="card-title">
-                    <a href="car-details.html" class="fw-bold fs-5 text-decoration-none link-body-emphasis link-opacity-100 link-opacity-75-hover d-block text-truncate">Mercedes G63 AMG</a>
-                  </h3>
-                  <p class="card-text">
-                    <span class="car-price text-primary fs-special fs-5 fw-bold custom-color">$38,965</span>
-                  </p>
-                  <div class="card-text border-top pt-2 row row-cols-2 g-2">
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-calendar-bolt" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M13.5 21h-7.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5"></path>
-                          <path d="M16 3v4"></path>
-                          <path d="M8 3v4"></path>
-                          <path d="M4 11h16"></path>
-                          <path d="M19 16l-2 3h4l-2 3"></path>
-                        </svg>
-                        2023
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-gauge" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                          <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                          <path d="M13.41 10.59l2.59 -2.59"></path>
-                          <path d="M7 12a5 5 0 0 1 5 -5"></path>
-                        </svg>
-                        25km
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-manual-gearbox" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M5 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M12 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M19 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M5 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M12 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                          <path d="M5 8l0 8"></path>
-                          <path d="M12 8l0 8"></path>
-                          <path d="M19 8v2a2 2 0 0 1 -2 2h-12"></path>
-                        </svg>
-                        Manual
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-engine" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M3 10v6"></path>
-                          <path d="M12 5v3"></path>
-                          <path d="M10 5h4"></path>
-                          <path d="M5 13h-2"></path>
-                          <path d="M6 10h2l2 -2h3.382a1 1 0 0 1 .894 .553l1.448 2.894a1 1 0 0 0 .894 .553h1.382v-2h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2v-2h-3v2a1 1 0 0 1 -1 1h-3.465a1 1 0 0 1 -.832 -.445l-1.703 -2.555h-2v-6z">
-                          </path>
-                        </svg>
-                        3500cc
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-gas-station" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M14 11h1a2 2 0 0 1 2 2v3a1.5 1.5 0 0 0 3 0v-7l-3 -3"></path>
-                          <path d="M4 20v-14a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v14"></path>
-                          <path d="M3 20l12 0"></path>
-                          <path d="M18 7v1a1 1 0 0 0 1 1h1"></path>
-                          <path d="M4 11l10 0"></path>
-                        </svg>
-                        Diesel
-                      </span>
-                    </div>
-                    <div>
-                      <span class="d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-palette" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25">
-                          </path>
-                          <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                          <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                          <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                        </svg>
-                        Grey
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <!-- END Featured Cars - v3 -->
+  <!-- END Featured Cars -->
 
   <!-- Counters -->
-  <section class="stats-counter border-top border-bottom position-relative custom-color
-            
-            ">
+  <section class="stats-counter border-top border-bottom position-relative custom-color">
 
 
     <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" style="background-color: ; background-image: ; opacity: "></span>
@@ -3470,13 +2952,13 @@ Home
 <!-- END Main -->
 @endsection
 
- @section('page-src')
-    <!-- Owl Carousel plugin -->
-    <script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
-    <!-- Magnific Popup plugin -->
-    <script src="libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-    <!-- Judo Spin plugin -->
-    <script src="libs/judo-spin/dist/js/judo-spin.min.js"></script>
-    <!-- Plyr plugin -->
-    <script src="libs/plyr/dist/plyr.min.js"></script>
-     @endsection
+@section('page-src')
+<!-- Owl Carousel plugin -->
+<script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
+<!-- Magnific Popup plugin -->
+<script src="libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+<!-- Judo Spin plugin -->
+<script src="libs/judo-spin/dist/js/judo-spin.min.js"></script>
+<!-- Plyr plugin -->
+<script src="libs/plyr/dist/plyr.min.js"></script>
+@endsection
