@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Brand;
 use App\Models\Car;
 use App\Models\CarImage;
 use App\Models\Enquiry;
@@ -29,7 +30,12 @@ class CarController extends Controller
 
     public function homePage()
     {
-        return view('cars.home');
+        $brands = Brand::select('id', 'brand_name', 'brand_logo')
+            ->where('status', 1)
+            ->orderby('brand_name')
+            ->get();
+
+        return view('cars.home', compact('brands'));
     }
 
     public function show($id)

@@ -175,7 +175,7 @@
                                 <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Sold</a>
                             </li> -->
                             <li class="nav-item">
-                                <a href="#" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">About</a>
+                                <a href="/about" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">About</a>
                             </li>
                             <li class="nav-item">
                                 <a href="/contact" class="nav-link link-body-emphasis px-3 py-3 fw-bold custom-color">Contact</a>
