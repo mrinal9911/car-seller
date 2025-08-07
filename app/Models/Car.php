@@ -16,4 +16,9 @@ class Car extends Model
     {
         return $this->hasMany(CarImage::class);
     }
+
+    public function mainImage()
+    {
+        return $this->hasOne(CarImage::class)->where('is_main', 1);
+    }
 }

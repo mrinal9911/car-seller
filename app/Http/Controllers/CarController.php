@@ -191,7 +191,8 @@ class CarController extends Controller
 
     public function dashboard()
     {
-        return view('cars.account-listing');
+        $carDetails = Car::with('mainImage')->latest()->paginate(10);
+        return view('cars.account-listing', compact('carDetails'));
     }
 
     public function addListing()
