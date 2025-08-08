@@ -32,7 +32,7 @@ Route::get('/contact', [CarController::class, 'contactUs']);
 Route::post('/post-contact', [CarController::class, 'postContactUs']);
 
 Route::get('/vehicles', [CarController::class, 'vehicleList']);
-Route::get('/vehicle-details', [CarController::class, 'vehicleDetails']);
+Route::get('/vehicle-details/{id}', [CarController::class, 'vehicleDetails']);
 
 Route::get('/about', [CarController::class, 'aboutUs']);
 
