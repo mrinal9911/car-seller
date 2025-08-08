@@ -35,7 +35,14 @@ class CarController extends Controller
             ->orderby('brand_name')
             ->get();
 
-        return view('cars.home', compact('brands'));
+        $featuredCars = Car::with(['images' => function ($query) {
+            $query->where('is_main', true)->limit(1);
+        }])
+            ->latest()
+            ->take(3)
+            ->get();
+
+        return view('cars.home', compact('brands', 'featuredCars'));
     }
 
     public function show($id)
@@ -179,7 +186,7 @@ class CarController extends Controller
 
     public function vehicleList()
     {
-        $cars = Car::with('images')->where('status', 'approved')->latest()->paginate(10);
+        $cars = Car::with('mainImage')->latest()->paginate(10);
         return view('cars.vehicle-list', compact('cars'));
     }
 

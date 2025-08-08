@@ -63,60 +63,65 @@ Explore Vehicles
             <section class="cars col-lg-12">
 
                 <div class="row cars-grid">
-                    <!-- Car  1-->
+
+                    <!-- Car -->
+                    @foreach($cars as $car)
                     <div class="col-sm-12 col-md-4 mb-4 mx-auto mx-md-0">
                         <div class="card car-item border bg-body-tertiary">
                             <div class="position-absolute end-0 top-0 pt-3 pe-3 z-2">
-
                                 <button type="button" class="btn btn-compare compare-active p-0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Remove from compare"></button>
-
-
-
-
                                 <button type="button" class="btn btn-favorites p-0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to favorites"></button>
-
                             </div>
                             <div class="position-absolute start-0 top-0 pt-3 ps-3 z-2 d-flex align-items-start">
-
                                 <span class="badge text-bg-success text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">New</span>
-
-
-
-
                                 <span class="badge text-bg-warning text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">Reserved</span>
-
                             </div>
+
+                            {{-- Image --}}
                             <div class="card-image">
-                                <div id="itemCarousel1" class="item-preview item-preview carousel slide carousel-fade">
+                                <div id="itemCarousel{{ $car['id'] }}" class="item-preview item-preview carousel slide carousel-fade">
                                     <div class="carousel-inner rounded-top">
+                                        @if(!empty($car['mainImage']) && !empty($car['mainImage']['image_path']))
                                         <div class="carousel-item listing-image-box rounded-top active">
-                                            <img data-src="./images/cars/bmw-x5/01.jpg" class="img-fluid object-fit-cover rounded-top lazy" alt="...">
+                                            <img
+                                                data-src="{{ asset('storage/' . $car['mainImage']['image_path']) }}"
+                                                class="img-fluid object-fit-cover rounded-top lazy"
+                                                alt="{{ $car['brand'] . ' ' . $car['title'] }}">
                                         </div>
-                                        <div class="carousel-item listing-image-box">
-                                            <img data-src="./images/cars/bmw-x5/02.jpg" class="img-fluid object-fit-cover rounded-top lazy" alt="...">
+                                        @else
+                                        <div class="carousel-item listing-image-box rounded-top active">
+                                            <img
+                                                data-src="{{ asset('storage/images/default-car.png') }}"
+                                                class="img-fluid object-fit-cover rounded-top lazy"
+                                                alt="No image available">
                                         </div>
-                                        <div class="carousel-item listing-image-box">
-                                            <img data-src="./images/cars/bmw-x5/03.jpg" class="img-fluid object-fit-cover rounded-top lazy" alt="...">
-                                        </div>
+                                        @endif
+                                        {{-- Add additional images here if available --}}
                                     </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#itemCarousel1" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#itemCarousel{{ $car['id'] }}" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#itemCarousel1" data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#itemCarousel{{ $car['id'] }}" data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
                                 </div>
                             </div>
+
+                            {{-- Body --}}
                             <div class="card-body">
                                 <h3 class="card-title">
-                                    <a href="{{ url('/vehicle-details' ) }}" class="fw-bold fs-5 text-decoration-none link-body-emphasis link-opacity-100 link-opacity-75-hover">BMW X5</a>
+                                    <a href="{{ url('/vehicle-details/' . $car['id']) }}" class="fw-bold fs-5 text-decoration-none link-body-emphasis link-opacity-100 link-opacity-75-hover">
+                                        {{ $car['brand'] . ' ' . $car['title'] }}
+                                    </a>
                                 </h3>
                                 <p class="card-text">
-                                    <span class="car-price text-primary fs-special fs-5 fw-bold custom-color">$95,895</span>
+                                    <span class="car-price text-primary fs-special fs-5 fw-bold custom-color">₹{{ indianNumberFormat($car['price']) }}</span>
                                 </p>
                                 <div class="card-text border-top pt-2 row row-cols-3 g-2">
+
+                                    {{-- Year --}}
                                     <div>
                                         <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-calendar-bolt" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -126,10 +131,11 @@ Explore Vehicles
                                                 <path d="M8 3v4"></path>
                                                 <path d="M4 11h16"></path>
                                                 <path d="M19 16l-2 3h4l-2 3"></path>
-                                            </svg>
-                                            2024
+                                            </svg> {{ $car['year'] }}
                                         </span>
                                     </div>
+
+                                    {{-- Driven --}}
                                     <div>
                                         <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-gauge" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -138,10 +144,11 @@ Explore Vehicles
                                                 <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
                                                 <path d="M13.41 10.59l2.59 -2.59"></path>
                                                 <path d="M7 12a5 5 0 0 1 5 -5"></path>
-                                            </svg>
-                                            98m
+                                            </svg> {{ indianNumberFormat($car['driven']) }} Km
                                         </span>
                                     </div>
+
+                                    {{-- Transmission --}}
                                     <div>
                                         <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-manual-gearbox" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -154,10 +161,11 @@ Explore Vehicles
                                                 <path d="M5 8l0 8"></path>
                                                 <path d="M12 8l0 8"></path>
                                                 <path d="M19 8v2a2 2 0 0 1 -2 2h-12"></path>
-                                            </svg>
-                                            Automatic
+                                            </svg> {{ ucfirst($car['transmission']) }}
                                         </span>
                                     </div>
+
+                                    {{-- Engine --}}
                                     <div>
                                         <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-engine" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -169,9 +177,11 @@ Explore Vehicles
                                                 <path d="M6 10h2l2 -2h3.382a1 1 0 0 1 .894 .553l1.448 2.894a1 1 0 0 0 .894 .553h1.382v-2h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2v-2h-3v2a1 1 0 0 1 -1 1h-3.465a1 1 0 0 1 -.832 -.445l-1.703 -2.555h-2v-6z">
                                                 </path>
                                             </svg>
-                                            2500cc
+                                            {{ $car['engine'] }}cc
                                         </span>
                                     </div>
+
+                                    {{-- Fuel --}}
                                     <div>
                                         <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-gas-station" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -182,9 +192,11 @@ Explore Vehicles
                                                 <path d="M18 7v1a1 1 0 0 0 1 1h1"></path>
                                                 <path d="M4 11l10 0"></path>
                                             </svg>
-                                            Petrol
+                                            {{ ucfirst($car['fuel_type']) }}
                                         </span>
                                     </div>
+
+                                    {{-- Color --}}
                                     <div>
                                         <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-palette" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -195,585 +207,16 @@ Explore Vehicles
                                                 <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
                                                 <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
                                             </svg>
-                                            White
+                                            {{ ucfirst($car['color']) }}
                                         </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    @endforeach
+
                     <!-- END Car -->
-
-
-
-                    <!-- Car 2-->
-                    <div class="col-sm-12 col-md-4 mb-4 mx-auto mx-md-0">
-                        <div class="card car-item border bg-body-tertiary">
-                            <div class="position-absolute end-0 top-0 pt-3 pe-3 z-2">
-
-                                <button type="button" class="btn btn-compare compare-active p-0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Remove from compare"></button>
-
-
-
-                                <button type="button" class="btn btn-favorites favorites-active p-0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Remove from favorites"></button>
-
-
-                            </div>
-                            <div class="position-absolute start-0 top-0 pt-3 ps-3 z-2 d-flex align-items-start">
-
-
-                                <span class="badge text-bg-primary text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">Used</span>
-
-
-
-                            </div>
-                            <div class="card-image">
-                                <div id="itemCarousel2" class="item-preview item-preview carousel slide carousel-fade">
-                                    <div class="carousel-inner rounded-top">
-                                        <div class="carousel-item listing-image-box rounded-top active">
-                                            <img data-src="./images/cars/volkswagen-tiguan/01.jpg" class="img-fluid object-fit-cover rounded-top lazy" alt="...">
-                                        </div>
-                                        <div class="carousel-item listing-image-box">
-                                            <img data-src="./images/cars/volkswagen-tiguan/02.jpg" class="img-fluid object-fit-cover rounded-top lazy" alt="...">
-                                        </div>
-                                        <div class="carousel-item listing-image-box">
-                                            <img data-src="./images/cars/volkswagen-tiguan/03.jpg" class="img-fluid object-fit-cover rounded-top lazy" alt="...">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#itemCarousel2" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#itemCarousel2" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="card-title">
-                                    <a href="car-details.html" class="fw-bold fs-5 text-decoration-none link-body-emphasis link-opacity-100 link-opacity-75-hover">Volkswagen Tiguan</a>
-                                </h3>
-                                <p class="card-text">
-                                    <span class="car-price text-primary fs-special fs-5 fw-bold custom-color">$225,125</span>
-                                </p>
-                                <div class="card-text border-top pt-2 row row-cols-3 g-2">
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-calendar-bolt" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M13.5 21h-7.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5"></path>
-                                                <path d="M16 3v4"></path>
-                                                <path d="M8 3v4"></path>
-                                                <path d="M4 11h16"></path>
-                                                <path d="M19 16l-2 3h4l-2 3"></path>
-                                            </svg>
-                                            2019
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-gauge" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                                                <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                                <path d="M13.41 10.59l2.59 -2.59"></path>
-                                                <path d="M7 12a5 5 0 0 1 5 -5"></path>
-                                            </svg>
-                                            4,500m
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-manual-gearbox" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M5 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M12 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M19 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M5 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M12 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M5 8l0 8"></path>
-                                                <path d="M12 8l0 8"></path>
-                                                <path d="M19 8v2a2 2 0 0 1 -2 2h-12"></path>
-                                            </svg>
-                                            Automatic
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-engine" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M3 10v6"></path>
-                                                <path d="M12 5v3"></path>
-                                                <path d="M10 5h4"></path>
-                                                <path d="M5 13h-2"></path>
-                                                <path d="M6 10h2l2 -2h3.382a1 1 0 0 1 .894 .553l1.448 2.894a1 1 0 0 0 .894 .553h1.382v-2h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2v-2h-3v2a1 1 0 0 1 -1 1h-3.465a1 1 0 0 1 -.832 -.445l-1.703 -2.555h-2v-6z">
-                                                </path>
-                                            </svg>
-                                            3500cc
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-gas-station" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M14 11h1a2 2 0 0 1 2 2v3a1.5 1.5 0 0 0 3 0v-7l-3 -3"></path>
-                                                <path d="M4 20v-14a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v14"></path>
-                                                <path d="M3 20l12 0"></path>
-                                                <path d="M18 7v1a1 1 0 0 0 1 1h1"></path>
-                                                <path d="M4 11l10 0"></path>
-                                            </svg>
-                                            Petrol
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-palette" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25">
-                                                </path>
-                                                <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                                <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                                <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                            </svg>
-                                            Yellow
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END Car -->
-
-
-
-                    <!-- Car -->
-                    <div class="col-sm-12 col-md-4 mb-4 mx-auto mx-md-0">
-                        <div class="card car-item border bg-body-tertiary">
-                            <div class="position-absolute end-0 top-0 pt-3 pe-3 z-2">
-
-                                <button type="button" class="btn btn-compare compare-active p-0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Remove from compare"></button>
-
-
-
-
-                                <button type="button" class="btn btn-favorites p-0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to favorites"></button>
-
-                            </div>
-                            <div class="position-absolute start-0 top-0 pt-3 ps-3 z-2 d-flex align-items-start">
-
-
-                                <span class="badge text-bg-primary text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">Used</span>
-
-
-                                <span class="badge text-bg-danger text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">Sold</span>
-
-
-                            </div>
-                            <div class="card-image">
-                                <div id="itemCarousel3" class="item-preview item-preview carousel slide carousel-fade">
-                                    <div class="carousel-inner rounded-top">
-                                        <div class="carousel-item listing-image-box rounded-top active">
-                                            <img data-src="./images/cars/mercedes-g63-amg/01.jpg" class="img-fluid object-fit-cover rounded-top lazy" alt="...">
-                                        </div>
-                                        <div class="carousel-item listing-image-box">
-                                            <img data-src="./images/cars/mercedes-g63-amg/02.jpg" class="img-fluid object-fit-cover rounded-top lazy" alt="...">
-                                        </div>
-                                        <div class="carousel-item listing-image-box">
-                                            <img data-src="./images/cars/mercedes-g63-amg/03.jpg" class="img-fluid object-fit-cover rounded-top lazy" alt="...">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#itemCarousel3" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#itemCarousel3" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="card-title">
-                                    <a href="car-details.html" class="fw-bold fs-5 text-decoration-none link-body-emphasis link-opacity-100 link-opacity-75-hover">Mercedes G63 AMG</a>
-                                </h3>
-                                <p class="card-text">
-                                    <span class="car-price text-primary fs-special fs-5 fw-bold custom-color">$49,675</span>
-                                </p>
-                                <div class="card-text border-top pt-2 row row-cols-3 g-2">
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-calendar-bolt" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M13.5 21h-7.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5"></path>
-                                                <path d="M16 3v4"></path>
-                                                <path d="M8 3v4"></path>
-                                                <path d="M4 11h16"></path>
-                                                <path d="M19 16l-2 3h4l-2 3"></path>
-                                            </svg>
-                                            2019
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-gauge" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                                                <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                                <path d="M13.41 10.59l2.59 -2.59"></path>
-                                                <path d="M7 12a5 5 0 0 1 5 -5"></path>
-                                            </svg>
-                                            14,500m
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-manual-gearbox" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M5 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M12 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M19 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M5 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M12 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M5 8l0 8"></path>
-                                                <path d="M12 8l0 8"></path>
-                                                <path d="M19 8v2a2 2 0 0 1 -2 2h-12"></path>
-                                            </svg>
-                                            Automatic
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-engine" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M3 10v6"></path>
-                                                <path d="M12 5v3"></path>
-                                                <path d="M10 5h4"></path>
-                                                <path d="M5 13h-2"></path>
-                                                <path d="M6 10h2l2 -2h3.382a1 1 0 0 1 .894 .553l1.448 2.894a1 1 0 0 0 .894 .553h1.382v-2h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2v-2h-3v2a1 1 0 0 1 -1 1h-3.465a1 1 0 0 1 -.832 -.445l-1.703 -2.555h-2v-6z">
-                                                </path>
-                                            </svg>
-                                            1800cc
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-gas-station" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M14 11h1a2 2 0 0 1 2 2v3a1.5 1.5 0 0 0 3 0v-7l-3 -3"></path>
-                                                <path d="M4 20v-14a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v14"></path>
-                                                <path d="M3 20l12 0"></path>
-                                                <path d="M18 7v1a1 1 0 0 0 1 1h1"></path>
-                                                <path d="M4 11l10 0"></path>
-                                            </svg>
-                                            Diesel
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-palette" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25">
-                                                </path>
-                                                <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                                <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                                <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                            </svg>
-                                            White
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END Car -->
-
-
-
-                    <!-- Car -->
-                    <div class="col-sm-12 col-md-4 mb-4 mx-auto mx-md-0">
-                        <div class="card car-item border bg-body-tertiary">
-                            <div class="position-absolute end-0 top-0 pt-3 pe-3 z-2">
-
-
-                                <button type="button" class="btn btn-compare p-0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to compare"></button>
-
-
-
-                                <button type="button" class="btn btn-favorites p-0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to favorites"></button>
-
-                            </div>
-                            <div class="position-absolute start-0 top-0 pt-3 ps-3 z-2 d-flex align-items-start">
-
-                                <span class="badge text-bg-success text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">New</span>
-
-
-
-
-                                <span class="badge text-bg-warning text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">Reserved</span>
-
-                            </div>
-                            <div class="card-image">
-                                <div id="itemCarousel4" class="item-preview item-preview carousel slide carousel-fade">
-                                    <div class="carousel-inner rounded-top">
-                                        <div class="carousel-item listing-image-box rounded-top active">
-                                            <img data-src="./images/cars/land-rover-defender/01.jpg" class="img-fluid object-fit-cover rounded-top lazy" alt="...">
-                                        </div>
-                                        <div class="carousel-item listing-image-box">
-                                            <img data-src="./images/cars/land-rover-defender/02.jpg" class="img-fluid object-fit-cover rounded-top lazy" alt="...">
-                                        </div>
-                                        <div class="carousel-item listing-image-box">
-                                            <img data-src="./images/cars/land-rover-defender/03.jpg" class="img-fluid object-fit-cover rounded-top lazy" alt="...">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#itemCarousel4" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#itemCarousel4" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="card-title">
-                                    <a href="car-details.html" class="fw-bold fs-5 text-decoration-none link-body-emphasis link-opacity-100 link-opacity-75-hover">Land Rover Defender</a>
-                                </h3>
-                                <p class="card-text">
-                                    <span class="car-price text-primary fs-special fs-5 fw-bold custom-color">$85,985</span>
-                                </p>
-                                <div class="card-text border-top pt-2 row row-cols-3 g-2">
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-calendar-bolt" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M13.5 21h-7.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5"></path>
-                                                <path d="M16 3v4"></path>
-                                                <path d="M8 3v4"></path>
-                                                <path d="M4 11h16"></path>
-                                                <path d="M19 16l-2 3h4l-2 3"></path>
-                                            </svg>
-                                            2023
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-gauge" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                                                <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                                <path d="M13.41 10.59l2.59 -2.59"></path>
-                                                <path d="M7 12a5 5 0 0 1 5 -5"></path>
-                                            </svg>
-                                            6,300
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-manual-gearbox" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M5 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M12 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M19 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M5 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M12 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M5 8l0 8"></path>
-                                                <path d="M12 8l0 8"></path>
-                                                <path d="M19 8v2a2 2 0 0 1 -2 2h-12"></path>
-                                            </svg>
-                                            Automatic
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-engine" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M3 10v6"></path>
-                                                <path d="M12 5v3"></path>
-                                                <path d="M10 5h4"></path>
-                                                <path d="M5 13h-2"></path>
-                                                <path d="M6 10h2l2 -2h3.382a1 1 0 0 1 .894 .553l1.448 2.894a1 1 0 0 0 .894 .553h1.382v-2h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2v-2h-3v2a1 1 0 0 1 -1 1h-3.465a1 1 0 0 1 -.832 -.445l-1.703 -2.555h-2v-6z">
-                                                </path>
-                                            </svg>
-                                            2900cc
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-gas-station" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M14 11h1a2 2 0 0 1 2 2v3a1.5 1.5 0 0 0 3 0v-7l-3 -3"></path>
-                                                <path d="M4 20v-14a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v14"></path>
-                                                <path d="M3 20l12 0"></path>
-                                                <path d="M18 7v1a1 1 0 0 0 1 1h1"></path>
-                                                <path d="M4 11l10 0"></path>
-                                            </svg>
-                                            Petrol
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-palette" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25">
-                                                </path>
-                                                <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                                <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                                <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                            </svg>
-                                            Grey
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END Car -->
-
-
-
-                    <!-- Car -->
-                    <div class="col-sm-12 col-md-4 mb-4 mx-auto mx-md-0">
-                        <div class="card car-item border bg-body-tertiary">
-                            <div class="position-absolute end-0 top-0 pt-3 pe-3 z-2">
-
-                                <button type="button" class="btn btn-compare compare-active p-0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Remove from compare"></button>
-
-
-
-                                <button type="button" class="btn btn-favorites favorites-active p-0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Remove from favorites"></button>
-
-
-                            </div>
-                            <div class="position-absolute start-0 top-0 pt-3 ps-3 z-2 d-flex align-items-start">
-
-                                <span class="badge text-bg-success text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">New</span>
-
-
-
-
-                            </div>
-                            <div class="card-image">
-                                <div id="itemCarousel5" class="item-preview item-preview carousel slide carousel-fade">
-                                    <div class="carousel-inner rounded-top">
-                                        <div class="carousel-item listing-image-box rounded-top active">
-                                            <img data-src="./images/cars/mercedes-a45-s-amg/01.jpg" class="img-fluid object-fit-cover rounded-top lazy" alt="...">
-                                        </div>
-                                        <div class="carousel-item listing-image-box">
-                                            <img data-src="./images/cars/mercedes-a45-s-amg/02.jpg" class="img-fluid object-fit-cover rounded-top lazy" alt="...">
-                                        </div>
-                                        <div class="carousel-item listing-image-box">
-                                            <img data-src="./images/cars/mercedes-a45-s-amg/03.jpg" class="img-fluid object-fit-cover rounded-top lazy" alt="...">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#itemCarousel5" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#itemCarousel5" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="card-title">
-                                    <a href="car-details.html" class="fw-bold fs-5 text-decoration-none link-body-emphasis link-opacity-100 link-opacity-75-hover">Mercedes A45 S AMG</a>
-                                </h3>
-                                <p class="card-text">
-                                    <span class="car-price text-primary fs-special fs-5 fw-bold custom-color">$39,458</span>
-                                </p>
-                                <div class="card-text border-top pt-2 row row-cols-3 g-2">
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-calendar-bolt" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M13.5 21h-7.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5"></path>
-                                                <path d="M16 3v4"></path>
-                                                <path d="M8 3v4"></path>
-                                                <path d="M4 11h16"></path>
-                                                <path d="M19 16l-2 3h4l-2 3"></path>
-                                            </svg>
-                                            2023
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-gauge" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                                                <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                                <path d="M13.41 10.59l2.59 -2.59"></path>
-                                                <path d="M7 12a5 5 0 0 1 5 -5"></path>
-                                            </svg>
-                                            121m
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-manual-gearbox" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M5 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M12 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M19 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M5 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M12 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                <path d="M5 8l0 8"></path>
-                                                <path d="M12 8l0 8"></path>
-                                                <path d="M19 8v2a2 2 0 0 1 -2 2h-12"></path>
-                                            </svg>
-                                            Manual
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-engine" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M3 10v6"></path>
-                                                <path d="M12 5v3"></path>
-                                                <path d="M10 5h4"></path>
-                                                <path d="M5 13h-2"></path>
-                                                <path d="M6 10h2l2 -2h3.382a1 1 0 0 1 .894 .553l1.448 2.894a1 1 0 0 0 .894 .553h1.382v-2h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2v-2h-3v2a1 1 0 0 1 -1 1h-3.465a1 1 0 0 1 -.832 -.445l-1.703 -2.555h-2v-6z">
-                                                </path>
-                                            </svg>
-                                            2400cc
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-gas-station" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M14 11h1a2 2 0 0 1 2 2v3a1.5 1.5 0 0 0 3 0v-7l-3 -3"></path>
-                                                <path d="M4 20v-14a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v14"></path>
-                                                <path d="M3 20l12 0"></path>
-                                                <path d="M18 7v1a1 1 0 0 0 1 1h1"></path>
-                                                <path d="M4 11l10 0"></path>
-                                            </svg>
-                                            Petrol
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span class="icon-wrapper d-inline-flex align-items-center p-1 px-2 me-1 bg-body-secondary rounded-1 text-body-secondary bg-opacity-75 w-100 fs-sm">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-palette" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25">
-                                                </path>
-                                                <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                                <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                                <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                            </svg>
-                                            Orange
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END Car -->
-
-
-
 
                 </div>
 
