@@ -231,15 +231,19 @@ Home
             <div class="card-image">
               <div id="itemCarousel{{ $car['id'] }}" class="item-preview carousel slide carousel-fade">
                 <div class="carousel-inner rounded-top">
-                  @if (!empty($car['images']))
-                  @foreach ($car['images'] as $index => $image)
-                  <div class="carousel-item listing-image-box rounded-top {{ $index === 0 ? 'active' : '' }}">
-                    <img data-src="{{ asset('storage/' . $image['image_path']) }}" class="img-fluid object-fit-cover rounded-top lazy" alt="{{ $car['brand'] . ' ' . $car['title'] }}">
+                  @if(!empty($car['mainImage']) && !empty($car['mainImage']['image_path']))
+                  <div class="carousel-item listing-image-box rounded-top active">
+                    <img
+                      data-src="{{ asset('storage/' . $car['mainImage']['image_path']) }}"
+                      class="img-fluid object-fit-cover rounded-top lazy"
+                      alt="{{ $car['brand'] . ' ' . $car['title'] }}">
                   </div>
-                  @endforeach
                   @else
                   <div class="carousel-item listing-image-box rounded-top active">
-                    <img data-src="{{ asset('storage/images/default-car.png') }}" class="img-fluid object-fit-cover rounded-top lazy" alt="No image available">
+                    <img
+                      data-src="{{ asset('storage/images/default-car.png') }}"
+                      class="img-fluid object-fit-cover rounded-top lazy"
+                      alt="No image available">
                   </div>
                   @endif
                 </div>
@@ -260,7 +264,7 @@ Home
                 </a>
               </h3>
               <p class="card-text">
-                <span class="car-price text-primary fs-special fs-5 fw-bold custom-color">${{ number_format($car['price'], 0) }}</span>
+                <span class="car-price text-primary fs-special fs-5 fw-bold custom-color">₹{{ indianNumberFormat($car['price'], 0) }}</span>
               </p>
               <div class="card-text border-top pt-2 row row-cols-3 g-2" style="border-color: rgba(var(--bs-primary-rgb), 0.12) !important;">
 

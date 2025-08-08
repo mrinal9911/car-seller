@@ -86,9 +86,9 @@ Contact Us
                     <div class="mb-4 fs-special fs-6">
                         CarMart
                         <br>
-                        Automotive Street
+                        Pardih Road
                         <br>
-                        77 McKinney, Texas
+                        Jamshedpur, Jharkhand
                     </div>
 
                     <h4 class="fs-sm text-muted text-uppercase">Phone</h4>

@@ -109,7 +109,7 @@
                         <div class="h-widget-content">
                             <p class="m-0 text-nowrap">Our Location
                                 <br>
-                                <span class="text-muted">77 McKinney, Texas</span>
+                                <span class="text-muted">Jamshedpur, Jharkhand</span>
                             </p>
                         </div>
                         <div class="vr opacity-15 position-absolute end-0 top-0 h-100 d-none d-md-block m-0 ms-md-3 ms-lg-0"></div>
