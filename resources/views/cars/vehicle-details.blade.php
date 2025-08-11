@@ -152,99 +152,23 @@ Vehicles Details
 
                             <div id="sync1" class="owl-carousel owl-theme popup-gallery rounded-2">
 
+                                @foreach($car['images'] as $image)
                                 <div class="item rounded-2">
-                                    <a href="images/cars/bmw-x5/01.jpg" data-effect="mfp-zoom-in" title="">
-                                        <img class="img-fluid object-fit-cover rounded-2" src="images/cars/bmw-x5/01.jpg" alt="" srcset="">
+                                    <a href="{{asset('storage/'.$image->image_path)}}" data-effect="mfp-zoom-in" title="">
+                                        <img class="img-fluid object-fit-cover rounded-2 img-resolution" src="{{asset('storage/'.$image->image_path)}}" alt="" srcset="">
                                     </a>
                                 </div>
-
-                                <div class="item rounded-2">
-                                    <a href="images/cars/bmw-x5/02.jpg" data-effect="mfp-zoom-in" title="">
-                                        <img class="img-fluid object-fit-cover rounded-2" src="images/cars/bmw-x5/02.jpg" alt="" srcset="">
-                                    </a>
-                                </div>
-
-                                <div class="item rounded-2">
-                                    <a href="images/cars/bmw-x5/03.jpg" data-effect="mfp-zoom-in" title="">
-                                        <img class="img-fluid object-fit-cover rounded-2" src="images/cars/bmw-x5/03.jpg" alt="" srcset="">
-                                    </a>
-                                </div>
-
-                                <div class="item rounded-2">
-                                    <a href="images/cars/bmw-x5/04.jpg" data-effect="mfp-zoom-in" title="">
-                                        <img class="img-fluid object-fit-cover rounded-2" src="images/cars/bmw-x5/04.jpg" alt="" srcset="">
-                                    </a>
-                                </div>
-
-                                <div class="item rounded-2">
-                                    <a href="images/cars/bmw-x5/05.jpg" data-effect="mfp-zoom-in" title="">
-                                        <img class="img-fluid object-fit-cover rounded-2" src="images/cars/bmw-x5/05.jpg" alt="" srcset="">
-                                    </a>
-                                </div>
-
-                                <div class="item rounded-2">
-                                    <a href="images/cars/bmw-x5/06.jpg" data-effect="mfp-zoom-in" title="">
-                                        <img class="img-fluid object-fit-cover rounded-2" src="images/cars/bmw-x5/06.jpg" alt="" srcset="">
-                                    </a>
-                                </div>
-
-                                <div class="item rounded-2">
-                                    <a href="images/cars/bmw-x5/07.jpg" data-effect="mfp-zoom-in" title="">
-                                        <img class="img-fluid object-fit-cover rounded-2" src="images/cars/bmw-x5/07.jpg" alt="" srcset="">
-                                    </a>
-                                </div>
-
-                                <div class="item rounded-2">
-                                    <a href="images/cars/bmw-x5/08.jpg" data-effect="mfp-zoom-in" title="">
-                                        <img class="img-fluid object-fit-cover rounded-2" src="images/cars/bmw-x5/08.jpg" alt="" srcset="">
-                                    </a>
-                                </div>
-
-                                <div class="item rounded-2">
-                                    <a href="images/cars/bmw-x5/09.jpg" data-effect="mfp-zoom-in" title="">
-                                        <img class="img-fluid object-fit-cover rounded-2" src="images/cars/bmw-x5/09.jpg" alt="" srcset="">
-                                    </a>
-                                </div>
+                                @endforeach
 
                             </div>
 
                             <div id="sync2" class="owl-carousel owl-theme position-relative">
 
+                                @foreach($car['images'] as $image)
                                 <div class="item rounded-2">
-                                    <img class="img-fluid object-fit-cover rounded-2" src="images/cars/bmw-x5/01.jpg" alt="" srcset="">
+                                    <img class="img-fluid object-fit-cover rounded-2" src="{{asset('storage/'.$image->image_path)}}" alt="" srcset="">
                                 </div>
-
-                                <div class="item rounded-2">
-                                    <img class="img-fluid object-fit-cover rounded-2" src="images/cars/bmw-x5/02.jpg" alt="" srcset="">
-                                </div>
-
-                                <div class="item rounded-2">
-                                    <img class="img-fluid object-fit-cover rounded-2" src="images/cars/bmw-x5/03.jpg" alt="" srcset="">
-                                </div>
-
-                                <div class="item rounded-2">
-                                    <img class="img-fluid object-fit-cover rounded-2" src="images/cars/bmw-x5/04.jpg" alt="" srcset="">
-                                </div>
-
-                                <div class="item rounded-2">
-                                    <img class="img-fluid object-fit-cover rounded-2" src="images/cars/bmw-x5/05.jpg" alt="" srcset="">
-                                </div>
-
-                                <div class="item rounded-2">
-                                    <img class="img-fluid object-fit-cover rounded-2" src="images/cars/bmw-x5/06.jpg" alt="" srcset="">
-                                </div>
-
-                                <div class="item rounded-2">
-                                    <img class="img-fluid object-fit-cover rounded-2" src="images/cars/bmw-x5/07.jpg" alt="" srcset="">
-                                </div>
-
-                                <div class="item rounded-2">
-                                    <img class="img-fluid object-fit-cover rounded-2" src="images/cars/bmw-x5/08.jpg" alt="" srcset="">
-                                </div>
-
-                                <div class="item rounded-2">
-                                    <img class="img-fluid object-fit-cover rounded-2" src="images/cars/bmw-x5/09.jpg" alt="" srcset="">
-                                </div>
+                                @endforeach
 
                             </div>
 

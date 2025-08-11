@@ -6,7 +6,8 @@
 
 <head>
 
-    <script src="js/color-modes.js"></script>
+    <base href="/">
+    <script src="/js/color-modes.js"></script>
 
 
     <meta charset="UTF-8">
@@ -14,7 +15,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
 
-    <base href="/">
 
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
@@ -28,7 +28,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Simplebar stylesheet -->
-    <link rel="stylesheet" href="libs/simplebar/dist/simplebar.min.css">
+    <link rel="stylesheet" href="/libs/simplebar/dist/simplebar.min.css">
     <noscript>
         <style>
             /**
@@ -49,21 +49,21 @@
     </noscript>
 
     <!-- Jarallax stylesheet -->
-    <link rel="stylesheet" href="libs/jarallax/dist/jarallax.min.css">
+    <link rel="stylesheet" href="/libs/jarallax/dist/jarallax.min.css">
 
     <!-- Site stylesheet -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
 
     <!-- Color scheme -->
-    <link id="templateColorScheme" rel="stylesheet" href="css/color-schemes/tc_red.css">
+    <link id="templateColorScheme" rel="stylesheet" href="/css/color-schemes/tc_red.css">
 
     <!-- Preloader stylesheet -->
-    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="/css/preloader.css">
 
     @yield('css-links')
 
     <!-- Preloader JavaScript -->
-    <script src="js/preloader.js"></script>
+    <script src="/js/preloader.js"></script>
 </head>
 
 <body>
@@ -342,28 +342,28 @@
     <!-- Scripts -->
 
     <!-- jQuery -->
-    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="/libs/jquery/dist/jquery.min.js"></script>
 
     <!-- jQuery Lazy plugin -->
-    <script src="libs/jquery-lazy/jquery.lazy.min.js"></script>
+    <script src="/libs/jquery-lazy/jquery.lazy.min.js"></script>
 
     <!-- Simplebar plugin -->
-    <script src="libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="/libs/simplebar/dist/simplebar.min.js"></script>
 
     <!-- Bootstrap bundle -->
-    <script src="libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Jarallax plugin -->
-    <script src="libs/jarallax/dist/jarallax.min.js"></script>
-    <script src="libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="/libs/jarallax/dist/jarallax-video.min.js"></script>
 
     <!-- FlyTo plugin -->
-    <script src="libs/fly-to/dist/js/fly-to.min.js"></script>
+    <script src="/libs/fly-to/dist/js/fly-to.min.js"></script>
 
     <!-- Main JavaScript -->
-    <script src="js/script.min.js"></script>
+    <script src="/js/script.min.js"></script>
 
-    <script src="switcher/switcher.min.js"></script>
+    <script src="/switcher/switcher.min.js"></script>
 
     @yield('page-src')
 
