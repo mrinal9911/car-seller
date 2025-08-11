@@ -621,7 +621,7 @@ Vehicles Details
             border-radius: 0.25rem;
             font-size: 0.875rem;
             color: rgba(var(--bs-body-color-rgb), 0.75);
-            width: 100%;
+            width: 101% !important;
         }
     </style>
 
