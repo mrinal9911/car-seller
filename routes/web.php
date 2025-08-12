@@ -44,6 +44,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/car/edit/{id}', [CarController::class, 'editListing']);
     Route::post('/car/update/{id}', [CarController::class, 'updateListing']);
     Route::get('/car/delete/{id}', [CarController::class, 'deleteListing']);
+    Route::get('/list-message', [CarController::class, 'listMessage']);
 });
 /**
  * | CRUD of Enquiry

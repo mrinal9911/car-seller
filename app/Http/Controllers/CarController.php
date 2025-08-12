@@ -222,4 +222,14 @@ class CarController extends Controller
         $car = Car::with('images')->findOrFail($id);
         return view('cars.edit-listing', compact('car'));
     }
+
+
+    public function listMessage(Request $req)
+    {
+        try {
+            print_r($req);
+            die;
+        } catch (Exception $e) {
+        }
+    }
 }
