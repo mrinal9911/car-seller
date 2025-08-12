@@ -54,7 +54,7 @@ Dashboard - My Listings
                                 <li class="nav-item my-1">
                                     <a class="btn btn-sm d-flex align-items-center nav-link px-3 px-lg-4 mx-1
                             bg-body text-body-emphasis text-primary custom-color border border-light-subtle
-                            " href="account-listings.html">
+                            " href="{{ url('dashboard') }}">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-list-details me-2">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <path d="M13 5h8" />
@@ -67,9 +67,9 @@ Dashboard - My Listings
                                     </a>
                                 </li>
                                 <li class="nav-item my-1">
-                                    <a class="btn btn-sm d-flex align-items-center nav-link px-3 px-lg-4 mx-1
+                                    <a id="loadMessagesBtn" class="btn btn-sm d-flex align-items-center nav-link px-3 px-lg-4 mx-1
                             
-                            bg-body-tertiary text-body-secondary fs-6" href="#">
+                            bg-body-tertiary text-body-secondary fs-6" href="">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages me-2">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
@@ -86,7 +86,7 @@ Dashboard - My Listings
                 <div class="row">
                     <div class="col-12">
 
-                        <div class="card border mb-4 overflow-hidden">
+                        <div class="card border mb-4 overflow-hidden thiss">
 
                             <div class="card-header p-3 border-bottom d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between align-items-center bg-body">
                                 <h5 class="card-title mb-3 m-sm-0">My Listings <span class="badge bg-primary bg-opacity-10 text-primary ms-2">{{ $carDetails->count() }} Items</span>
@@ -239,6 +239,24 @@ Dashboard - My Listings
             </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const messagesBtn = document.getElementById('loadMessagesBtn');
+            const container = document.querySelector('.thiss'); // The section to replace
+
+            messagesBtn.addEventListener('click', function() {
+                fetch('/load-messages')
+                    .then(response => response.text())
+                    .then(html => {
+                        container.outerHTML = html;
+                    })
+                    .catch(err => {
+                        console.error('Error loading messages:', err);
+                    });
+            });
+        });
+    </script>
 
 
 </main>

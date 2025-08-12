@@ -216,4 +216,19 @@ class CarController extends Controller
     {
         return view('cars.add-listing');
     }
+
+
+    /*
+
+    */
+    public function listMessage( Request $req)
+    {
+        try{
+            print_r($req);
+            die;
+        }
+        catch (Exception $e){
+            
+        }
+    }
 }

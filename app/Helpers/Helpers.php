@@ -19,3 +19,7 @@ if (!function_exists('indianNumberFormat')) {
         return $restUnits . $lastThree;
     }
 }
+
+if(!function_exists('')){
+    
+}

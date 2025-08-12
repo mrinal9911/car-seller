@@ -41,6 +41,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [CarController::class, 'dashboard'])->name('dashboard');
     Route::get('/add-listing', [CarController::class, 'addListing']);
     Route::post('/car/store', [CarController::class, 'store']);
+    Route::get('/list-message', [CarController::class, 'listMessage']);
 });
 /**
  * | CRUD of Enquiry
