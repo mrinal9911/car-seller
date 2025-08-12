@@ -110,6 +110,8 @@ Vehicles Details
                                         <!-- Hidden input to send static page name -->
                                         <input type="hidden" name="page_name" value="vehicleDetailPage">
                                         <input type="hidden" name="page_tag" value="offer">
+                                        <input type="hidden" name="car_id" value="{{ $car->id }}"> <!-- Added car ID -->
+
                                         <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Submit</button>
                                     </form>
                                     <!-- END Add Offer -->
@@ -364,6 +366,7 @@ Vehicles Details
                                             <!-- Hidden input to send static page name -->
                                             <input type="hidden" name="page_name" value="vehicleDetailPage">
                                             <input type="hidden" name="page_tag" value="enquiry">
+                                            <input type="hidden" name="car_id" value="{{ $car->id }}"> <!-- Added car ID -->
                                             <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Submit</button>
                                         </form>
                                         <!-- END Add Enquiry -->
