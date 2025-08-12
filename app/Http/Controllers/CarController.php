@@ -276,6 +276,17 @@ class CarController extends Controller
         return redirect()->back()->with('success', 'Car listing updated successfully.');
     }
 
+    public function deleteListing($id)
+    {
+        $car = Car::findOrFail($id);
+        $car->delete();
+
+        // Optionally, delete associated images
+        CarImage::where('car_id', $id)->delete();
+
+        return redirect()->back()->with('success', 'Car listing deleted successfully.');
+    }
+
     public function listMessage(Request $req)
     {
         try {
