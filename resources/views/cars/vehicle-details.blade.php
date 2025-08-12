@@ -127,7 +127,7 @@ Vehicles Details
                 <!-- Car Media -->
                 <ul class="nav nav-tabs custom-color justify-content-start mb-4" id="carTabs" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link link-body-emphasis fw-bold fs-6 py-3 px-4 active" id="car-pictures-tab" data-bs-toggle="tab" data-bs-target="#car-pictures" type="button" role="tab" aria-controls="car-pictures" aria-selected="true">Gallery <span class="badge rounded-pill bg-secondary text-bg-secondary  text-bg-primary ms-1">15</span>
+                        <button class="nav-link link-body-emphasis fw-bold fs-6 py-3 px-4 active" id="car-pictures-tab" data-bs-toggle="tab" data-bs-target="#car-pictures" type="button" role="tab" aria-controls="car-pictures" aria-selected="true">Gallery <span class="badge rounded-pill bg-secondary text-bg-secondary  text-bg-primary ms-1"> {{ $car['images']->count() }}</span>
                         </button>
                     </li>
 

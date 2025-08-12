@@ -111,7 +111,7 @@ Add Listing
 
                                                                     <option value="Skoda">Skoda</option>
 
-                                                                    <option value="Suzuki">Suzuki</option>
+                                                                    <option value="Maruti-Suzuki">Maruti Suzuki</option>
 
                                                                     <option value="Tata">Tata</option>
 
