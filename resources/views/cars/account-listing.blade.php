@@ -156,9 +156,9 @@ Dashboard - My Listings
                                                 </td>
                                                 <td>
                                                     <div class="action">
-                                                        <a href="/car-details" class="btn btn-sm action-preview position-relative btn-light border rounded-circle ms-2 fs-xs" role="button" data-bs-toggle="tooltip" data-bs-title="Preview"></a>
-                                                        <a href="/edit-listing" class="btn btn-sm action-edit position-relative btn-light border rounded-circle ms-2 fs-xs" role="button" data-bs-toggle="tooltip" data-bs-title="Edit"></a>
-                                                        <a href="javascript:void(0)" class="btn btn-sm action-delete position-relative btn-light border rounded-circle ms-2 fs-xs" role="button" data-bs-toggle="tooltip" data-bs-title="Delete"></a>
+                                                        <a href="/vehicle-details/{{ $car->id }}" class="btn btn-sm action-preview position-relative btn-light border rounded-circle ms-2 fs-xs" role="button" data-bs-toggle="tooltip" data-bs-title="Preview"></a>
+                                                        <a href="/car/edit/{{ $car->id }}" class="btn btn-sm action-edit position-relative btn-light border rounded-circle ms-2 fs-xs" role="button" data-bs-toggle="tooltip" data-bs-title="Edit"></a>
+                                                        <a href="/car/delete/{{ $car->id }}" class="btn btn-sm action-delete position-relative btn-light border rounded-circle ms-2 fs-xs" role="button" data-bs-toggle="tooltip" data-bs-title="Delete"></a>
                                                     </div>
                                                 </td>
                                             </tr>
