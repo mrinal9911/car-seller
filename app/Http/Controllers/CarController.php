@@ -206,23 +206,75 @@ class CarController extends Controller
         return view('cars.about-us');
     }
 
+    /** 
+     * | View of dashboard page
+     */
     public function dashboard()
     {
         $carDetails = Car::with('mainImage')->latest()->paginate(10);
         return view('cars.account-listing', compact('carDetails'));
     }
 
+    /** 
+     * | View of add listing page
+     */
     public function addListing()
     {
         return view('cars.add-listing');
     }
 
+    /** 
+     * | View of car edit details
+     */
     public function editListing($id)
     {
         $car = Car::with('images')->findOrFail($id);
         return view('cars.edit-listing', compact('car'));
     }
 
+    /** 
+     * | For updating car details
+     */
+    public function updateListing(Request $request, $id)
+    {
+        // Validate the request
+        $request->validate([
+            'title'                      => 'required|string|max:255',
+            'brand'                      => 'required|string|max:100',
+            'model'                      => 'required|string|max:100',
+            'bodyType'                   => 'required|string|max:50',
+            'transmission'               => 'required|string|max:50',
+            'fuelType'                   => 'required|string|max:50',
+            'color'                      => 'required|string|max:50',
+            'engine'                     => 'required|integer',
+            'regMonth'                   => 'required|integer|between:1,12',
+            'regYear'                    => 'required|integer|min:1980|max:' . date('Y'),
+            'ownershipType'              => 'required|string|max:50',
+            'condition'                  => 'required|string|max:50',
+            'driven'                     => 'required|integer|min:0',
+            'price'                      => 'required|numeric|min:0',
+            'isNegotiable'               => 'nullable',
+            'description'                => 'required|string',
+        ]);
+
+        $data = $request->all();
+        $data['body_type']           = $data['bodyType'];
+        $data['fuel_type']           = $data['fuelType'];
+        $data['month']               = $data['regMonth'];
+        $data['year']                = $data['regYear'];
+        $data['ownership_type']      = $data['ownershipType'];
+        $data['is_price_negotiable'] = (int)$data['isNegotiable'] ?? 0;
+
+        // Remove the camelCase keys so they don't try to update non-existent columns
+        unset($data['bodyType'], $data['fuelType'], $data['regMonth'], $data['regYear'], $data['ownershipType'], $data['isNegotiable']);
+
+        $car = Car::findOrFail($id);
+        $car->update($data);
+
+        // Handle image uploads as in the store method...
+
+        return redirect()->back()->with('success', 'Car listing updated successfully.');
+    }
 
     public function listMessage(Request $req)
     {
