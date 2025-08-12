@@ -216,4 +216,10 @@ class CarController extends Controller
     {
         return view('cars.add-listing');
     }
+
+    public function editListing($id)
+    {
+        $car = Car::with('images')->findOrFail($id);
+        return view('cars.edit-listing', compact('car'));
+    }
 }

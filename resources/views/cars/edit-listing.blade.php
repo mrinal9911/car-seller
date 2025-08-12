@@ -1,7 +1,7 @@
 @extends('layouts.landing.app')
 
 @section('title')
-Add Listing
+Edit Listing
 @endsection
 
 @section('page-content')
@@ -18,7 +18,7 @@ Add Listing
     <div class="container d-lg-flex position-relative z-1 justify-content-between align-items-center py-2 py-lg-3">
 
         <div class="order-lg-1 pe-lg-4 text-center text-lg-start">
-            <h3 class="h3 mb-3 mb-lg-0">Add Listing</h3>
+            <h3 class="h3 mb-3 mb-lg-0">Edit Listing</h3>
         </div>
     </div>
 </div>
@@ -36,8 +36,8 @@ Add Listing
 
                 <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-12 g-4">
 
-                    <!-- Add Listing -->
-                    <form id="add-listing-form" class="w-100 submit-listing-form" action="{{ url('car/store') }}" method="POST" enctype="multipart/form-data">
+                    <!-- Edit Listing -->
+                    <form id="edit-listing-form" class="w-100 submit-listing-form" action="{{ url('car/store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
 
                         <div class="row">
@@ -60,7 +60,7 @@ Add Listing
                                                             <!-- Listing Name -->
                                                             <div class="mb-3">
                                                                 <label for="title" class="form-label fw-semibold fs-special mb-1">Car Title/Name</label>
-                                                                <input type="text" class="form-control custom-color" id="title" name="title">
+                                                                <input type="text" class="form-control custom-color" id="title" name="title" value="{{ old('title', $car->title) }}">
                                                             </div>
                                                             <!-- END Listing name -->
 
@@ -521,24 +521,13 @@ Add Listing
                         </div>
 
                     </form>
-                    <!-- END Add Listing -->
+                    <!-- END Edit Listing -->
 
                 </div>
 
             </section>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -570,7 +559,7 @@ Add Listing
 <script>
     function submitListingForm(event) {
         event.preventDefault(); // prevent anchor default navigation
-        document.getElementById('add-listing-form').submit();
+        document.getElementById('edit-listing-form').submit();
     }
 </script>
 
