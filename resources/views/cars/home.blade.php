@@ -190,7 +190,7 @@ Home
             <div class="card-body d-flex flex-column align-items-center">
               <h5 class="card-title fw-bold fs-6 fs-special">{{ $brand['brand_name'] }}</h5>
               <div class="car-brand-img overflow-hidden position-relative">
-                <div style="--car-brand-icon: url('{{ asset('storage/icons/brands/' . $brand['brand_logo']) }}')" class="car-brand text-primary fs-5 fw-bold"></div>
+                <div style="--car-brand-icon: url('{{ asset('images/brand-logo/' . $brand['brand_logo']) }}')" class="car-brand text-primary fs-5 fw-bold"></div>
                 <a href="javascript:void(0)" class="stretched-link"></a>
               </div>
             </div>

@@ -14,7 +14,7 @@ class Car extends Model
 
     public function images()
     {
-        return $this->hasMany(CarImage::class);
+        return $this->hasMany(CarImage::class)->orderBy('is_main', 'desc');
     }
 
     public function mainImage()
