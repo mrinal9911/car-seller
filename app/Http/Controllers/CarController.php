@@ -226,10 +226,6 @@ class CarController extends Controller
 
     public function listMessage(Request $req)
     {
-        try {
-            print_r($req);
-            die;
-        } catch (Exception $e) {
-        }
+       return true;
     }
 }

@@ -246,7 +246,7 @@ Dashboard - My Listings
             const container = document.querySelector('.thiss'); // The section to replace
 
             messagesBtn.addEventListener('click', function() {
-                fetch('/load-messages')
+                fetch('/list-message')
                     .then(response => response.text())
                     .then(html => {
                         container.outerHTML = html;
