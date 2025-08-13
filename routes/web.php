@@ -43,7 +43,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/car/store', [CarController::class, 'store']);
     Route::get('/car/edit/{id}', [CarController::class, 'editListing']);
     Route::post('/car/update/{id}', [CarController::class, 'updateListing']);
-    Route::get('/car/delete/{id}', [CarController::class, 'deleteListing']);
+    Route::post('/car/manage-status', [CarController::class, 'manageStatus']);
     Route::get('/list-message', [CarController::class, 'listMessage']);
 });
 /**

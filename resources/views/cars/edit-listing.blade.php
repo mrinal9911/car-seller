@@ -37,7 +37,7 @@ Edit Listing
                 <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-12 g-4">
 
                     <!-- Edit Listing -->
-                    <form id="edit-listing-form" class="w-100 submit-listing-form" action="{{ url('car/store') }}" method="POST" enctype="multipart/form-data">
+                    <form id="edit-listing-form" class="w-100 submit-listing-form" action="{{ url('/car/update/'. $car->id) }}" method="POST" enctype="multipart/form-data">
                         @csrf
 
                         <div class="row">
@@ -71,55 +71,31 @@ Edit Listing
                                                                 <select id="brand" name="brand" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select brand">
                                                                     <option selected>Select</option>
 
-                                                                    <option value="Audi">Audi</option>
-
-                                                                    <option value="BMW">BMW</option>
-
-                                                                    <option value="Chevrolet">Chevrolet</option>
-
-                                                                    <option value="Fiat">Fiat</option>
-
-                                                                    <option value="Ford">Ford</option>
-
-                                                                    <option value="GMC">GMC</option>
-
-                                                                    <option value="Honda">Honda</option>
-
-                                                                    <option value="Hyundai">Hyundai</option>
-
-                                                                    <option value="Jaguar">Jaguar</option>
-
-                                                                    <option value="Jeep">Jeep</option>
-
-                                                                    <option value="Kia">Kia</option>
-
-                                                                    <option value="Land Rover">Land Rover</option>
-
-                                                                    <option value="Lexus">Lexus</option>
-
-                                                                    <option value="Mercedes-Benz">Mercedes-Benz</option>
-
-                                                                    <option value="MG">MG</option>
-
-                                                                    <option value="Mini Cooper">Mini Cooper</option>
-
-                                                                    <option value="Mitsubishi">Mitsubishi</option>
-
-                                                                    <option value="Nissan">Nissan</option>
-
-                                                                    <option value="Renault">Renault</option>
-
-                                                                    <option value="Skoda">Skoda</option>
-
-                                                                    <option value="Maruti Suzuki">Maruti Suzuki</option>
-
-                                                                    <option value="Tata">Tata</option>
-
-                                                                    <option value="Toyota">Toyota</option>
-
-                                                                    <option value="Volkswagen">Volkswagen</option>
-
-                                                                    <option value="Volvo">Volvo</option>
+                                                                    <option value="Audi" {{ old('brand', $car->brand) == 'Audi' ? 'selected' : '' }}>Audi</option>
+                                                                    <option value="BMW" {{ old('brand', $car->brand) == 'BMW' ? 'selected' : '' }}>BMW</option>
+                                                                    <option value="Chevrolet" {{ old('brand', $car->brand) == 'Chevrolet' ? 'selected' : '' }}>Chevrolet</option>
+                                                                    <option value="Fiat" {{ old('brand', $car->brand) == 'Fiat' ? 'selected' : '' }}>Fiat</option>
+                                                                    <option value="Ford" {{ old('brand', $car->brand) == 'Ford' ? 'selected' : '' }}>Ford</option>
+                                                                    <option value="GMC" {{ old('brand', $car->brand) == 'GMC' ? 'selected' : '' }}>GMC</option>
+                                                                    <option value="Honda" {{ old('brand', $car->brand) == 'Honda' ? 'selected' : '' }}>Honda</option>
+                                                                    <option value="Hyundai" {{ old('brand', $car->brand) == 'Hyundai' ? 'selected' : '' }}>Hyundai</option>
+                                                                    <option value="Jaguar" {{ old('brand', $car->brand) == 'Jaguar' ? 'selected' : '' }}>Jaguar</option>
+                                                                    <option value="Jeep" {{ old('brand', $car->brand) == 'Jeep' ? 'selected' : '' }}>Jeep</option>
+                                                                    <option value="Kia" {{ old('brand', $car->brand) == 'Kia' ? 'selected' : '' }}>Kia</option>
+                                                                    <option value="Land Rover" {{ old('brand', $car->brand) == 'Land Rover' ? 'selected' : '' }}>Land Rover</option>
+                                                                    <option value="Lexus" {{ old('brand', $car->brand) == 'Lexus' ? 'selected' : '' }}>Lexus</option>
+                                                                    <option value="Mercedes-Benz" {{ old('brand', $car->brand) == 'Mercedes-Benz' ? 'selected' : '' }}>Mercedes-Benz</option>
+                                                                    <option value="MG" {{ old('brand', $car->brand) == 'MG' ? 'selected' : '' }}>MG</option>
+                                                                    <option value="Mini Cooper" {{ old('brand', $car->brand) == 'Mini Cooper' ? 'selected' : '' }}>Mini Cooper</option>
+                                                                    <option value="Mitsubishi" {{ old('brand', $car->brand) == 'Mitsubishi' ? 'selected' : '' }}>Mitsubishi</option>
+                                                                    <option value="Nissan" {{ old('brand', $car->brand) == 'Nissan' ? 'selected' : '' }}>Nissan</option>
+                                                                    <option value="Renault" {{ old('brand', $car->brand) == 'Renault' ? 'selected' : '' }}>Renault</option>
+                                                                    <option value="Skoda" {{ old('brand', $car->brand) == 'Skoda' ? 'selected' : '' }}>Skoda</option>
+                                                                    <option value="Maruti Suzuki" {{ old('brand', $car->brand) == 'Maruti Suzuki' ? 'selected' : '' }}>Maruti Suzuki</option>
+                                                                    <option value="Tata" {{ old('brand', $car->brand) == 'Tata' ? 'selected' : '' }}>Tata</option>
+                                                                    <option value="Toyota" {{ old('brand', $car->brand) == 'Toyota' ? 'selected' : '' }}>Toyota</option>
+                                                                    <option value="Volkswagen" {{ old('brand', $car->brand) == 'Volkswagen' ? 'selected' : '' }}>Volkswagen</option>
+                                                                    <option value="Volvo" {{ old('brand', $car->brand) == 'Volvo' ? 'selected' : '' }}>Volvo</option>
 
                                                                 </select>
                                                             </div>
@@ -129,7 +105,7 @@ Edit Listing
                                                             <!-- Listing model -->
                                                             <div class="mb-3">
                                                                 <label for="model" class="form-label fw-semibold fs-special mb-1">Model</label>
-                                                                <input type="text" class="form-control custom-color" id="model" name="model">
+                                                                <input type="text" class="form-control custom-color" id="model" name="model" value="{{ old('model', $car->model) }}">
 
                                                             </div>
                                                             <!-- END Listing model -->
@@ -141,24 +117,15 @@ Edit Listing
                                                                 <select id="bodyType" name="bodyType" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select body">
                                                                     <option selected>Select</option>
 
-
-                                                                    <option value="4x4">4x4</option>
-
-                                                                    <option value="convertible">Convertible</option>
-
-                                                                    <option value="coupe">Coupe</option>
-
-                                                                    <option value="hatchback">Hatchback</option>
-
-                                                                    <option value="camper">MPV</option>
-
-                                                                    <option value="sedan">Sedan</option>
-
-                                                                    <option value="sports">Sports</option>
-
-                                                                    <option value="suv">SUV</option>
-
-                                                                    <option value="mpv">MPV</option>
+                                                                    <option value="4x4" {{ old('body_type', $car->body_type) == '4x4' ? 'selected' : '' }}>4x4</option>
+                                                                    <option value="convertible" {{ old('body_type', $car->body_type) == 'convertible' ? 'selected' : '' }}>Convertible</option>
+                                                                    <option value="coupe" {{ old('body_type', $car->body_type) == 'coupe' ? 'selected' : '' }}>Coupe</option>
+                                                                    <option value="hatchback" {{ old('body_type', $car->body_type) == 'hatchback' ? 'selected' : '' }}>Hatchback</option>
+                                                                    <option value="camper" {{ old('body_type', $car->body_type) == 'camper' ? 'selected' : '' }}>MPV</option>
+                                                                    <option value="sedan" {{ old('body_type', $car->body_type) == 'sedan' ? 'selected' : '' }}>Sedan</option>
+                                                                    <option value="sports" {{ old('body_type', $car->body_type) == 'sports' ? 'selected' : '' }}>Sports</option>
+                                                                    <option value="suv" {{ old('body_type', $car->body_type) == 'suv' ? 'selected' : '' }}>SUV</option>
+                                                                    <option value="mpv" {{ old('body_type', $car->body_type) == 'mpv' ? 'selected' : '' }}>MPV</option>
 
                                                                 </select>
                                                             </div>
@@ -171,13 +138,9 @@ Edit Listing
                                                                 <select id="transmission" name="transmission" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select transmission">
                                                                     <option selected>Select</option>
 
-
-                                                                    <option value="automatic">Automatic</option>
-
-                                                                    <option value="semi-auto">Semi Auto</option>
-
-                                                                    <option value="manual">Manual</option>
-
+                                                                    <option value="automatic" {{ old('transmission', $car->transmission) == 'automatic' ? 'selected' : '' }}>Automatic</option>
+                                                                    <option value="semi-auto" {{ old('transmission', $car->transmission) == 'semi-auto' ? 'selected' : '' }}>Semi Auto</option>
+                                                                    <option value="manual" {{ old('transmission', $car->transmission) == 'manual' ? 'selected' : '' }}>Manual</option>
 
                                                                 </select>
                                                             </div>
@@ -190,18 +153,12 @@ Edit Listing
                                                                 <select id="fuelType" name="fuelType" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select fuel">
                                                                     <option selected>Select</option>
 
-                                                                    <option value="petrol">Petrol</option>
-
-                                                                    <option value="diesel">Diesel</option>
-
-                                                                    <option value="hybrid-electric">Hybrid Electric</option>
-
-                                                                    <option value="hybrid-petrol-el">Hybrid Petrol/EL</option>
-
-                                                                    <option value="petrol-mhev">Petrol/MHEV</option>
-
-                                                                    <option value="diesel-mhev">Diesel/MHEV</option>
-
+                                                                    <option value="petrol" {{ old('fuel_type', $car->fuel_type) == 'petrol' ? 'selected' : '' }}>Petrol</option>
+                                                                    <option value="diesel" {{ old('fuel_type', $car->fuel_type) == 'diesel' ? 'selected' : '' }}>Diesel</option>
+                                                                    <option value="hybrid-electric" {{ old('fuel_type', $car->fuel_type) == 'hybrid-electric' ? 'selected' : '' }}>Hybrid Electric</option>
+                                                                    <option value="hybrid-petrol-el" {{ old('fuel_type', $car->fuel_type) == 'hybrid-petrol-el' ? 'selected' : '' }}>Hybrid Petrol/EL</option>
+                                                                    <option value="petrol-mhev" {{ old('fuel_type', $car->fuel_type) == 'petrol-mhev' ? 'selected' : '' }}>Petrol/MHEV</option>
+                                                                    <option value="diesel-mhev" {{ old('fuel_type', $car->fuel_type) == 'diesel-mhev' ? 'selected' : '' }}>Diesel/MHEV</option>
 
                                                                 </select>
                                                             </div>
@@ -212,56 +169,31 @@ Edit Listing
                                                             <div class="mb-3">
                                                                 <label for="color" class="form-label fw-semibold fs-special mb-1">Color</label>
                                                                 <select id="color" name="color" class="form-select custom-color text-dark-emphasis rounded-1">
-                                                                    <option selected>Select</option>
-                                                                    <option value="White">White</option>
-                                                                    <option value="Black">Black</option>
-                                                                    <option value="Silver">Silver</option>
-                                                                    <option value="Gray">Gray</option>
-                                                                    <option value="Red">Red</option>
-                                                                    <option value="Blue">Blue</option>
-                                                                    <option value="Green">Green</option>
-                                                                    <option value="Yellow">Yellow</option>
-                                                                    <option value="Brown">Brown</option>
-                                                                    <option value="Orange">Orange</option>
-                                                                    <option value="Maroon">Maroon</option>
-                                                                    <option value="Gold">Gold</option>
-                                                                    <option value="Beige">Beige</option>
+
+                                                                    <option value="">Select</option>
+                                                                    <option value="White" {{ old('color', $car->color) == 'White' ? 'selected' : '' }}>White</option>
+                                                                    <option value="Black" {{ old('color', $car->color) == 'Black' ? 'selected' : '' }}>Black</option>
+                                                                    <option value="Silver" {{ old('color', $car->color) == 'Silver' ? 'selected' : '' }}>Silver</option>
+                                                                    <option value="Gray" {{ old('color', $car->color) == 'Gray' ? 'selected' : '' }}>Gray</option>
+                                                                    <option value="Red" {{ old('color', $car->color) == 'Red' ? 'selected' : '' }}>Red</option>
+                                                                    <option value="Blue" {{ old('color', $car->color) == 'Blue' ? 'selected' : '' }}>Blue</option>
+                                                                    <option value="Green" {{ old('color', $car->color) == 'Green' ? 'selected' : '' }}>Green</option>
+                                                                    <option value="Yellow" {{ old('color', $car->color) == 'Yellow' ? 'selected' : '' }}>Yellow</option>
+                                                                    <option value="Brown" {{ old('color', $car->color) == 'Brown' ? 'selected' : '' }}>Brown</option>
+                                                                    <option value="Orange" {{ old('color', $car->color) == 'Orange' ? 'selected' : '' }}>Orange</option>
+                                                                    <option value="Maroon" {{ old('color', $car->color) == 'Maroon' ? 'selected' : '' }}>Maroon</option>
+                                                                    <option value="Gold" {{ old('color', $car->color) == 'Gold' ? 'selected' : '' }}>Gold</option>
+                                                                    <option value="Beige" {{ old('color', $car->color) == 'Beige' ? 'selected' : '' }}>Beige</option>
+
                                                                 </select>
                                                             </div>
                                                             <!-- END Listing Color -->
 
 
-                                                            <!-- Listing engine -->
-                                                            <!-- <div class="mb-3">
-                                                                <label for="engine" class="form-label fw-semibold fs-special mb-1">Engine</label>
-                                                                <select id="engine" name="engine" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select engine">
-                                                                    <option selected>Select</option>
-
-
-                                                                    <option value="1">0 - 1L</option>
-
-                                                                    <option value="2">1L - 2L</option>
-
-                                                                    <option value="3">2L - 3L</option>
-
-                                                                    <option value="4">3L - 4L</option>
-
-                                                                    <option value="5">4L - 5L</option>
-
-                                                                    <option value="6">5L+</option>
-
-
-
-
-                                                                </select>
-                                                            </div> -->
-                                                            <!-- END Listing engine -->
-
-
                                                             <!-- Listing power -->
                                                             <div class="mb-3">
                                                                 <label for="engine" class="form-label fw-semibold fs-special mb-1">Engine (CC)</label>
-                                                                <input type="text" class="form-control custom-color" id="engine" name="engine">
+                                                                <input type="text" class="form-control custom-color" id="engine" name="engine" value="{{ old('engine', $car->engine) }}">
                                                             </div>
                                                             <!-- END Listing power -->
 
@@ -289,8 +221,17 @@ Edit Listing
                                                             <!-- Listing reg-year -->
                                                             <div class="mb-3">
                                                                 <label for="regYear" class="form-label fw-semibold fs-special mb-1">Registration Year</label>
-                                                                <select id="regYear" name="regYear" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select year of registration">
-                                                                    <option selected>Select</option>
+                                                                <select id="regYear" name="regYear" class="form-select custom-color text-dark-emphasis rounded-1">
+                                                                    <option value="">Select</option>
+                                                                    @php
+                                                                    $currentYear = date('Y');
+                                                                    $startYear = 2000; // Earliest possible year
+                                                                    @endphp
+                                                                    @for ($year = $currentYear; $year >= $startYear; $year--)
+                                                                    <option value="{{ $year }}" {{ old('regYear', $car->year) == $year ? 'selected' : '' }}>
+                                                                        {{ $year }}
+                                                                    </option>
+                                                                    @endfor
                                                                 </select>
                                                             </div>
                                                             <!-- END Listing reg-year -->
@@ -316,7 +257,17 @@ Edit Listing
                                                                 <select id="regMonth" name="regMonth" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select month of registration">
                                                                     <option selected>Select</option>
 
+                                                                    @php
+                                                                    $months = [
+                                                                    1 => "January", 2 => "February", 3 => "March", 4 => "April", 5 => "May", 6 => "June",
+                                                                    7 => "July", 8 => "August", 9 => "September", 10 => "October", 11 => "November", 12 => "December"];
+                                                                    @endphp
 
+                                                                    @foreach ($months as $num => $name)
+                                                                    <option value="{{ $num }}" {{ old('regMonth', $car->month) == $num ? 'selected' : '' }}>
+                                                                        {{ $name }}
+                                                                    </option>
+                                                                    @endforeach
                                                                 </select>
                                                             </div>
                                                             <!-- END Listing reg-month -->
@@ -343,10 +294,13 @@ Edit Listing
                                                                 <label for="ownershipType" class="form-label fw-semibold fs-special mb-1">Ownership Type</label>
                                                                 <select id="ownershipType" name="ownershipType" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select ownership type">
                                                                     <option selected>Select</option>
-                                                                    <option value="First">First Owner</option>
-                                                                    <option value="Second">Second Owner</option>
-                                                                    <option value="Third">Third Owner</option>
-                                                                    <option value="Fourth or more">Fourth or more Owner</option>
+
+                                                                    <option value="First" {{ old('ownership_type', $car->ownership_type) == 'First' ? 'selected' : '' }}>First Owner</option>
+                                                                    <option value="Second" {{ old('ownership_type', $car->ownership_type) == 'Second' ? 'selected' : '' }}>Second Owner</option>
+                                                                    <option value="Third" {{ old('ownership_type', $car->ownership_type) == 'Third' ? 'selected' : '' }}>Third Owner</option>
+                                                                    <option value="Fourth or more" {{ old('ownership_type', $car->ownership_type) == 'Fourth or more' ? 'selected' : '' }}>Fourth or more Owner</option>
+
+
                                                                 </select>
                                                             </div>
                                                             <!-- END Listing ownership-type -->
@@ -358,10 +312,8 @@ Edit Listing
                                                                 <select id="condition" name="condition" class="form-select custom-color text-dark-emphasis rounded-1" aria-label="Select condition">
                                                                     <option selected>Select</option>
 
-                                                                    <option value="No Accident History">No Accident History</option>
-
-                                                                    <option value="Restored After Accident">Restored After Accident</option>
-
+                                                                    <option value="No Accident History" {{ old('condition', $car->condition) == 'No Accident History' ? 'selected' : '' }}>No Accident History</option>
+                                                                    <option value="Restored After Accident" {{ old('condition', $car->condition) == 'Restored After Accident' ? 'selected' : '' }}>Restored After Accident</option>
 
                                                                 </select>
                                                             </div>
@@ -371,7 +323,7 @@ Edit Listing
                                                             <!-- Listing driven -->
                                                             <div class="mb-3">
                                                                 <label for="driven" class="form-label fw-semibold fs-special mb-1">Driven(KM)</label>
-                                                                <input type="text" class="form-control custom-color" id="driven" name="driven">
+                                                                <input type="text" class="form-control custom-color" id="driven" name="driven" value="{{ old('driven', $car->driven) }}">
                                                             </div>
                                                             <!-- END Listing driven -->
 
@@ -379,7 +331,7 @@ Edit Listing
                                                             <!-- Listing price -->
                                                             <div class="mb-3">
                                                                 <label for="price" class="form-label fw-semibold fs-special mb-1">Price</label>
-                                                                <input type="text" class="form-control custom-color" id="price" name="price">
+                                                                <input type="text" class="form-control custom-color" id="price" name="price" value="{{ old('price', $car->price) }}">
                                                             </div>
                                                             <!-- END Listing price -->
 
@@ -390,7 +342,12 @@ Edit Listing
                                                                 <input type="hidden" name="isNegotiable" value="0">
 
                                                                 <div class="form-check d-flex align-items-top mb-1">
-                                                                    <input class="form-check-input custom-color" type="checkbox" id="isNegotiable" name="isNegotiable" value="1">
+                                                                    <input class="form-check-input custom-color"
+                                                                        type="checkbox"
+                                                                        id="isNegotiable"
+                                                                        name="isNegotiable"
+                                                                        value="1"
+                                                                        {{ old('is_price_negotiable', $car->is_price_negotiable) ? 'checked' : '' }}>
                                                                     <label class="form-check-label" for="isNegotiable">Price Negotiable</label>
                                                                 </div>
                                                             </div>
@@ -400,7 +357,7 @@ Edit Listing
                                                             <!-- Listing description -->
                                                             <div class="mb-2 w-100">
                                                                 <label for="description" class="form-label fw-semibold fs-special mb-1">Description</label>
-                                                                <textarea class="form-control custom-color" id="description" name="description" rows="6"></textarea>
+                                                                <textarea class="form-control custom-color" id="description" name="description" rows="6">{{ old('description', $car->description) }}</textarea>
                                                             </div>
                                                             <!-- END Listing description -->
 

@@ -110,6 +110,8 @@ Vehicles Details
                                         <!-- Hidden input to send static page name -->
                                         <input type="hidden" name="page_name" value="vehicleDetailPage">
                                         <input type="hidden" name="page_tag" value="offer">
+                                        <input type="hidden" name="car_id" value="{{ $car->id }}"> <!-- Added car ID -->
+
                                         <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Submit</button>
                                     </form>
                                     <!-- END Add Offer -->
@@ -312,12 +314,12 @@ Vehicles Details
                                                         <span class="text-body-secondary fs-sm">White</span>
                                                     </div>
                                                     <div class="w-100 lh-sm">
-                                                        <span class="fw-bold me-2 fs-sm">Stock #:</span>
-                                                        <span class="text-body-secondary fs-sm">74587</span>
+                                                        <span class="fw-bold me-2 fs-sm">Year:</span>
+                                                        <span class="text-body-secondary fs-sm">April,2022</span>
                                                     </div>
                                                     <div class="w-100 lh-sm">
-                                                        <span class="fw-bold me-2 fs-sm">VIN:</span>
-                                                        <span class="text-body-secondary fs-sm">1G54A547136H66J98</span>
+                                                        <span class="fw-bold me-2 fs-sm">Ownership:</span>
+                                                        <span class="text-body-secondary fs-sm">First</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -364,6 +366,7 @@ Vehicles Details
                                             <!-- Hidden input to send static page name -->
                                             <input type="hidden" name="page_name" value="vehicleDetailPage">
                                             <input type="hidden" name="page_tag" value="enquiry">
+                                            <input type="hidden" name="car_id" value="{{ $car->id }}"> <!-- Added car ID -->
                                             <button type="submit" class="btn btn-primary custom-color fs-sm px-4 py-2 text-uppercase fw-bold text-spacing-md" data-requires-confirm="true">Submit</button>
                                         </form>
                                         <!-- END Add Enquiry -->
