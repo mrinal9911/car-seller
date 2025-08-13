@@ -276,6 +276,9 @@ class CarController extends Controller
         return redirect()->back()->with('success', 'Car listing updated successfully.');
     }
 
+    /**
+     * | Manage car status
+     */
     public function manageStatus(Request $request)
     {
         $car = Car::findOrFail($request->car_id);
@@ -297,15 +300,9 @@ class CarController extends Controller
         return redirect()->back()->with('success', 'Car status updated successfully.');
     }
 
-    public function listMessage(Request $req)
-    {
-        try {
-            print_r($req);
-            die;
-        } catch (Exception $e) {
-        }
-    }
-
+    /**
+     * | Delete car listing
+     */
     public function deleteListing(Request $request)
     {
         $car = Car::findOrFail($request->car_id);
@@ -320,5 +317,17 @@ class CarController extends Controller
         $car->delete();
 
         return redirect()->back()->with('success', 'Car listing deleted successfully.');
+    }
+
+    /**
+     * | List of messages
+     */
+    public function listMessage(Request $req)
+    {
+        try {
+            print_r($req);
+            die;
+        } catch (Exception $e) {
+        }
     }
 }
