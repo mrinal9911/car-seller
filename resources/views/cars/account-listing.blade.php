@@ -147,7 +147,12 @@ Dashboard - My Listings
                                                 </td>
                                                 <td>
                                                     <div class="d-flex align-items-center listing-status">
-                                                        <span class="badge {{ $car->status === 'published' ? 'bg-success' : 'bg-secondary' }} me-2"></span>
+                                                        <span class="badge 
+                                                            {{     $car->status === 'published' ? 'bg-success' 
+                                                                : ($car->status === 'sold' ? 'bg-danger' 
+                                                                : ($car->status === 'archived' ? 'bg-warning' : 'bg-secondary')) 
+                                                            }} me-2">
+                                                        </span>
                                                         <span class="text-body-secondary text-capitalize">{{ $car->status }}</span>
                                                     </div>
                                                 </td>
