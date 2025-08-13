@@ -276,15 +276,25 @@ class CarController extends Controller
         return redirect()->back()->with('success', 'Car listing updated successfully.');
     }
 
-    public function deleteListing($id)
+    public function manageStatus(Request $request)
     {
-        $car = Car::findOrFail($id);
-        $car->delete();
+        $car = Car::findOrFail($request->car_id);
+        if (!$car) {
+            return redirect()->back()->with('error', 'Car not found.');
+        }
+        $actionType = $request->action_type;
+        if ($actionType === 'archived') {
+            $car->status = 'archived';
+        } elseif ($actionType === 'sold') {
+            $car->status = 'sold';
+        } elseif ($actionType === 'delete') {
+            return $this->deleteListing($request);
+        } else {
+            return redirect()->back()->with('error', 'Invalid action type.');
+        }
+        $car->save();
 
-        // Optionally, delete associated images
-        CarImage::where('car_id', $id)->delete();
-
-        return redirect()->back()->with('success', 'Car listing deleted successfully.');
+        return redirect()->back()->with('success', 'Car status updated successfully.');
     }
 
     public function listMessage(Request $req)
@@ -294,5 +304,21 @@ class CarController extends Controller
             die;
         } catch (Exception $e) {
         }
+    }
+
+    public function deleteListing(Request $request)
+    {
+        $car = Car::findOrFail($request->car_id);
+        if (!$car) {
+            return redirect()->back()->with('error', 'Car not found.');
+        }
+
+        // Delete associated images
+        $car->images()->delete();
+
+        // Delete the car record
+        $car->delete();
+
+        return redirect()->back()->with('success', 'Car listing deleted successfully.');
     }
 }

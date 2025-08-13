@@ -314,12 +314,12 @@ Vehicles Details
                                                         <span class="text-body-secondary fs-sm">White</span>
                                                     </div>
                                                     <div class="w-100 lh-sm">
-                                                        <span class="fw-bold me-2 fs-sm">Stock #:</span>
-                                                        <span class="text-body-secondary fs-sm">74587</span>
+                                                        <span class="fw-bold me-2 fs-sm">Year:</span>
+                                                        <span class="text-body-secondary fs-sm">April,2022</span>
                                                     </div>
                                                     <div class="w-100 lh-sm">
-                                                        <span class="fw-bold me-2 fs-sm">VIN:</span>
-                                                        <span class="text-body-secondary fs-sm">1G54A547136H66J98</span>
+                                                        <span class="fw-bold me-2 fs-sm">Ownership:</span>
+                                                        <span class="text-body-secondary fs-sm">First</span>
                                                     </div>
                                                 </div>
                                             </div>

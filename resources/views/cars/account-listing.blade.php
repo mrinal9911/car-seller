@@ -158,7 +158,7 @@ Dashboard - My Listings
                                                     <div class="action">
                                                         <a href="/vehicle-details/{{ $car->id }}" class="btn btn-sm action-preview position-relative btn-light border rounded-circle ms-2 fs-xs" role="button" data-bs-toggle="tooltip" data-bs-title="Preview"></a>
                                                         <a href="/car/edit/{{ $car->id }}" class="btn btn-sm action-edit position-relative btn-light border rounded-circle ms-2 fs-xs" role="button" data-bs-toggle="tooltip" data-bs-title="Edit"></a>
-                                                        <a href="/car/delete/{{ $car->id }}" class="btn btn-sm action-delete position-relative btn-light border rounded-circle ms-2 fs-xs" role="button" data-bs-toggle="tooltip" data-bs-title="Delete"></a>
+                                                        <a href="#" class="btn btn-sm action-delete position-relative btn-light border rounded-circle ms-2 fs-xs" role="button" data-bs-toggle="modal" data-bs-target="#deleteOptionModal" data-car-id="{{ $car->id }}"></a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -171,6 +171,53 @@ Dashboard - My Listings
                             </div>
 
                         </div>
+
+                        <!-- Modal Delete Option  -->
+                        <div class="modal fade" id="deleteOptionModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteOptionModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-md modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-secondary-subtle py-2">
+                                        <h5 class="modal-title" id="deleteOptionModalLabel">Manage Car Status</h5>
+                                        <button type="button" class="btn-close rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body p-lg-4">
+                                        <form action="{{ url('car/manage-status') }}" method="POST">
+                                            @csrf
+                                            <input type="hidden" name="car_id" id="modalCarId">
+
+                                            <div class="mb-3">
+                                                <label for="actionType" class="form-label">Select Action</label>
+                                                <select class="form-select rounded-1" id="actionType" name="action_type" required>
+                                                    <option value="">-- Choose Action --</option>
+                                                    <option value="archived">Archived</option>
+                                                    <option value="sold">Mark as Sold</option>
+                                                    <option value="delete">Delete</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="text-end">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                <button type="submit" class="btn btn-danger">Confirm</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                var deleteOptionModal = document.getElementById('deleteOptionModal');
+                                deleteOptionModal.addEventListener('show.bs.modal', function(event) {
+                                    var button = event.relatedTarget; // Button that triggered the modal
+                                    var carId = button.getAttribute('data-car-id'); // Extract info from data-* attributes
+                                    var input = deleteOptionModal.querySelector('#modalCarId');
+                                    input.value = carId;
+                                });
+                            });
+                        </script>
+
+                        <!-- END - Modal Delete Option -->
 
                         <nav aria-label="Content navigation">
                             <ul class="pagination justify-content-center">
