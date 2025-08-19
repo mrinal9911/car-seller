@@ -293,32 +293,13 @@ Dashboard - My Listings
         </div>
     </div>
 
-    <!-- <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const messagesBtn = document.getElementById('loadMessagesBtn');
-            const container = document.querySelector('.thiss');
-
-            messagesBtn.addEventListener('click', function(event) {
-                event.preventDefault(); 
-
-                fetch('/list-message')
-                    .then(response => response.text())
-                    .then(html => {
-                        container.innerHTML = html; 
-                    })
-                    .catch(err => {
-                        console.error('Error loading messages:', err);
-                    });
-            });
-        });
-    </script> -->
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         const container = document.querySelector('.thiss');
 
         const messagesBtn = document.getElementById('loadMessagesBtn');
-        const listingsBtn = document.getElementById('loadListingsBtn'); 
+        const listingsBtn = document.getElementById('loadListingsBtn');
 
         const originalListingsHTML = container.innerHTML;
 
@@ -329,46 +310,44 @@ Dashboard - My Listings
                 .then(response => response.json())
                 .then(data => {
                     let table = `
-                        <div class="card-header p-3 border-bottom d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between align-items-center bg-body">
-                            <h5 class="card-title mb-3 m-sm-0">
-                                Messages <span class="badge bg-primary bg-opacity-10 text-primary ms-2">${data.length} Items</span>
-                            </h5>
-                        </div>
+                    <div class="card-header p-3 border-bottom d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between align-items-center bg-body">
+                        <h5 class="card-title mb-3 m-sm-0">
+                            Messages <span class="badge bg-primary bg-opacity-10 text-primary ms-2">${data.length} Items</span>
+                        </h5>
+                    </div>
 
-                        <div class="account-listings table-responsive border-0">
-                            <table class="table table-bordered table-striped text-center align-middle p-4 mb-0 table-shrink">
-                                <thead class="bg-body-tertiary text-uppercase fs-sm border-top border-bottom">
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">Salutation</th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Phone</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">Message</th>
-                                        <th scope="col">Tag</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
+                    <div class="account-listings table-responsive border-0">
+                        <table class="table table-bordered table-striped text-center align-middle p-4 mb-0 table-shrink">
+                            <thead class="bg-body-tertiary text-uppercase fs-sm border-top border-bottom">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Message</th>
+                                    <th scope="col">Tag</th>
+                                </tr>
+                            </thead>
+                            <tbody>
                     `;
 
                     data.forEach((item, index) => {
                         table += `
-                            <tr>
-                                <td>${index + 1}</td>
-                                <td>${item.salutation || ''}</td>
-                                <td>${item.name}</td>
-                                <td>${item.phone}</td>
-                                <td>${item.email}</td>
-                                <td>${item.message}</td>
-                                <td>${item.tag || ''}</td>
-                            </tr>
+                        <tr>
+                            <td>${index + 1}</td>
+                            <td>${(item.salutation ? item.salutation + ' ' : '') + item.name}</td>
+                            <td>${item.phone}</td>
+                            <td>${item.email}</td>
+                            <td>${item.message}</td>
+                            <td>${item.tag || ''}</td>
+                        </tr>
                         `;
                     });
 
                     table += `
-                                </tbody>
-                            </table>
-                        </div>
+                            </tbody>
+                        </table>
+                    </div>
                     `;
 
                     container.innerHTML = table;
@@ -387,6 +366,7 @@ Dashboard - My Listings
         }
     });
 </script>
+
 
 
 
