@@ -177,6 +177,7 @@ Dashboard - My Listings
 
                         </div>
 
+
                         <!-- Modal Delete Option  -->
                         <div class="modal fade" id="deleteOptionModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteOptionModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-md modal-dialog-centered">
@@ -292,7 +293,7 @@ Dashboard - My Listings
         </div>
     </div>
 
-    <script>
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function() {
             const messagesBtn = document.getElementById('loadMessagesBtn');
             const container = document.querySelector('.thiss');
@@ -310,7 +311,87 @@ Dashboard - My Listings
                     });
             });
         });
+    </script> -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector('.thiss');
+
+            // Example: Hook your "Messages" button/tab
+            const messagesBtn = document.getElementById('loadMessagesBtn');
+            const listingsBtn = document.getElementById('loadListingsBtn'); // if you have one
+
+            // Backup the original listings HTML so we can restore it
+            const originalListingsHTML = container.innerHTML;
+
+            // Load messages table
+            messagesBtn.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                fetch('/list-message')
+                    .then(response => response.json())
+                    .then(data => {
+                        let table = `
+
+                        <div class="card-header p-3 border-bottom d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between align-items-center bg-body">
+                                <h5 class="card-title mb-3 m-sm-0">Messages<span class="badge bg-primary bg-opacity-10 text-primary ms-2">  Items</span>
+                                </h5>
+                            </div>
+
+                    <div class="account-listings table-responsive border-0">
+                        <table class="table align-middle p-4 mb-0 table-shrink">
+                            <thead class="bg-body-tertiary text-uppercase fs-sm border-top border-bottom">
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Salutation</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Message</th>
+                                    <th scope="col">Tag</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                `;
+
+                        data.forEach(item => {
+                            table += `
+                        <tr>
+                            <td>${item.id}</td>
+                            <td>${item.salutation || ''}</td>
+                            <td>${item.name}</td>
+                            <td>${item.phone}</td>
+                            <td>${item.email}</td>
+                            <td>${item.message}</td>
+                            <td>${item.tag || ''}</td>
+                        </tr>
+                    `;
+                        });
+
+                        table += `
+                            </tbody>
+                        </table>
+                    </div>
+                `;
+
+                        container.innerHTML = table;
+                    })
+                    .catch(err => {
+                        console.error('Error loading messages:', err);
+                        container.innerHTML = `<p class="text-danger">Failed to load messages.</p>`;
+                    });
+            });
+
+            // Restore listings if needed
+            if (listingsBtn) {
+                listingsBtn.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    container.innerHTML = originalListingsHTML;
+                });
+            }
+        });
     </script>
+
 
 
 </main>
