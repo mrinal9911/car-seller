@@ -295,13 +295,15 @@ Dashboard - My Listings
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const messagesBtn = document.getElementById('loadMessagesBtn');
-            const container = document.querySelector('.thiss'); // The section to replace
+            const container = document.querySelector('.thiss');
 
-            messagesBtn.addEventListener('click', function() {
+            messagesBtn.addEventListener('click', function(event) {
+                event.preventDefault(); 
+
                 fetch('/list-message')
                     .then(response => response.text())
                     .then(html => {
-                        container.outerHTML = html;
+                        container.innerHTML = html; 
                     })
                     .catch(err => {
                         console.error('Error loading messages:', err);

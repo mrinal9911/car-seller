@@ -12,6 +12,15 @@ use Illuminate\Support\Facades\Log;
 
 class CarController extends Controller
 {
+    protected static $mEnquiry;
+
+    public function __construct()
+    {
+        if (!self::$mEnquiry) {
+            self::$mEnquiry = new Enquiry();
+        }
+    }
+
     public function index()
     {
         $cars = Car::with('images')->where('status', 'approved')->latest()->paginate(10);
@@ -324,6 +333,7 @@ class CarController extends Controller
      */
     public function listMessage(Request $req)
     {
-       return true;
+        $enquirylist = self::$mEnquiry->getAllEnqiryList();
+        return $enquirylist->get();
     }
 }
