@@ -314,83 +314,80 @@ Dashboard - My Listings
     </script> -->
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const container = document.querySelector('.thiss');
+    document.addEventListener('DOMContentLoaded', function() {
+        const container = document.querySelector('.thiss');
 
-            // Example: Hook your "Messages" button/tab
-            const messagesBtn = document.getElementById('loadMessagesBtn');
-            const listingsBtn = document.getElementById('loadListingsBtn'); // if you have one
+        const messagesBtn = document.getElementById('loadMessagesBtn');
+        const listingsBtn = document.getElementById('loadListingsBtn'); 
 
-            // Backup the original listings HTML so we can restore it
-            const originalListingsHTML = container.innerHTML;
+        const originalListingsHTML = container.innerHTML;
 
-            // Load messages table
-            messagesBtn.addEventListener('click', function(event) {
-                event.preventDefault();
+        messagesBtn.addEventListener('click', function(event) {
+            event.preventDefault();
 
-                fetch('/list-message')
-                    .then(response => response.json())
-                    .then(data => {
-                        let table = `
-
+            fetch('/list-message')
+                .then(response => response.json())
+                .then(data => {
+                    let table = `
                         <div class="card-header p-3 border-bottom d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between align-items-center bg-body">
-                                <h5 class="card-title mb-3 m-sm-0">Messages<span class="badge bg-primary bg-opacity-10 text-primary ms-2">  Items</span>
-                                </h5>
-                            </div>
+                            <h5 class="card-title mb-3 m-sm-0">
+                                Messages <span class="badge bg-primary bg-opacity-10 text-primary ms-2">${data.length} Items</span>
+                            </h5>
+                        </div>
 
-                    <div class="account-listings table-responsive border-0">
-                        <table class="table align-middle p-4 mb-0 table-shrink">
-                            <thead class="bg-body-tertiary text-uppercase fs-sm border-top border-bottom">
-                                <tr>
-                                    <th scope="col">ID</th>
-                                    <th scope="col">Salutation</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Phone</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Message</th>
-                                    <th scope="col">Tag</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                `;
-
-                        data.forEach(item => {
-                            table += `
-                        <tr>
-                            <td>${item.id}</td>
-                            <td>${item.salutation || ''}</td>
-                            <td>${item.name}</td>
-                            <td>${item.phone}</td>
-                            <td>${item.email}</td>
-                            <td>${item.message}</td>
-                            <td>${item.tag || ''}</td>
-                        </tr>
+                        <div class="account-listings table-responsive border-0">
+                            <table class="table table-bordered table-striped text-center align-middle p-4 mb-0 table-shrink">
+                                <thead class="bg-body-tertiary text-uppercase fs-sm border-top border-bottom">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Salutation</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Phone</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Message</th>
+                                        <th scope="col">Tag</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
                     `;
-                        });
 
+                    data.forEach((item, index) => {
                         table += `
-                            </tbody>
-                        </table>
-                    </div>
-                `;
-
-                        container.innerHTML = table;
-                    })
-                    .catch(err => {
-                        console.error('Error loading messages:', err);
-                        container.innerHTML = `<p class="text-danger">Failed to load messages.</p>`;
+                            <tr>
+                                <td>${index + 1}</td>
+                                <td>${item.salutation || ''}</td>
+                                <td>${item.name}</td>
+                                <td>${item.phone}</td>
+                                <td>${item.email}</td>
+                                <td>${item.message}</td>
+                                <td>${item.tag || ''}</td>
+                            </tr>
+                        `;
                     });
-            });
 
-            // Restore listings if needed
-            if (listingsBtn) {
-                listingsBtn.addEventListener('click', function(event) {
-                    event.preventDefault();
-                    container.innerHTML = originalListingsHTML;
+                    table += `
+                                </tbody>
+                            </table>
+                        </div>
+                    `;
+
+                    container.innerHTML = table;
+                })
+                .catch(err => {
+                    console.error('Error loading messages:', err);
+                    container.innerHTML = `<p class="text-danger">Failed to load messages.</p>`;
                 });
-            }
         });
-    </script>
+
+        if (listingsBtn) {
+            listingsBtn.addEventListener('click', function(event) {
+                event.preventDefault();
+                container.innerHTML = originalListingsHTML;
+            });
+        }
+    });
+</script>
+
 
 
 
