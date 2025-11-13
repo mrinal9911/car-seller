@@ -33,7 +33,7 @@ About Us
             <div class="col-12 col-md-6">
                 <div class="pe-4">
                     <h2 class="fs-5 text-uppercase mb-3 custom-color">About Us</h2>
-                    <p>Welcome to CarMart, where passion meets precision on the road. At CarMart, we are more than just a dealership; we are automotive enthusiasts dedicated to delivering unparalleled driving adventures. Our commitment to excellence extends beyond the vehicles we offer - it's embedded in our culture. </p>
+                    <p>Welcome to PrajapatiSales, where passion meets precision on the road. At PrajapatiSales, we are more than just a dealership; we are automotive enthusiasts dedicated to delivering unparalleled driving adventures. Our commitment to excellence extends beyond the vehicles we offer - it's embedded in our culture. </p>
 
                     <p>As avid automotive enthusiasts, we've crafted a haven for fellow car connoisseurs and seekers of driving exhilaration. We transcend the ordinary, curating an immersive experience that celebrates the artistry, innovation, and sheer thrill of the automotive world.</p>
 

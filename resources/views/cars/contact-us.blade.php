@@ -84,36 +84,35 @@ Contact Us
 
                     <h4 class="fs-sm text-muted text-uppercase">Address</h4>
                     <div class="mb-4 fs-special fs-6">
-                        CarMart
-                        <br>
-                        Pardih Road
+                        PrajapatiSales
                         <br>
                         Jamshedpur, Jharkhand
                     </div>
 
                     <h4 class="fs-sm text-muted text-uppercase">Phone</h4>
                     <div class="mb-4 fs-special fs-6">
-                        +1 800 123 4567
+                        +91 82967 70287
                         <br>
-                        +1 800 765 4321
+                        <!-- +1 800 765 4321 -->
                     </div>
 
                     <h4 class="fs-sm text-muted text-uppercase">Email</h4>
                     <div class="mb-4 fs-special fs-6">
-                        info@carmartsite.com
+                        ashujsr79@gmail.com
                         <br>
-                        sales@carmartsite.com
+                        <!-- sales@carmartsite.com -->
                         <br>
-                        support@carmartsite.com
+                        <!-- support@carmartsite.com -->
                     </div>
 
                     <h4 class="fs-sm text-muted text-uppercase">Opening Times</h4>
                     <div class="mb-4 fs-special fs-6">
-                        Monday - Friday 9.00AM to 6.00PM
+                        Monday - Sunday - 24/7
+                        <!-- Monday - Friday 9.00AM to 6.00PM -->
                         <br>
-                        Saturday - 10.00AM to 5.00PM
+                        <!-- Saturday - 10.00AM to 5.00PM -->
                         <br>
-                        Sunday - Please call us to book appointment
+                        Please call us to book appointment
                     </div>
 
                 </div>

@@ -123,9 +123,9 @@
                             </svg>
                         </div>
                         <div class="h-widget-content">
-                            <p class="m-0 text-nowrap">+1 (800) 445 6677
+                            <p class="m-0 text-nowrap">+91 82967 70287
                                 <br>
-                                <span class="text-muted">info@carmart.com</span>
+                                <span class="text-muted">ashujsr79@gmail.com</span>
                             </p>
                         </div>
                         <div class="vr opacity-15 position-absolute end-0 top-0 h-100 d-none d-md-block m-0 ms-md-3 ms-lg-0"></div>
@@ -140,9 +140,9 @@
                             </svg>
                         </div>
                         <div class="h-widget-content">
-                            <p class="m-0 text-nowrap">Mon - Sat: 9AM - 5PM
+                            <p class="m-0 text-nowrap">Mon - Sun: 24/7
                                 <br>
-                                <span class="text-muted">Sunday Closed</span>
+                                <span class="text-muted">Open All Day</span>
                             </p>
                         </div>
                     </div>
