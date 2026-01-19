@@ -373,30 +373,29 @@ Home
     <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" style="background-color: ; background-image: ; opacity: "></span>
 
     <div class="container">
-      <div class="row row-cols-lg-4 row-cols-2 g-0 fs-special py-5">
+      <div class="row row-cols-lg-3 row-cols-2 g-0 fs-special py-5">
 
         <div class="d-flex flex-column align-items-center text-center position-relative my-4">
-          <span class="fw-semibold fs-3">44,785</span>
+          <span class="fw-semibold fs-3">119</span>
           <span class="text-muted text-uppercase">Cars Sold</span>
           <div class="vr h-100 position-absolute end-0 top-0 opacity-15"></div>
         </div>
 
         <div class="d-flex flex-column align-items-center text-center position-relative my-4">
-          <span class="fw-semibold fs-3">39,687</span>
+          <span class="fw-semibold fs-3">468</span>
           <span class="text-muted text-uppercase">Happy Customers</span>
           <div class="vr h-100 position-absolute end-0 top-0 opacity-15 d-none d-lg-block"></div>
         </div>
 
         <div class="d-flex flex-column align-items-center text-center position-relative my-4">
-          <span class="fw-semibold fs-3">32,650</span>
+          <span class="fw-semibold fs-3">326</span>
           <span class="text-muted text-uppercase">Positive Reviews</span>
-          <div class="vr h-100 position-absolute end-0 top-0 opacity-15"></div>
         </div>
 
-        <div class="d-flex flex-column align-items-center text-center position-relative my-4">
+        <!-- <div class="d-flex flex-column align-items-center text-center position-relative my-4">
           <span class="fw-semibold fs-3">79</span>
           <span class="text-muted text-uppercase">Awards Received</span>
-        </div>
+        </div> -->
 
       </div>
     </div>

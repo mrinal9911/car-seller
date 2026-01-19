@@ -88,9 +88,9 @@
 
         <div class="container d-flex flex-wrap justify-content-between align-items-center py-4 pb-0 pb-md-4 border-bottom overflow-hidden">
             <div class="logo mb-3 mx-auto m-lg-0 mb-lg-0">
-                <a class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-decoration-none" href="index.html">
-                    <img class="logo-dark" src="images/logo.png" alt="CARMART">
-                    <img class="logo-light" src="images/logo-light.png" alt="CARMART">
+                <a class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-decoration-none" href="/">
+                    <img class="logo-dark" src="images/logo3.png" alt="CARMART">
+                    <img class="logo-light" src="images/logo-light3.png" alt="CARMART">
                 </a>
             </div>
             <div class="header-widgets col-12 col-lg-auto mb-1 mb-md-3 mb-lg-0">
@@ -228,8 +228,8 @@
                 <div class="col-lg-3 col-sm-6 mb-sm-0 mb-5 order-lg-0 order-2">
                     <div class="d-flex flex-column h-100">
                         <div class="logo mb-4">
-                            <a class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-decoration-none" href="index.html">
-                                <img class="logo-light" src="images/logo-light.png" alt="CARMART">
+                            <a class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-decoration-none" href="/">
+                                <img class="logo-light" src="images/logo-light3.png" alt="CARMART">
                             </a>
                         </div>
                         <p class="mb-4">Buy and drive your dream car from the most trusted automotive specialists.</p>
