@@ -155,8 +155,8 @@ Home
       <!-- <img class="jarallax-img lazy" data-src="./images/cars/bmw-x5/021.jpg" alt=""> -->
       <!-- <img class="jarallax-img lazy" data-src="./storage/images/car-hero.jpg" alt=""> -->
       <!-- <img class="jarallax-img lazy" data-src="./storage/images/car-hero2.jpg" alt=""> -->
-      <img class="jarallax-img lazy" data-src="./storage/images/car-hero3.png" alt="">
       <!-- <img class="jarallax-img lazy" data-src="./storage/images/hero-02.jpg" alt=""> -->
+      <img class="jarallax-img lazy" data-src="./storage/images/car-hero3.png" alt="">
 
 
       <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" style="background-color: ; background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.42) 0px, rgba(255, 255, 255, 0.08) 67%); opacity: "></span>
