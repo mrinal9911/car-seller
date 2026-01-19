@@ -248,10 +248,10 @@
                             <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="/about">About Us</a>
                         </li>
                         <li class="mb-2">
-                            <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="terms-of-service.html">Terms of Service</a>
+                            <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="/">Terms of Service</a>
                         </li>
                         <li class="mb-2">
-                            <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="privacy-policy.html">Privacy Policy</a>
+                            <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="/">Privacy Policy</a>
                         </li>
                     </ul>
                 </div>
