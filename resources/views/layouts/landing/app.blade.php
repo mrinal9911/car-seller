@@ -234,7 +234,7 @@
                         </div>
                         <p class="mb-4">Buy and drive your dream car from the most trusted automotive specialists.</p>
                         <p class="fw-bold fs-special mt-auto">
-                            &copy; 2025. All Rights Reserved.
+                            &copy; 2026. All Rights Reserved.
                         </p>
                     </div>
                 </div>
@@ -268,7 +268,7 @@
                             <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="reviews.html">Reviews</a>
                         </li> -->
                         <li class="mb-2">
-                            <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="faqs.html">FAQs</a>
+                            <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="/faq">FAQs</a>
                         </li>
                         <li class="mb-2">
                             <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="/contact">Contact us</a>

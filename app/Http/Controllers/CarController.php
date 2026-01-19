@@ -215,6 +215,11 @@ class CarController extends Controller
         return view('cars.about-us');
     }
 
+    public function faqPage()
+    {
+        return view('cars.faq');
+    }
+
     /** 
      * | View of dashboard page
      */

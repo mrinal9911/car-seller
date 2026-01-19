@@ -35,6 +35,7 @@ Route::get('/vehicles', [CarController::class, 'vehicleList']);
 Route::get('/vehicle-details/{id}', [CarController::class, 'vehicleDetails']);
 
 Route::get('/about', [CarController::class, 'aboutUs']);
+Route::get('/faq', [CarController::class, 'faqPage']);
 
 
 Route::middleware(['auth'])->group(function () {

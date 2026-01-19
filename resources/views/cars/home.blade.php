@@ -414,11 +414,7 @@ Home
     <div class="container position-relative col-xxl-8 py-5 px-3 px-sm-0">
       <div class="row info-v2 g-0">
 
-        <!-- <div class="col-lg-5 col-md-10 mx-md-auto"> -->
-        <!-- Reviews Widget  -->
 
-        <!-- END Reviews Widget  -->
-        <!-- </div> -->
         <div class="col-lg-12 col-md-10 mx-md-auto">
           <!-- FAQs Widget  -->
           <div class="widget reviews-widget reviews-widget-2 p-3 bg-body-tertiary rounded mb-4">
