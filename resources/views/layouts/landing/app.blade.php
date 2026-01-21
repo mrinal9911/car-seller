@@ -15,6 +15,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
 
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="@yield('meta_title', 'Prajapati Sales | Buy & Sell Quality Cars in India')">
+    <meta name="description" content="@yield('meta_description', 'Prajapati Sales offers trusted new and used cars at the best prices. Explore verified vehicles, transparent deals, and hassle-free car buying experience in India.')">
+    <meta name="keywords" content="Prajapati Sales, car sales, used cars, second hand cars, buy car online, sell car, car dealer India">
+    <meta name="author" content="Prajapati Sales">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
+
 
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
