@@ -271,13 +271,22 @@ class CarController extends Controller
             'description'                => 'required|string',
         ]);
 
-        $data = $request->all();
-        $data['body_type']           = $data['bodyType'];
-        $data['fuel_type']           = $data['fuelType'];
-        $data['month']               = $data['regMonth'];
-        $data['year']                = $data['regYear'];
-        $data['ownership_type']      = $data['ownershipType'];
-        $data['is_price_negotiable'] = (int)$data['isNegotiable'] ?? 0;
+        $data['title']           = $request['title'];
+        $data['brand']           = $request['brand'];
+        $data['model']           = $request['model'];
+        $data['body_type']       = $request['bodyType'];
+        $data['transmission']    = $request['transmission'];
+        $data['fuel_type']       = $request['fuelType'];
+        $data['color']           = $request['color'];
+        $data['engine']          = $request['engine'];
+        $data['month']           = $request['regMonth'];
+        $data['year']            = $request['regYear'];
+        $data['ownership_type']  = $request['ownershipType'];
+        $data['condition']       = $request['condition'];
+        $data['driven']          = $request['driven'];
+        $data['price']           = $request['price'];
+        $data['description']     = $request['description'];
+        $data['is_price_negotiable'] = (int)$request['isNegotiable'] ?? 0;
 
         // Remove the camelCase keys so they don't try to update non-existent columns
         unset($data['bodyType'], $data['fuelType'], $data['regMonth'], $data['regYear'], $data['ownershipType'], $data['isNegotiable']);
@@ -285,7 +294,39 @@ class CarController extends Controller
         $car = Car::findOrFail($id);
         $car->update($data);
 
+
         // Handle image uploads as in the store method...
+        // 2. Upload and save main image
+        if ($request->hasFile('main_image')) {
+            // Delete existing main image
+            CarImage::where('car_id', $id)->where('is_main', true)->delete();
+
+            $mainImage = $request->file('main_image');
+            $mainPath = $mainImage->store('car/main', 'public');
+
+            // Save to CarImage table
+            CarImage::create([
+                'car_id'     => $id,
+                'image_path' => $mainPath,
+                'is_main'    => true, // or use 1
+            ]);
+        }
+
+        // 3. Upload and save gallery images
+        if ($request->hasFile('images')) {
+            CarImage::where('car_id', $id)->where('is_main', false)->delete();
+            foreach ($request->file('images') as $img) {
+                if ($img->isValid()) {
+                    $path = $img->store('car/gallery', 'public');
+
+                    CarImage::create([
+                        'car_id' => $id,
+                        'image_path' => $path,
+                        'is_main' => false, // or 0
+                    ]);
+                }
+            }
+        }
 
         return redirect()->back()->with('success', 'Car listing updated successfully.');
     }
