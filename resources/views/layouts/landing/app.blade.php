@@ -23,6 +23,12 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ url()->current() }}">
 
+    <!-- Geo / Local SEO -->
+    <meta name="geo.region" content="IN-JH">
+    <meta name="geo.placename" content="Jharkhand">
+    <meta name="geo.position" content="23.3441;85.3096">
+    <meta name="ICBM" content="23.3441, 85.3096">
+
 
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
