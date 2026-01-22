@@ -9,6 +9,7 @@ use App\Models\Enquiry;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
 
 class CarController extends Controller
 {
@@ -298,6 +299,17 @@ class CarController extends Controller
         // Handle image uploads as in the store method...
         // 2. Upload and save main image
         if ($request->hasFile('main_image')) {
+
+            // Get existing main image
+            $oldMainImage = CarImage::where('car_id', $id)
+                ->where('is_main', true)
+                ->first();
+
+            // Delete old image file from storage
+            if ($oldMainImage && Storage::disk('public')->exists($oldMainImage->image_path)) {
+                Storage::disk('public')->delete($oldMainImage->image_path);
+            }
+
             // Delete existing main image
             CarImage::where('car_id', $id)->where('is_main', true)->delete();
 
@@ -314,7 +326,22 @@ class CarController extends Controller
 
         // 3. Upload and save gallery images
         if ($request->hasFile('images')) {
+
+            // Get existing gallery images (non-main)
+            $oldImages = CarImage::where('car_id', $id)
+                ->where('is_main', false)
+                ->get();
+
+            // Delete files from storage
+            foreach ($oldImages as $image) {
+                if ($image->image_path && Storage::disk('public')->exists($image->image_path)) {
+                    Storage::disk('public')->delete($image->image_path);
+                }
+            }
+
+            // Delete DB records
             CarImage::where('car_id', $id)->where('is_main', false)->delete();
+
             foreach ($request->file('images') as $img) {
                 if ($img->isValid()) {
                     $path = $img->store('car/gallery', 'public');
@@ -365,7 +392,17 @@ class CarController extends Controller
             return redirect()->back()->with('error', 'Car not found.');
         }
 
-        // Delete associated images
+        // Get all associated images
+        $images = $car->images;
+
+        // Delete image files from storage
+        foreach ($images as $image) {
+            if ($image->image_path && Storage::disk('public')->exists($image->image_path)) {
+                Storage::disk('public')->delete($image->image_path);
+            }
+        }
+
+        // Delete image records from DB
         $car->images()->delete();
 
         // Delete the car record
