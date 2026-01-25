@@ -163,7 +163,7 @@ class CarController extends Controller
         try {
 
             $request->validate([
-                'carId'          => 'nullable|numeric|max:100',
+                'car_id'          => 'nullable|numeric|max:100',
                 'userSalutation' => 'required|string|max:100',
                 'userName'       => 'required|string|max:100',
                 'userPhone'      => 'required|string|max:20',
@@ -172,7 +172,7 @@ class CarController extends Controller
             ]);
 
             $mEnquiry            =  new Enquiry();
-            $mEnquiry->car_id     = $request->input('car_id ', null);
+            $mEnquiry->car_id     = $request->input('car_id', null);
             $mEnquiry->salutation = $request->input('userSalutation');
             $mEnquiry->name       = $request->input('userName');
             $mEnquiry->phone      = $request->input('userPhone');
