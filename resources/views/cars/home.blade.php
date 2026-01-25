@@ -182,7 +182,8 @@ Home
         <!-- Slide 1 -->
         <div class="carousel-item active">
           <div class="carousel-item-wrapper d-flex align-items-center position-relative">
-            <a class="stretched-link z-2"></a>
+            <a href="/vehicles" class="stretched-link z-2"></a>
+
             <!-- <span class="badge bg-success position-absolute top-0 start-0 m-3 z-2">New</span> -->
             <img src="./images/car-hero3.png" class="d-block w-100 rounded-2" alt="BMW X5">
           </div>
@@ -191,7 +192,8 @@ Home
         <!-- Slide 2 -->
         <div class="carousel-item">
           <div class="carousel-item-wrapper d-flex align-items-center position-relative">
-            <a class="stretched-link z-2"></a>
+            <a href="/vehicles" class="stretched-link z-2"></a>
+
             <!-- <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-2">Sold</span> -->
             <img src="./images/car-hero2.jpg" class="d-block w-100 rounded-2" alt="Tiguan">
           </div>
@@ -200,7 +202,8 @@ Home
         <!-- Slide 3 -->
         <div class="carousel-item">
           <div class="carousel-item-wrapper d-flex align-items-center position-relative">
-            <a class="stretched-link z-2"></a>
+            <a href="/vehicles" class="stretched-link z-2"></a>
+
             <!-- <span class="badge bg-primary position-absolute top-0 start-0 m-3 z-2">Used</span> -->
             <img src="./images/car-hero.jpg" class="d-block w-100 rounded-2" alt="G63">
           </div>
@@ -241,6 +244,8 @@ Home
         <div class="item">
           <div class="card border border-light-subtle">
             <div class="card-body d-flex flex-column align-items-center">
+              <a href="/vehicles" class="stretched-link z-2"></a>
+
               <h5 class="card-title fw-bold fs-6 fs-special">{{ $brand['brand_name'] }}</h5>
               <div class="car-brand-img overflow-hidden position-relative">
                 <div style="--car-brand-icon: url('{{ asset('images/brand-logo/' . $brand['brand_logo']) }}')" class="car-brand text-primary fs-5 fw-bold"></div>
