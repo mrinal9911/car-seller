@@ -172,7 +172,7 @@ class CarController extends Controller
             ]);
 
             $mEnquiry            =  new Enquiry();
-            $mEnquiry->car_id     = $request->input('carId', null);
+            $mEnquiry->car_id     = $request->input('car_id ', null);
             $mEnquiry->salutation = $request->input('userSalutation');
             $mEnquiry->name       = $request->input('userName');
             $mEnquiry->phone      = $request->input('userPhone');
