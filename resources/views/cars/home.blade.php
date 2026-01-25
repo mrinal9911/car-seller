@@ -150,15 +150,9 @@ Home
   <!-- Hero Filter -->
   <section class="position-relative custom-color">
 
-    <div class="jarallax" data-jarallax data-speed="0.2">
+    <!-- <div class="jarallax" data-jarallax data-speed="0.2">
 
-      <!-- <img class="jarallax-img lazy" data-src="./images/cars/bmw-x5/021.jpg" alt=""> -->
-      <!-- <img class="jarallax-img lazy" data-src="./storage/images/car-hero.jpg" alt=""> -->
-      <!-- <img class="jarallax-img lazy" data-src="./storage/images/car-hero2.jpg" alt=""> -->
-      <!-- <img class="jarallax-img lazy" data-src="./storage/images/hero-02.jpg" alt=""> -->
       <img class="jarallax-img lazy" data-src="./images/car-hero3.png" alt="">
-
-
       <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" style="background-color: ; background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.42) 0px, rgba(255, 255, 255, 0.08) 67%); opacity: "></span>
 
       <div class="container position-relative col-xxl-8 py-5">
@@ -167,9 +161,64 @@ Home
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
+
+    <div id="hero-slider"
+      class="carousel slide rounded-2"
+      data-bs-ride="carousel"
+      data-bs-interval="4000"
+      data-bs-pause="false">
+
+      <!-- Indicators -->
+      <div class="carousel-indicators z-3">
+        <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner rounded-2">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="carousel-item-wrapper d-flex align-items-center position-relative">
+            <a class="stretched-link z-2"></a>
+            <!-- <span class="badge bg-success position-absolute top-0 start-0 m-3 z-2">New</span> -->
+            <img src="./images/car-hero3.png" class="d-block w-100 rounded-2" alt="BMW X5">
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="carousel-item-wrapper d-flex align-items-center position-relative">
+            <a class="stretched-link z-2"></a>
+            <!-- <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-2">Sold</span> -->
+            <img src="./images/car-hero2.jpg" class="d-block w-100 rounded-2" alt="Tiguan">
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="carousel-item-wrapper d-flex align-items-center position-relative">
+            <a class="stretched-link z-2"></a>
+            <!-- <span class="badge bg-primary position-absolute top-0 start-0 m-3 z-2">Used</span> -->
+            <img src="./images/car-hero.jpg" class="d-block w-100 rounded-2" alt="G63">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls
+      <button class="carousel-control-prev" type="button" data-bs-target="#hero-slider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#hero-slider" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button> -->
 
     </div>
+
 
   </section>
   <!-- END Hero Filter -->
@@ -184,7 +233,7 @@ Home
 
     <div class="container position-relative col-xxl-8 py-5 px-3 px-sm-0">
       <h2 class="fs-5 text-uppercase pb-3 mb-4 custom-color ">Browse by Brand</h2>
-      <div class="browse-brands-carousel owl-carousel owl-theme" data-loop="false" data-nav="true" data-dots="false" data-autoplay="false">
+      <div class="browse-brands-carousel owl-carousel owl-theme" data-loop="true" data-nav="true" data-dots="false" data-autoplay="true">
 
 
         <!-- Brand Item -->
@@ -218,7 +267,7 @@ Home
 
     <div class="container position-relative col-xxl-10 py-5 px-3 px-sm-0 position-relative">
       <h2 class="fs-5 text-uppercase pb-3 mb-4 custom-color ">Featured Cars</h2>
-      <div class="recent-cars-carousel basic-carousel owl-carousel owl-theme" data-loop="false" data-nav="true" data-dots="false" data-autoplay="false">
+      <div class="recent-cars-carousel basic-carousel owl-carousel owl-theme" data-loop="true" data-nav="true" data-dots="false" data-autoplay="true">
 
         <!-- Car -->
         @foreach ($featuredCars as $car)

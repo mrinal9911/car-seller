@@ -98,7 +98,7 @@ Contact Us
 
                     <h4 class="fs-sm text-muted text-uppercase">Email</h4>
                     <div class="mb-4 fs-special fs-6">
-                        ashujsr79@gmail.com
+                        prajapatisales97@gmail.com
                         <br>
                         <!-- sales@carmartsite.com -->
                         <br>
