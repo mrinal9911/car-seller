@@ -227,10 +227,7 @@ Home
   <!-- END Hero Filter -->
 
   <!-- Browse by brand logo -->
-  <section class="position-relative custom-color
-    
-    ">
-
+  <section class="position-relative custom-color">
 
     <span class="position-absolute top-0 start-0 w-100 h-100 custom-color" style="background-color: var(--bs-primary); background-image: ; opacity: 0.04"></span>
 

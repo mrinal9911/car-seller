@@ -295,21 +295,21 @@ Dashboard - My Listings
 
 
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const container = document.querySelector('.thiss');
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector('.thiss');
 
-        const messagesBtn = document.getElementById('loadMessagesBtn');
-        const listingsBtn = document.getElementById('loadListingsBtn');
+            const messagesBtn = document.getElementById('loadMessagesBtn');
+            const listingsBtn = document.getElementById('loadListingsBtn');
 
-        const originalListingsHTML = container.innerHTML;
+            const originalListingsHTML = container.innerHTML;
 
-        messagesBtn.addEventListener('click', function(event) {
-            event.preventDefault();
+            messagesBtn.addEventListener('click', function(event) {
+                event.preventDefault();
 
-            fetch('/list-message')
-                .then(response => response.json())
-                .then(data => {
-                    let table = `
+                fetch('/list-message')
+                    .then(response => response.json())
+                    .then(data => {
+                        let table = `
                     <div class="card-header p-3 border-bottom d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between align-items-center bg-body">
                         <h5 class="card-title mb-3 m-sm-0">
                             Messages <span class="badge bg-primary bg-opacity-10 text-primary ms-2">${data.length} Items</span>
@@ -331,8 +331,8 @@ Dashboard - My Listings
                             <tbody>
                     `;
 
-                    data.forEach((item, index) => {
-                        table += `
+                        data.forEach((item, index) => {
+                            table += `
                         <tr>
                             <td>${index + 1}</td>
                             <td>${(item.salutation ? item.salutation + ' ' : '') + item.name}</td>
@@ -342,30 +342,30 @@ Dashboard - My Listings
                             <td>${item.tag || ''}</td>
                         </tr>
                         `;
-                    });
+                        });
 
-                    table += `
+                        table += `
                             </tbody>
                         </table>
                     </div>
                     `;
 
-                    container.innerHTML = table;
-                })
-                .catch(err => {
-                    console.error('Error loading messages:', err);
-                    container.innerHTML = `<p class="text-danger">Failed to load messages.</p>`;
-                });
-        });
-
-        if (listingsBtn) {
-            listingsBtn.addEventListener('click', function(event) {
-                event.preventDefault();
-                container.innerHTML = originalListingsHTML;
+                        container.innerHTML = table;
+                    })
+                    .catch(err => {
+                        console.error('Error loading messages:', err);
+                        container.innerHTML = `<p class="text-danger">Failed to load messages.</p>`;
+                    });
             });
-        }
-    });
-</script>
+
+            if (listingsBtn) {
+                listingsBtn.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    container.innerHTML = originalListingsHTML;
+                });
+            }
+        });
+    </script>
 
 
 

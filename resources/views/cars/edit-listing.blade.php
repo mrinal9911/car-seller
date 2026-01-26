@@ -197,6 +197,12 @@ Edit Listing
                                                             </div>
                                                             <!-- END Listing power -->
 
+                                                            <!-- Location -->
+                                                            <div class="mb-3">
+                                                                <label for="location" class="form-label fw-semibold fs-special mb-1">Available At</label>
+                                                                <input type="text" class="form-control custom-color" id="location" name="location" value="{{ old('location', $car->location) }}">
+                                                            </div>
+                                                            <!-- END Location -->
 
                                                         </div>
                                                     </div>

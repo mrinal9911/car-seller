@@ -112,6 +112,7 @@ class CarController extends Controller
                 'price'               => $request->price,
                 'is_price_negotiable' => (int)$request->isNegotiable ?? 0,
                 'description'         => $request->description,
+                'location'            => $request->location ?? 'Not Specified',
             ]);
 
 
@@ -287,6 +288,7 @@ class CarController extends Controller
         $data['driven']          = $request['driven'];
         $data['price']           = $request['price'];
         $data['description']     = $request['description'];
+        $data['location']        = $request['location'];
         $data['is_price_negotiable'] = (int)$request['isNegotiable'] ?? 0;
 
         // Remove the camelCase keys so they don't try to update non-existent columns

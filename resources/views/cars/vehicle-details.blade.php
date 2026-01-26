@@ -261,6 +261,10 @@ Vehicles Details
                                 <span>Condition</span>
                                 <span class="fw-bold">{{ucfirst($car['condition'])}}</span>
                             </li>
+                            <li class="list-group-item d-flex justify-content-between list-group-item-light border mb-1 rounded-1">
+                                <span>Available At</span>
+                                <span class="fw-bold">{{ucfirst($car['location'])}}</span>
+                            </li>
                         </ul>
                         <div class="card-body">
                             <div class="container p-0">

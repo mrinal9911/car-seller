@@ -56,14 +56,12 @@ Add Listing
                                                     <div class="accordion-body">
                                                         <div class="row row-cols-sm-2 row-cols-md-3">
 
-
                                                             <!-- Listing Name -->
                                                             <div class="mb-3">
                                                                 <label for="title" class="form-label fw-semibold fs-special mb-1">Car Title/Name</label>
                                                                 <input type="text" class="form-control custom-color" id="title" name="title">
                                                             </div>
                                                             <!-- END Listing name -->
-
 
                                                             <!-- Listing brand -->
                                                             <div class="mb-3">
@@ -101,7 +99,6 @@ Add Listing
                                                             </div>
                                                             <!-- END Listing brand -->
 
-
                                                             <!-- Listing model -->
                                                             <div class="mb-3">
                                                                 <label for="model" class="form-label fw-semibold fs-special mb-1">Model</label>
@@ -109,7 +106,6 @@ Add Listing
 
                                                             </div>
                                                             <!-- END Listing model -->
-
 
                                                             <!-- Listing body -->
                                                             <div class="mb-3">
@@ -140,7 +136,6 @@ Add Listing
                                                             </div>
                                                             <!-- END Listing body -->
 
-
                                                             <!-- Listing transmission -->
                                                             <div class="mb-3">
                                                                 <label for="transmission" class="form-label fw-semibold fs-special mb-1">Transmission</label>
@@ -158,7 +153,6 @@ Add Listing
                                                                 </select>
                                                             </div>
                                                             <!-- END Listing transmission -->
-
 
                                                             <!-- Listing fuel -->
                                                             <div class="mb-3">
@@ -183,7 +177,6 @@ Add Listing
                                                             </div>
                                                             <!-- END Listing fuel -->
 
-
                                                             <!-- Listing Color -->
                                                             <div class="mb-3">
                                                                 <label for="color" class="form-label fw-semibold fs-special mb-1">Color</label>
@@ -205,7 +198,6 @@ Add Listing
                                                                 </select>
                                                             </div>
                                                             <!-- END Listing Color -->
-
 
                                                             <!-- Listing engine -->
                                                             <!-- <div class="mb-3">
@@ -233,7 +225,6 @@ Add Listing
                                                             </div> -->
                                                             <!-- END Listing engine -->
 
-
                                                             <!-- Listing power -->
                                                             <div class="mb-3">
                                                                 <label for="engine" class="form-label fw-semibold fs-special mb-1">Engine (CC)</label>
@@ -241,6 +232,12 @@ Add Listing
                                                             </div>
                                                             <!-- END Listing power -->
 
+                                                            <!-- Location -->
+                                                            <div class="mb-3">
+                                                                <label for="location" class="form-label fw-semibold fs-special mb-1">Available At</label>
+                                                                <input type="text" class="form-control custom-color" id="location" name="location">
+                                                            </div>
+                                                            <!-- END Location -->
 
                                                         </div>
                                                     </div>
