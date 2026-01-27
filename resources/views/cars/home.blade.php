@@ -280,8 +280,15 @@ Home
               <button type="button" class="btn btn-favorites p-0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to favorites"></button>
             </div>
             <div class="position-absolute start-0 top-0 pt-3 ps-3 z-2 d-flex align-items-start">
-              <span class="badge text-bg-success text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">New</span>
-              <span class="badge text-bg-warning text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">Reserved</span>
+              <?php if ($car['status'] == 'sold'): ?>
+                <span class="badge text-bg-danger text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">
+                  <?= $car['status'] ?>
+                </span>
+              <?php else: ?>
+                <span class="badge text-bg-success text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">
+                  <?= 'New' ?>
+                </span>
+              <?php endif; ?>
             </div>
             <div class="card-image">
               <div id="itemCarousel{{ $car['id'] }}" class="item-preview carousel slide carousel-fade">
