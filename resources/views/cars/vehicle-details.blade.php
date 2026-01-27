@@ -26,6 +26,11 @@ Vehicles Details
                 <div class="row">
                     <div class="col-lg-8 pb-4">
                         <div class="h-100 car-title bg-body-tertiary border rounded-2 p-3 position-relative">
+                            @if($car['status'] === 'sold')
+                            <span class="badge text-bg-danger text-uppercase position-absolute top-0 end-0 m-2 px-3 py-2 fs-2sm fw-normal">
+                                Sold Out
+                            </span>
+                            @endif
                             <h1 class="fw-bold car-name fs-special fs-2 p-0 m-0 text-body-emphasis">{{$car['brand']}} {{$car['title']}}</h1>
                             <div class="mt-3 fs-sm">
                                 <div class="d-md-inline-flex d-flex justify-content-start">
@@ -34,12 +39,12 @@ Vehicles Details
                                         <span class="car-vin-icon text-uppercase fw-bold">Added:</span>
                                         <span class="text-body-secondary"> {{ \Carbon\Carbon::parse($car->created_at)->format('d, M Y') }}</span>
                                     </div>
+
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
+
                     <div class="col-lg-4 pb-4">
                         <div class="h-100 bg-body-tertiary border rounded-2 p-3 d-flex justify-content-between">
                             <div class="price-text">
@@ -154,8 +159,20 @@ Vehicles Details
 
                             <div id="sync1" class="owl-carousel owl-theme popup-gallery rounded-2">
 
+
                                 @foreach($car['images'] as $image)
                                 <div class="item rounded-2">
+                                    <div class="position-absolute start-0 top-0 pt-3 ps-3 z-2 d-flex align-items-start">
+                                        <?php if ($car['status'] == 'sold'): ?>
+                                            <span class="badge text-bg-danger text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">
+                                                <?= $car['status'] ?>
+                                            </span>
+                                        <?php else: ?>
+                                            <span class="badge text-bg-success text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">
+                                                <?= 'New' ?>
+                                            </span>
+                                        <?php endif; ?>
+                                    </div>
                                     <a href="{{asset('storage/'.$image->image_path)}}" data-effect="mfp-zoom-in" title="">
                                         <img class="img-fluid object-fit-cover rounded-2 img-resolution" src="{{asset('storage/'.$image->image_path)}}" alt="" srcset="">
                                     </a>
@@ -406,8 +423,15 @@ Vehicles Details
                                     <button type="button" class="btn btn-favorites p-0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to favorites"></button>
                                 </div>
                                 <div class="position-absolute start-0 top-0 pt-3 ps-3 z-2 d-flex align-items-start">
-                                    <span class="badge text-bg-success text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">New</span>
-                                    <span class="badge text-bg-warning text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">Reserved</span>
+                                    <?php if ($car['status'] == 'sold'): ?>
+                                        <span class="badge text-bg-danger text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">
+                                            <?= $car['status'] ?>
+                                        </span>
+                                    <?php else: ?>
+                                        <span class="badge text-bg-success text-uppercase rounded-1 fs-xs-alt fw-normal text-spacing-sm me-1">
+                                            <?= 'New' ?>
+                                        </span>
+                                    <?php endif; ?>
                                 </div>
                                 <div class="card-image">
                                     <div id="itemCarousel{{ $car['id'] }}" class="item-preview carousel slide carousel-fade">
