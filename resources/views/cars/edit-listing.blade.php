@@ -84,6 +84,7 @@ Edit Listing
                                                                     <option value="Kia" {{ old('brand', $car->brand) == 'Kia' ? 'selected' : '' }}>Kia</option>
                                                                     <option value="Land Rover" {{ old('brand', $car->brand) == 'Land Rover' ? 'selected' : '' }}>Land Rover</option>
                                                                     <option value="Lexus" {{ old('brand', $car->brand) == 'Lexus' ? 'selected' : '' }}>Lexus</option>
+                                                                    <option value="Mahindra" {{ old('brand', $car->brand) == 'Mahindra' ? 'selected' : '' }}>Mahindra</option>
                                                                     <option value="Mercedes-Benz" {{ old('brand', $car->brand) == 'Mercedes-Benz' ? 'selected' : '' }}>Mercedes-Benz</option>
                                                                     <option value="MG" {{ old('brand', $car->brand) == 'MG' ? 'selected' : '' }}>MG</option>
                                                                     <option value="Mini Cooper" {{ old('brand', $car->brand) == 'Mini Cooper' ? 'selected' : '' }}>Mini Cooper</option>
