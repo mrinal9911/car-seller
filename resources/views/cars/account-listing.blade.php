@@ -67,15 +67,14 @@ Dashboard - My Listings
                                     </a>
                                 </li>
                                 <li class="nav-item my-1">
-                                    <a id="loadMessagesBtn" class="btn btn-sm d-flex align-items-center nav-link px-3 px-lg-4 mx-1
-                            
-                            bg-body-tertiary text-body-secondary fs-6" href="">
+                                    <button id="loadMessagesBtn" class="btn btn-sm d-flex align-items-center nav-link px-3 px-lg-4 mx-1
+        bg-body-tertiary text-body-secondary fs-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages me-2">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
                                             <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
                                         </svg>Messages
-                                    </a>
+                                    </button>
                                 </li>
                             </ul>
 
@@ -296,12 +295,12 @@ Dashboard - My Listings
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const container = document.querySelector('.thiss');
 
+            const container = document.querySelector('.thiss');
             const messagesBtn = document.getElementById('loadMessagesBtn');
             const listingsBtn = document.getElementById('loadListingsBtn');
-
             const originalListingsHTML = container.innerHTML;
+            const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 
             messagesBtn.addEventListener('click', function(event) {
                 event.preventDefault();
@@ -326,6 +325,7 @@ Dashboard - My Listings
                                     <th scope="col">Email</th>
                                     <th scope="col">Message</th>
                                     <th scope="col">Tag</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -333,13 +333,18 @@ Dashboard - My Listings
 
                         data.forEach((item, index) => {
                             table += `
-                        <tr>
+                        <tr id="row-${item.id}">
                             <td>${index + 1}</td>
                             <td>${(item.salutation ? item.salutation + ' ' : '') + item.name}</td>
                             <td>${item.phone}</td>
                             <td>${item.email}</td>
                             <td>${item.message}</td>
                             <td>${item.tag || ''}</td>
+                            <td>
+                                <button type="button" class="btn btn-sm btn-danger delete-btn" data-id="${item.id}">
+                                    Delete
+                                </button>
+                            </td>
                         </tr>
                         `;
                         });
@@ -351,6 +356,40 @@ Dashboard - My Listings
                     `;
 
                         container.innerHTML = table;
+
+                        document.querySelectorAll('.delete-btn').forEach(button => {
+                            button.addEventListener('click', function(e) {
+
+                                e.preventDefault();
+                                e.stopPropagation();
+
+                                const messageId = this.dataset.id;
+
+                                if (!confirm('Are you sure you want to delete this message?')) return;
+
+                                fetch(`/delete-message`, {
+                                        method: 'POST',
+                                        headers: {
+                                            'X-CSRF-TOKEN': csrfToken,
+                                            'Accept': 'application/json',
+                                            'Content-Type': 'application/json'
+                                        },
+                                        body: JSON.stringify({
+                                            message_id: messageId
+                                        })
+                                    })
+                                    .then(res => res.json())
+                                    .then(result => {
+                                        if (result.success) {
+                                            document.getElementById(`row-${messageId}`).remove();
+                                        }
+                                    })
+                                    .catch(err => console.error('Delete failed:', err));
+                            });
+                        });
+
+
+
                     })
                     .catch(err => {
                         console.error('Error loading messages:', err);
@@ -366,10 +405,6 @@ Dashboard - My Listings
             }
         });
     </script>
-
-
-
-
 
 </main>
 
