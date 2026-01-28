@@ -421,4 +421,17 @@ class CarController extends Controller
         $enquirylist = self::$mEnquiry->getAllEnqiryList();
         return $enquirylist->get();
     }
+
+    /**
+     * | Delete the f**king message
+     */
+    public function DeleteMessage(Request $req)
+    {
+        $id = $req->message_id;   
+        self::$mEnquiry->getAllEnqiryList()
+            ->where('id', $id)
+            ->delete();
+
+        return response()->json(['success' => true]);
+    }
 }
