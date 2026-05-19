@@ -49,7 +49,6 @@ class CarController extends Controller
             $query->where('is_main', true)->limit(1);
         }])
             ->latest()
-            // ->take(3)
             ->get();
 
         return view('cars.home', compact('brands', 'featuredCars'));
@@ -197,7 +196,7 @@ class CarController extends Controller
 
     public function vehicleList()
     {
-        $cars = Car::with('mainImage')->latest()->get();
+        $cars = Car::with('mainImage')->orderby('status', 'asc')->latest()->get();
         return view('cars.vehicle-list', compact('cars'));
     }
 
