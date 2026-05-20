@@ -174,6 +174,13 @@ Home
         <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="0" class="active"></button>
         <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="1"></button>
         <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="4"></button>
+        <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="5"></button>
+        <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="6"></button>
+        <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="7"></button>
+        <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="8"></button>
+        <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="9"></button>
       </div>
 
       <!-- Slides -->
@@ -185,7 +192,8 @@ Home
             <a href="/vehicles" class="stretched-link z-2"></a>
 
             <!-- <span class="badge bg-success position-absolute top-0 start-0 m-3 z-2">New</span> -->
-            <img src="./images/car-hero3.png" class="d-block w-100 rounded-2" alt="BMW X5">
+            <!-- <img src="./images/car-hero3.png" class="d-block w-100 rounded-2" alt="BMW X5"> -->
+            <img src="./images/dual-hero-image.png" class=" d-block w-100 rounded-2" alt="Dual">
           </div>
         </div>
 
@@ -195,7 +203,19 @@ Home
             <a href="/vehicles" class="stretched-link z-2"></a>
 
             <!-- <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-2">Sold</span> -->
-            <img src="./images/car-hero2.jpg" class="d-block w-100 rounded-2" alt="Tiguan">
+            <!-- <img src="./images/car-hero2.jpg" class="d-block w-100 rounded-2" alt="Tiguan"> -->
+            <img src="./images/hero-car-image-mercedez.png" class="d-block w-100 rounded-2" alt="Mercesdez">
+          </div>
+        </div>
+
+        <!-- Slide 2.5 -->
+        <div class="carousel-item">
+          <div class="carousel-item-wrapper d-flex align-items-center position-relative">
+            <a href="/vehicles" class="stretched-link z-2"></a>
+
+            <!-- <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-2">Sold</span> -->
+            <!-- <img src="./images/car-hero2.jpg" class="d-block w-100 rounded-2" alt="Tiguan"> -->
+            <img src="./images/hero-image-audi-red.png" class="d-block w-100 rounded-2" alt="audi-red">
           </div>
         </div>
 
@@ -205,7 +225,67 @@ Home
             <a href="/vehicles" class="stretched-link z-2"></a>
 
             <!-- <span class="badge bg-primary position-absolute top-0 start-0 m-3 z-2">Used</span> -->
-            <img src="./images/car-hero.jpg" class="d-block w-100 rounded-2" alt="G63">
+            <img src="./images/hero-car-image-endeavour.png" class="d-block w-100 rounded-2" alt="Endeavour">
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <div class="carousel-item-wrapper d-flex align-items-center position-relative">
+            <a href="/vehicles" class="stretched-link z-2"></a>
+
+            <!-- <span class="badge bg-primary position-absolute top-0 start-0 m-3 z-2">Used</span> -->
+            <img src="./images/hero-image-audi-white.png" class="d-block w-100 rounded-2" alt="audi-white">
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="carousel-item">
+          <div class="carousel-item-wrapper d-flex align-items-center position-relative">
+            <a href="/vehicles" class="stretched-link z-2"></a>
+
+            <!-- <span class="badge bg-primary position-absolute top-0 start-0 m-3 z-2">Used</span> -->
+            <img src="./images/hero-image-bmw.png" class="d-block w-100 rounded-2" alt="bmw">
+          </div>
+        </div>
+
+        <!-- Slide 7 -->
+        <div class="carousel-item">
+          <div class="carousel-item-wrapper d-flex align-items-center position-relative">
+            <a href="/vehicles" class="stretched-link z-2"></a>
+
+            <!-- <span class="badge bg-primary position-absolute top-0 start-0 m-3 z-2">Used</span> -->
+            <img src="./images/hero-image-fortuner.png" class="d-block w-100 rounded-2" alt="fortuner">
+          </div>
+        </div>
+
+        <!-- Slide 8 -->
+        <div class="carousel-item">
+          <div class="carousel-item-wrapper d-flex align-items-center position-relative">
+            <a href="/vehicles" class="stretched-link z-2"></a>
+
+            <!-- <span class="badge bg-primary position-absolute top-0 start-0 m-3 z-2">Used</span> -->
+            <img src="./images/hero-image-range-rover-white.png" class="d-block w-100 rounded-2" alt="range-rover">
+          </div>
+        </div>
+
+        <!-- Slide 9 -->
+        <div class="carousel-item">
+          <div class="carousel-item-wrapper d-flex align-items-center position-relative">
+            <a href="/vehicles" class="stretched-link z-2"></a>
+
+            <!-- <span class="badge bg-primary position-absolute top-0 start-0 m-3 z-2">Used</span> -->
+            <img src="./images/hero-image-700.png" class="d-block w-100 rounded-2" alt="XUV700">
+          </div>
+        </div>
+
+        <!-- Slide 10 -->
+        <div class="carousel-item">
+          <div class="carousel-item-wrapper d-flex align-items-center position-relative">
+            <a href="/vehicles" class="stretched-link z-2"></a>
+
+            <!-- <span class="badge bg-primary position-absolute top-0 start-0 m-3 z-2">Used</span> -->
+            <img src="./images/hero-car-image-verna-2.png" class="d-block w-100 rounded-2" alt="Verna2">
           </div>
         </div>
 
