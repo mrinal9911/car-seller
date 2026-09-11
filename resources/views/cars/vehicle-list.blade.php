@@ -228,7 +228,7 @@ Explore Vehicles
                 </div>
 
                 <!-- Pagination -->
-                <nav aria-label="Content navigation">
+                <!-- <nav aria-label="Content navigation">
                     <ul class="pagination justify-content-center">
                         <li class="page-item custom-color me-auto">
                             <a class="page-link page-prev border-0 p-0 bg-transparent" href="javascript:void()" aria-label="Previous">
@@ -262,7 +262,10 @@ Explore Vehicles
                             </a>
                         </li>
                     </ul>
-                </nav>
+                </nav> -->
+                <div class="d-flex justify-content-center mt-4">
+                    {{ $cars->links('pagination::bootstrap-5') }}
+                </div>
             </section>
         </div>
     </div>

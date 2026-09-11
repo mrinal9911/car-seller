@@ -196,7 +196,10 @@ class CarController extends Controller
 
     public function vehicleList()
     {
-        $cars = Car::with('mainImage')->orderby('status', 'asc')->latest()->get();
+        $cars = Car::with('mainImage')
+            ->orderby('status', 'asc')
+            ->latest()
+            ->paginate(12);
         return view('cars.vehicle-list', compact('cars'));
     }
 
@@ -426,7 +429,7 @@ class CarController extends Controller
      */
     public function DeleteMessage(Request $req)
     {
-        $id = $req->message_id;   
+        $id = $req->message_id;
         self::$mEnquiry->getAllEnqiryList()
             ->where('id', $id)
             ->delete();
