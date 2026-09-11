@@ -49,6 +49,7 @@ class CarController extends Controller
             $query->where('is_main', true)->limit(1);
         }])
             ->latest()
+            ->limit(12)
             ->get();
 
         return view('cars.home', compact('brands', 'featuredCars'));
